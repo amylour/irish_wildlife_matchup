@@ -74,6 +74,7 @@ Irish Wildlife MatchUp has been designed to be eaily accessible and fun for all 
 
   - A user can set out to beat their previous scores using the timer and moves counter.
   - A user can reset their game using the reset button if they do not acheive their desired score.
+  - A user can visit the linked interactive page that features the animals from the game to learn more about them.
 
 ---
 
@@ -81,15 +82,42 @@ Irish Wildlife MatchUp has been designed to be eaily accessible and fun for all 
 
 ### **1. Strategy**
 
-The project goal was to build an interactive, memory game suitable for all ages. I wished to use my own artwork to personalise the styling of the game. The theme of the game is 'Irish Wildlife', with different animals displayed on the cards to be matched, and the game environment styled to reflect the Irish landscape. The user will be able to familiarise themselves with the game rules before personalising the gameboard with visual and acoustic features. The user can develop their memory skills using the timer, moves counter and gamescore board which displays previous users' scores or play in a relaxed manner listening to the background nature soundtrack.
+The project goal was to build an interactive, memory game suitable for all ages. I wished to use my own artwork to personalise the styling of the game. The theme of the game is 'Irish Wildlife', with different animals displayed on the cards to be matched, and the game environment styled to reflect the Irish landscape.
+
+  - The user will be able to familiarise themselves with the game rules before personalising the gameboard with visual and acoustic features. 
+  - The user can develop their memory skills using the timer, moves counter and gamescore board which displays previous users' scores or play in a relaxed manner listening to the background nature soundtrack.
 
 ### **2. Scope**
 
+The game must be responsive and playable on mobile, tablet and desktop sized devices. To assist with this, the styling and artwork will be clean, vectorised graphics that will adjust appropriately to the resizing of the screens.
+
+  - The game will have two playable sizes; 4x4 and 6x4 grid layouts. The player can choose which size by clicking a button.
+  - The game will have a light theme and a dark theme.
+  - The game will play a soundtrack of forest sounds and offer feedback to the user with sound effects when buttons are selected and cards are flipped.
+  - The game will track the time taken and moves made by the player.
+  - The game will record the scores and names of players from previous plays.
+  - A link will be displayed in the footer to an interactive page of the animals featured in the game for the player to learn more about them.
 
 ### **3. Structural**
 
+Clear pathways to interactivity are essential for this games success. 
+
+  - The player is informed of the rules via a modal window and a start button to bring them to the gameboard. This window also grants an option to enter the players name to record their scores, but this is optional.
+  - Buttons and toggles along the perimeter of the gameboard give the player the options to control the visual and acoustic aspects of the game. Game size choice is also made available. 
+  - The player is informed of their win, time taken and moves made by a modal window when the final cards are matched.
+  - The layout and design of the gameboard changes very minimally between screen sizes to keep the experience consistent, and gameplay familiar.
+
 ### **4. Skeleton**
 
+The game site will have a clean layout with every feature identifiable and interactive.
+
+  - On loading, the game page will display a modal window front and centre for the user to immediately start the game (click the 'Start Game' button). This window will also offer an optional input section to enter the user's name. A 'tick' icon submits the name. An 'x' in the top, right corner exits the window.
+  - The gameboard is situated in the center of the screen with the default size of 6x4 displayed.
+  - A toggle button is displayed top right of the game screen to control the Light/Dark mode.
+  - Volume controls are situated above the gameboard to the right.
+  - Timer and moves counter are located above the gameboard to the left.
+  - A reset button is located centered, below the cards on the gameboard.
+  - The gameboard is centered over background art of an Irish landscape which changes to reflect the Light/Dark mode.
 ### Wireframes
 
 ### **5. Surface**
