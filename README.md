@@ -128,9 +128,40 @@ The game site will have a clean layout with every feature identifiable and inter
 
 ### **Colour Scheme**
 
+![main color palette swatch](docs/images/iw_color.png)
+
+![gameboard colour palette swatch](docs/images/iw_gameboard.png)
+
+![screenshot of forest day with extracted colour palette](docs/images/forest_day_palette%20(2).png)
+
+![screenshot of forest night with extracted colour palette](docs/images/night_forest_colorpalette%20(1).png)
+
+
 ### **Typography**
 
 ### **Imagery**
+
+### **Accessibility**
+  
+
+<details open>
+<summary>Adobe Color Accessibility Tools used to check for colour blind safeness in main colour palette</summary>
+
+![adobe color colour blind checker for main swatch](docs/images/irishwildlife01cbs.png)
+</details>
+
+<details>
+<summary>Adobe Color Accessibility Tools used to check for colour blind safeness in gameboard colour palette</summary>
+
+![adobe color colour blind checker for main swatch](docs/images/gameboard_cbs.png)
+</details>
+
+
+
+
+
+
+
 
 ---
 
