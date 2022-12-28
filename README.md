@@ -211,7 +211,8 @@ I chose the serif font 'Inknut Antiqua' from [Google Fonts](https://fonts.google
 - Git - used for version control
 - Google Fonts - fonts were imported from here 
 - Font Awesome - icons and their associated kit were downloaded from here  
-- Adobe Color - for all color palettes and accessibility contrast ratios  
+- Adobe Color - for all color palettes and accessibility contrast ratios 
+- Remove.bg - for image background removal 
 - Favicon.io - for badger favicon  
 - Tiny PNG - to compress images 
 - Google Dev Tools - to debug and for testing responsiveness 
@@ -245,7 +246,17 @@ GitHub was used to deploy the website. These were the steps taken to acheive thi
 
 ### **Content References**
 
+  - All content created is of my own design using copyright-free resources and is intended for educational purposes.
+  - [Code Institute](https://codeinstitute.net/ie/) for their HTML/CSS/JavaScript learning material.
+  - [W3Schools](https://www.w3schools.com/) for additional learning material.
+  - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript) for JavaScript best-practise, tutorials and guidance.
+
 ### **Media References**
+
+  - [Pexels](https://www.pexels.com/), [Unsplash](https://unsplash.com/), and [Pixabay](https://pixabay.com/) for all reference material for creating the animals and background imagery.  
+  - [Favicon](https://favicon.io/) for the favicon used for this site.
+  
+
 
 ### **Acknowledgements**
 
