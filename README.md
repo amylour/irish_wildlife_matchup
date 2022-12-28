@@ -40,13 +40,36 @@ Irish Wildlife MatchUp is a matching card game built with HTML, CSS and JavaScri
 
 ### **Primary Goal**
 
+Irish Wildlife MatchUp is an online memory card game styled with my own artwork of Irish flora and fauna. It is suitable for all ages with two gameboard sizes available. The game has a Light/Dark mode with the design changing to reflect this. Sounds of nature also play with an option for the user to mute the game.
+
 ### **Visitor Goals**
+
+Irish Wildlife MatchUp has been designed to be eaily accessible and fun for all ages. The combination of artwork, music and nature sounds seek to bring the user into the wild environment as they play the game. Design and styling will be responsive to different media screen sizes and the user will have control over the aesthetic and the sounds played. A timer and moves counter will inform the user of their progress.
+
 
 ### **First Time Visitor**
 
+  - A user can learn the game rules via a modal window.
+  - A user can start the game via a start button.
+  - A user can enter their name to presonalise the game screen and record their score.
+  - A user can decide which size gameboard they would prefer to play with, controlling the level of difficulty.
+  - A user can toggle the display to Light/Dark mode.
+  - A user receives visual and acoustic feedback from the cards if they match and if they don't.
+  - A user can control the game sounds and music.
+  - A user can click the cards to turn them over and play the game.
+  - A user can see their progress via a timer and moves counter.
+
 ### **Returning Visitor**
 
+  - A user is familiar with the rules and can start the game via a start button.
+  - A user can enter their name to be recorded on the gamescore board.
+  - A user can set up their gamescreen using buttons for theme, gameboard size and audio playback.
+  - A user can use the timer and moves counter to improve on their previous score.
+  - A user can compare their scores from previous plays.
+
 ### **Frequent Visitor**
+
+  - A user can set out to beat their previous scores using the timer and moves counter.
 
 ---
 
