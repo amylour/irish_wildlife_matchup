@@ -82,7 +82,10 @@ Irish Wildlife MatchUp has been designed to be eaily accessible and fun for all 
 
 ### **1. Strategy**
 
+The project goal was to build an interactive, memory game suitable for all ages. I wished to use my own artwork to personalise the styling of the game. The theme of the game is 'Irish Wildlife', with different animals displayed on the cards to be matched, and the game environment styled to reflect the Irish landscape. The user will be able to familiarise themselves with the game rules before personalising the gameboard with visual and acoustic features. The user can develop their memory skills using the timer, moves counter and gamescore board which displays previous users' scores or play in a relaxed manner listening to the background nature soundtrack.
+
 ### **2. Scope**
+
 
 ### **3. Structural**
 
