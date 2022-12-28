@@ -51,15 +51,15 @@ Irish Wildlife MatchUp has been designed to be eaily accessible and fun for all 
 
   - A user can learn the game rules via a modal window.
   - A user can start the game via a start button.
-  - A user can enter their name to presonalise the game screen and record their score.
+  - A user can enter their name to personalise the game screen and record their score.
   - A user can decide which size gameboard they would prefer to play with, controlling the level of difficulty.
   - A user can toggle the display to Light/Dark mode.
-  - A user can expect the timer and moves counter to start once they click the first card.
+  - A user can expect the timer and moves counter to start once they've click the first card.
   - A user receives visual and acoustic feedback from the cards if they match and if they don't.
   - A user can control the game sounds and music.
   - A user can click the cards to turn them over and play the game.
   - A user can see their progress via a timer and moves counter.
-  - a user can reset the game via a reset button.
+  - A user can reset the game via a reset button.
   - A user can see that the timer stops once they match the final cards.
   - A user can expect their scores to be displayed at the end via a modal window with an 'x' button in the corner to exit the window back to the gameboard.
 
@@ -69,7 +69,6 @@ Irish Wildlife MatchUp has been designed to be eaily accessible and fun for all 
   - A user can enter their name to be recorded on the gamescore board.
   - A user can set up their gamescreen using buttons for theme, gameboard size and audio playback.
   - A user can use the timer and moves counter to improve on their previous score and develop their memory skills.
-  - A user can compare their scores from previous plays.
 
 ### **Frequent Visitor**
 
