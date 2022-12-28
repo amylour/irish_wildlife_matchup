@@ -18,8 +18,11 @@ Irish Wildlife MatchUp is a matching card game built with HTML, CSS and JavaScri
   * [Wireframes](#wireframes)
 * [Design](#design)
   * [Colour Scheme](#color-scheme)
+  * [Light/Dark Theme](#lightdark-theme)
   * [Typography](#typography)
   * [Imagery](#imagery)
+  * [Sounds](#sounds)
+  * [Accessibility](#accessibility)
 * [Page Features](#page-features)
 * [Future Features](#future-features)
 * [Technologies Used](#technologies-used)
@@ -128,18 +131,47 @@ The game site will have a clean layout with every feature identifiable and inter
 
 ### **Colour Scheme**
 
+Using the natural, vibrant colours present in the Irish landscape, I created a selection of colour palettes for the project using the Adobe Color program. 
+
 ![main color palette swatch](docs/images/iw_color.png)
+_Main colour palette for the game_
+
+The main palette will be used for the buttons, toggles and interactive elements of the gamepage.
+
+<br>
 
 ![gameboard colour palette swatch](docs/images/iw_gameboard.png)
+_Colour palette for the gameboard_
 
+The gameboard palette was inspired by natural wood tones and was used to give the gameboard design a 'heavy' feeling as it is the central, most important feature of the gamepage.
+
+<br>
+
+### **Light/Dark Theme**
+
+I decided to include an option to switch between a light and dark theme to keep up with current webpage features. This will be accessed by a toggle switch at the top right of the page. The design of the background and the gameboard will change to reflect this.
 ![screenshot of forest day with extracted colour palette](docs/images/forest_day_palette%20(2).png)
+_Light theme colours extracted from photography by Steven Hylands/Pexels_
+
+<br>
 
 ![screenshot of forest night with extracted colour palette](docs/images/night_forest_colorpalette%20(1).png)
+_Dark theme colours extracted from photography by Matthew Ang/Pexels_
+
+<br>
 
 
-### **Typography**
+### **Typography**  
+
+I chose the serif font 'Inknut Antiqua' from [Google Fonts](https://fonts.google.com/specimen/Inknut+Antiqua) and imported the Light 300 weight for use in my project. The font reminded me of the 'Book of Kells' in keeping with the Irish theme and is used throughout the project.
+
+![screenshot of google font inknut example](docs/images/inknutfont.png)
 
 ### **Imagery**
+
+
+### **Sounds**
+
 
 ### **Accessibility**
   
@@ -155,13 +187,6 @@ The game site will have a clean layout with every feature identifiable and inter
 
 ![adobe color colour blind checker for main swatch](docs/images/gameboard_cbs.png)
 </details>
-
-
-
-
-
-
-
 
 ---
 
@@ -187,7 +212,7 @@ The game site will have a clean layout with every feature identifiable and inter
 - Google Fonts - fonts were imported from here 
 - Font Awesome - icons and their associated kit were downloaded from here  
 - Adobe Color - for all color palettes and accessibility contrast ratios  
-- Favicon.io - for ice cream favicon  
+- Favicon.io - for badger favicon  
 - Tiny PNG - to compress images 
 - Google Dev Tools - to debug and for testing responsiveness 
 - Google Lighthouse - for auditing the website
