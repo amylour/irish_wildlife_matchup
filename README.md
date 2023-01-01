@@ -94,7 +94,7 @@ The project goal was to build an interactive, memory game suitable for all ages.
 
 The game must be responsive and playable on mobile, tablet and desktop sized devices. To assist with this, the styling and artwork will be clean, vectorised graphics that will adjust appropriately to the resizing of the screens.
 
-  - The game will have two playable sizes; 4x4 and 6x4 grid layouts. The player can choose which size by clicking a button.
+  - The game will have two playable sizes; 4x3 and 6x4 grid layouts. The player can choose which size by clicking a button.
   - The game will have a light theme and a dark theme.
   - The game will play a soundtrack of forest sounds and offer feedback to the user with sound effects when buttons are selected and cards are flipped.
   - The game will track the time taken and moves made by the player.
@@ -115,7 +115,7 @@ Clear pathways to interactivity are essential for this games success.
 The game site will have a clean layout with every feature identifiable and interactive.
 
   - On loading, the game page will display a modal window front and centre for the user to immediately start the game (click the 'Start Game' button). This window will also offer an optional input section to enter the user's name. A 'tick' icon submits the name. An 'x' in the top, right corner exits the window.
-  - The gameboard is situated in the center of the screen with the default size of 6x4 displayed.
+  - The gameboard is situated in the center of the screen with the default size of 4x3 displayed.
   - A toggle button is displayed top right of the game screen to control the Light/Dark mode.
   - Volume controls are situated above the gameboard to the right.
   - Timer and moves counter are located above the gameboard to the left.
