@@ -43,14 +43,34 @@ h1 {
     color: black;
 }
 
-.rules,
-.theme-toggle {
-    background-colour: lightgreen;
-    height: 50px;
-    width: 150px;
-    margin: 10px;
-    border-radius: 8px;
+.score-volume {
+    height: 80px;
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid red;
 }
 
+.timer,
+.moves,
+.volume {
+    width: 20%;
+    background-color: pink;
+    border-radius: 4px;
+}
+
+.game-container {
+    background: brown;
+    border-radius: 4px;
+    width: 1050px;
+    height: 550px;
+    display: flex;
+    box-shadow: 2px 3px 5px gray;
+    margin: auto;
+}
 
 
