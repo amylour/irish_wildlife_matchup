@@ -5,3 +5,50 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    height: 100vh;
+    background-color: lightblue;
+    font-family: 'Inknut Antiqua', serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.rules-theme {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 2px solid green;
+}
+
+.question {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 2.5rem;
+}
+
+.toggle {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2.5rem;
+}
+
+.rules,
+.theme-toggle {
+    background-colour: lightgreen;
+    height: 50px;
+    width: 150px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+
+

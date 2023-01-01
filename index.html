@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
     <title>Irish Wildlife MatchUp</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon/android-chrome-512x512.png">
 </head>
 <body>
-    <section class="score-controls">
-      <div class="rules"></div>
-      <div class="theme-toggle">
-            <button class="theme-button" onclick="themeToggle()"></button>
-      </div>
+
+    <div class="rules-theme">
+        <div class="rules"><p class="question">?</p></div>
+        <div class="title">
+            <h1 class="game-title">Irish Wildlife MatchUp</h1>
+        </div>
+        <div class="theme-toggle"><i class="fa-regular fa-toggle-on, toggle"></i></div>
+    </div>
+    
+    <div class="score-volume">
       <div class="timer"></div>
       <div class="moves"></div>
-    </section>
+      <div class="volume"></div>
+    </div>
 
     <section class="gamearea">
       <div class="game-container">
@@ -29,6 +35,9 @@
     </section>
 
     <footer></footer>
+
+  <!--fontawesome kit-->
+  <script src="https://kit.fontawesome.com/215d5971d3.js" crossorigin="anonymous"></script>  
   
   <script src="script.js"></script>
 </body>
