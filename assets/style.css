@@ -119,7 +119,7 @@ h1 {
 .game-board {
     margin: auto;
     border-radius: 8px;
-    width: 788px;
+    width: 745px;
     height: 488px;
     display: flex;
     flex-wrap: wrap;
@@ -133,17 +133,33 @@ h1 {
     position: relative;
     border-radius: 6px;
     box-shadow: 1px 3px 3px #382a25;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.game-card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+
+.game-card.flip {
+    transform: rotateY(180deg);
 }
 
 .front-card,
 .back-card {
     width: 100%;
     height: 100%;
-    padding: 20px;
+    padding: 15px;
     border-radius: 6px;
     background: #f7edd2;
     position: absolute;
     backface-visibility: hidden;
+}
+
+.front-card {
+    transform: rotateY(180deg);
 }
 
 img {
