@@ -8,12 +8,12 @@
 
 body {
     height: 100vh;
-    background-color: lightblue;
+    background-image: url("../assets/images/day.png");
     font-family: 'Inknut Antiqua', serif;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .rules-theme {
@@ -24,13 +24,12 @@ h1 {
     align-content: flex-start;
     flex-direction: row;
     justify-content: space-evenly;
-    border: 2px solid green;
 }
 
 .question {
     position: absolute;
     top: 20px;
-    left: 15px;
+    left: 25px;
     width: 30px;
     height: 30px;
 }
@@ -44,15 +43,24 @@ h1 {
 }
 
 .score-volume {
-    height: 80px;
-    width: 50%;
+    height: 60px;
+    width: 80%;
     margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    border: 2px solid red;
+    justify-content: space-evenly;
+}
+
+.timer-moves {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 50%;
+    font-size: 2rem;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .timer,
@@ -64,12 +72,20 @@ h1 {
 }
 
 .game-container {
-    background: brown;
-    border-radius: 4px;
-    width: 1050px;
-    height: 550px;
+    background-image: linear-gradient(#C28B51,#EDC88C);
+    border-radius: 8px;
+    width: 1000px;
+    height: 650px;
     display: flex;
-    box-shadow: 2px 3px 5px gray;
+    box-shadow: 1px 0px 0px #382A25,0px 1px 0px #382A25,
+    2px 1px 0px #382A25,1px 2px 0px #382A25,
+    3px 2px 0px #382A25,2px 3px 0px #382A25,
+    4px 3px 0px #382A25,3px 4px 0px #382A25,
+    5px 4px 0px #382A25,4px 5px 0px #382A25,
+    6px 5px 0px #382A25,5px 6px 0px #382A25,
+    7px 6px 0px #382A25,6px 7px 0px #382A25,
+    8px 7px 0px #382A25,7px 8px 0px #382A25,
+    9px 8px 0px #382A25,8px 9px 0px #382A25;
     margin: auto;
 }
 
