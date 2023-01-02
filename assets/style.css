@@ -10,6 +10,7 @@ body {
     height: 100vh;
     background-image: url("../assets/images/day.png");
     font-family: 'Inknut Antiqua', serif;
+    color: #382A25;
 }
 
 h1 {
@@ -44,31 +45,33 @@ h1 {
 
 .score-volume {
     height: 60px;
-    width: 80%;
+    width: 100%;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .timer-moves {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    width: 50%;
-    font-size: 2rem;
-    text-align: center;
-    vertical-align: middle;
+    justify-content: space-between;
+    width: 20%;
+    font-size: 2.5rem;
 }
 
 .timer,
-.moves,
-.volume {
-    width: 20%;
-    background-color: pink;
-    border-radius: 4px;
+.moves {
+    vertical-align: middle;
+}
+
+.vol-icon {
+    width: 40%;
+    height: 40px;
+    width: 40px;
 }
 
 .game-container {
