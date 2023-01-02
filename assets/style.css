@@ -7,14 +7,15 @@
 }
 
 body {
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     background-image: url("../assets/images/day.png");
     font-family: 'Inknut Antiqua', serif;
     color: #382A25;
 }
 
 h1 {
-    font-size: 2.5rem;
+
 }
 
 .gamescreen-top {
@@ -52,27 +53,37 @@ h1 {
 
 .score {
     height: 60px;
-    width: 80%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 60%;
+    margin: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .timer-moves {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 20%;
-    font-size: 2.5rem;
+    justify-content: space-evenly;
+    width: 35%;
 }
 
 .timer,
 .moves {
-    vertical-align: middle;
+    height: 60px;
+    width: 170px;
+    background-color: gray;
+    border-radius: 8px;
+    margin:0px 30px 0px 30px;
 }
+
+.digits {
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+}
+
 
 .game-container {
     background-image: linear-gradient(#C28B51,#EDC88C);
