@@ -13,6 +13,14 @@ body {
     color: #382A25;
 }
 
+.dark-mode {
+    background-image: url("../assets/images/night_scene.png");
+    height: 100vh;
+    color: #f7edd2;
+}
+
+
+
 .gamescreen-top {
     width: 100%;
     display: flex;
