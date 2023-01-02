@@ -53,26 +53,26 @@ h1 {
 
 .score {
     height: 60px;
-    width: 60%;
+    width: 65%;
     margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .timer-moves {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 35%;
+    width: 40%;
 }
 
 .timer,
 .moves {
-    height: 60px;
-    width: 170px;
+    height: 40px;
+    width: 150px;
     background-color: gray;
     border-radius: 8px;
     margin:0px 30px 0px 30px;
@@ -80,16 +80,16 @@ h1 {
 
 .digits {
     text-align: center;
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 25px;
+    line-height: 35px;
 }
 
 
 .game-container {
     background-image: linear-gradient(#C28B51,#EDC88C);
     border-radius: 8px;
-    width: 1000px;
-    height: 650px;
+    width: 888px;
+    height: 588px;
     display: flex;
     box-shadow: 1px 0px 0px #382A25,0px 1px 0px #382A25,
     2px 1px 0px #382A25,1px 2px 0px #382A25,
