@@ -17,42 +17,48 @@ h1 {
     font-size: 2.5rem;
 }
 
-.rules-theme {
-    position: relative;
-    margin: auto;
+.gamescreen-top {
     width: 100%;
     display: flex;
-    align-content: flex-start;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-end;
 }
 
-.question {
-    position: absolute;
-    top: 20px;
-    left: 25px;
-    width: 30px;
+.title {
+   
+}
+
+.volume-toggle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     height: 30px;
+    width: 30px;
+}
+
+.vol-icon {
+    margin-top: 15px;
+    height: 30px;
+    width: 30px;
 }
 
 .toggle {
-    position: absolute;
-    right: 15px;
     width: 60px;
     height: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
     color: black;
 }
 
-.score-volume {
+.score {
     height: 60px;
-    width: 100%;
-    margin: auto;
+    width: 80%;
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .timer-moves {
@@ -66,12 +72,6 @@ h1 {
 .timer,
 .moves {
     vertical-align: middle;
-}
-
-.vol-icon {
-    width: 40%;
-    height: 40px;
-    width: 40px;
 }
 
 .game-container {
