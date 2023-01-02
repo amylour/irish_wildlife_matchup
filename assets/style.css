@@ -19,8 +19,6 @@ body {
     color: #f7edd2;
 }
 
-
-
 .gamescreen-top {
     width: 100%;
     display: flex;
@@ -162,3 +160,4 @@ body {
 img {
     width: 80px;
 }
+

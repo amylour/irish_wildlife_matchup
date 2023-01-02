@@ -5,6 +5,16 @@ function lightDark() {
     element.classList.toggle('dark-mode');
 }
 
+// change toggle color for light/dark theme
+
+function changeImage() {
+    if (document.getElementById("ld-theme").src.endsWith('night_in_day.png') == true) {
+        document.getElementById("ld-theme").src = "assets/images/day_in_night.png";
+    }  else if (document.getElementById("ld-theme").src.endsWith('day_in_night.png') == true) {
+        document.getElementById("ld-theme").src = "assets/images/night_in_day.png";
+    }
+}
+
 
 // card flip function
 
