@@ -3,9 +3,11 @@
 function lightDark() {
     var element = document.body;
     element.classList.toggle('dark-mode');
+    document.body.classList.toggle('.dark-mode');
 }
 
 // change toggle color for light/dark theme
+// credit https://tutorial.eyehunts.com/js/swap-images-in-javascript-simple-onclick-image-swap-example/
 
 function changeImage() {
     if (document.getElementById("ld-theme").src.endsWith('night_in_day.png') == true) {

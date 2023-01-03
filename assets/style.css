@@ -161,3 +161,35 @@ img {
     width: 80px;
 }
 
+body.dark-mode .digits {
+    color: #f7edd2;
+}
+
+body.dark-mode 
+
+body.dark-mode .timer {
+    background-color: #382a25;
+    box-shadow: 1px 0px 0px #f7edd2,0px 1px 0px#f7edd2,
+    2px 1px 0px #f7edd2,1px 2px 0px #f7edd2,
+    3px 2px 0px #f7edd2,2px 3px 0px #f7edd2,
+    4px 3px 0px #f7edd2,3px 4px 0px #f7edd2,
+    5px 4px 0px #f7edd2,4px 5px 0px #f7edd2,
+    6px 5px 0px #f7edd2,5px 6px 0px #f7edd2,
+    7px 6px 0px #f7edd2,6px 7px 0px #f7edd2,
+    8px 7px 0px #f7edd2,7px 8px 0px #f7edd2,
+    9px 8px 0px #f7edd2,8px 9px 0px #f7edd2;
+}
+
+body.dark-mode .moves {
+    background-color: #382a25;
+    box-shadow: 1px 0px 0px #f7edd2,0px 1px 0px#f7edd2,
+    2px 1px 0px #f7edd2,1px 2px 0px #f7edd2,
+    3px 2px 0px #f7edd2,2px 3px 0px #f7edd2,
+    4px 3px 0px #f7edd2,3px 4px 0px #f7edd2,
+    5px 4px 0px #f7edd2,4px 5px 0px #f7edd2,
+    6px 5px 0px #f7edd2,5px 6px 0px #f7edd2,
+    7px 6px 0px #f7edd2,6px 7px 0px #f7edd2,
+    8px 7px 0px #f7edd2,7px 8px 0px #f7edd2,
+    9px 8px 0px #f7edd2,8px 9px 0px #f7edd2;
+
+}
