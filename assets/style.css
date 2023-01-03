@@ -47,12 +47,17 @@ body {
     margin: 15px 0px 0px 0px;
 }
 
-.score {
-    height: 60px;
-    width: 65%;
-    margin: auto;
+.gamescreen-middle {
     display: flex;
     flex-direction: row;
+}
+
+.score {
+    height: 60px;
+    /*width: 65%;
+    margin: auto;*/
+    display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -60,9 +65,10 @@ body {
 
 .timer-moves {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 50%;
+    flex-direction: column;
+    margin: 200px 0px 200px 40px;
+    /*justify-content: space-evenly;
+    width: 50%;*/
 }
 
 .timer,
@@ -76,16 +82,18 @@ body {
     4px 3px 0px #382A25,3px 4px 0px #382A25,
     5px 4px 0px #382A25,4px 5px 0px #382A25,
     6px 5px 0px #382A25,5px 6px 0px #382A25,
-    7px 6px 0px #382A25,6px 7px 0px #382A25,
-    8px 7px 0px #382A25,7px 8px 0px #382A25,
-    9px 8px 0px #382A25,8px 9px 0px #382A25;
+    7px 6px 0px #382A25,6px 7px 0px #382A25;
     border-radius: 8px;
-    margin:0px 30px 0px 30px;
+   /* margin:0px 30px 0px 30px;*/
 }
 
 .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     font-size: 25px;
     line-height: 42px;
+    margin: 25px 0px 7px 33px;
 }
 
 .digits {
@@ -175,9 +183,7 @@ body.dark-mode .timer {
     4px 3px 0px #f7edd2,3px 4px 0px #f7edd2,
     5px 4px 0px #f7edd2,4px 5px 0px #f7edd2,
     6px 5px 0px #f7edd2,5px 6px 0px #f7edd2,
-    7px 6px 0px #f7edd2,6px 7px 0px #f7edd2,
-    8px 7px 0px #f7edd2,7px 8px 0px #f7edd2,
-    9px 8px 0px #f7edd2,8px 9px 0px #f7edd2;
+    7px 6px 0px #f7edd2,6px 7px 0px #f7edd2;
 }
 
 body.dark-mode .moves {
@@ -188,9 +194,6 @@ body.dark-mode .moves {
     4px 3px 0px #f7edd2,3px 4px 0px #f7edd2,
     5px 4px 0px #f7edd2,4px 5px 0px #f7edd2,
     6px 5px 0px #f7edd2,5px 6px 0px #f7edd2,
-    7px 6px 0px #f7edd2,6px 7px 0px #f7edd2,
-    8px 7px 0px #f7edd2,7px 8px 0px #f7edd2,
-    9px 8px 0px #f7edd2,8px 9px 0px #f7edd2;
-
+    7px 6px 0px #f7edd2,6px 7px 0px #f7edd2;
 }
 
