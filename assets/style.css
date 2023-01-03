@@ -16,7 +16,8 @@ body {
 .dark-mode {
     background-image: url("../assets/images/night_scene.png");
     height: 100vh;
-    color: #f7edd2;
+    background-size: cover;
+    color: #edc88c;
 }
 
 .gamescreen-top {
@@ -162,10 +163,9 @@ img {
 }
 
 body.dark-mode .digits {
-    color: #f7edd2;
+    color: #edc88c;
 }
 
-body.dark-mode 
 
 body.dark-mode .timer {
     background-color: #382a25;
@@ -193,3 +193,4 @@ body.dark-mode .moves {
     9px 8px 0px #f7edd2,8px 9px 0px #f7edd2;
 
 }
+

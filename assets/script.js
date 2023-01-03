@@ -15,6 +15,18 @@ function changeImage() {
     }  else if (document.getElementById("ld-theme").src.endsWith('day_in_night.png') == true) {
         document.getElementById("ld-theme").src = "assets/images/night_in_day.png";
     }
+
+    if (document.getElementById("ld-vol").src.endsWith('volume.png') == true) {
+        document.getElementById("ld-vol").src = "assets/images/volume_light.png";
+    }  else if (document.getElementById("ld-vol").src.endsWith('volume_light.png') == true) {
+        document.getElementById("ld-vol").src = "assets/images/volume.png";
+    }
+
+    if (document.getElementById("ld-vol-mute").src.endsWith('volume-mute.png') == true) {
+        document.getElementById("ld-vol-mute").src = "assets/images/volume-mute_light.png";
+    }  else if (document.getElementById("ld-vol-mute").src.endsWith('volume-mute_light.png') == true) {
+        document.getElementById("ld-vol-mute").src = "assets/images/volume-mute.png";
+    }
 }
 
 
