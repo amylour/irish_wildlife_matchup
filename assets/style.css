@@ -229,6 +229,7 @@ body.dark-mode .timer {
     5px 4px 0px #f7edd2,4px 5px 0px #f7edd2,
     6px 5px 0px #f7edd2,5px 6px 0px #f7edd2,
     7px 6px 0px #f7edd2,6px 7px 0px #f7edd2;
+    border: 2px solid #f7edd2;
 }
 
 body.dark-mode .moves {
@@ -240,6 +241,7 @@ body.dark-mode .moves {
     5px 4px 0px #f7edd2,4px 5px 0px #f7edd2,
     6px 5px 0px #f7edd2,5px 6px 0px #f7edd2,
     7px 6px 0px #f7edd2,6px 7px 0px #f7edd2;
+    border: 2px solid #f7edd2;
 }
 
 body.dark-mode .name-entered {
@@ -251,6 +253,7 @@ body.dark-mode .name-entered {
     5px 4px 0px #f7edd2,4px 5px 0px #f7edd2,
     6px 5px 0px #f7edd2,5px 6px 0px #f7edd2,
     7px 6px 0px #f7edd2,6px 7px 0px #f7edd2;
+    border: 2px solid #f7edd2;
 }
 
 body.dark-mode .best-scores {
@@ -262,5 +265,6 @@ body.dark-mode .best-scores {
     5px 4px 0px #f7edd2,4px 5px 0px #f7edd2,
     6px 5px 0px #f7edd2,5px 6px 0px #f7edd2,
     7px 6px 0px #f7edd2,6px 7px 0px #f7edd2;
+    border: 2px solid #f7edd2;
 }
 
