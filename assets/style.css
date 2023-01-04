@@ -195,6 +195,25 @@ img {
     transition: transform .4s;
 }
 
+.best-scores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+    line-height: 42px;
+    height: 240px;
+    width: 140px;
+    background-color: #f7edd2;
+    box-shadow: 1px 0px 0px #382A25,0px 1px 0px #382A25,
+    2px 1px 0px #382A25,1px 2px 0px #382A25,
+    3px 2px 0px #382A25,2px 3px 0px #382A25,
+    4px 3px 0px #382A25,3px 4px 0px #382A25,
+    5px 4px 0px #382A25,4px 5px 0px #382A25,
+    6px 5px 0px #382A25,5px 6px 0px #382A25,
+    7px 6px 0px #382A25,6px 7px 0px #382A25;
+    border-radius: 8px;
+}
+
 body.dark-mode .digits {
     color: #edc88c;
 }
