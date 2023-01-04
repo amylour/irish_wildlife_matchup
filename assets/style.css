@@ -96,6 +96,7 @@ body {
     font-size: 25px;
     line-height: 42px;
     margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .digits {
@@ -231,6 +232,28 @@ body.dark-mode .timer {
 }
 
 body.dark-mode .moves {
+    background-color: #382a25;
+    box-shadow: 1px 0px 0px #f7edd2,0px 1px 0px#f7edd2,
+    2px 1px 0px #f7edd2,1px 2px 0px #f7edd2,
+    3px 2px 0px #f7edd2,2px 3px 0px #f7edd2,
+    4px 3px 0px #f7edd2,3px 4px 0px #f7edd2,
+    5px 4px 0px #f7edd2,4px 5px 0px #f7edd2,
+    6px 5px 0px #f7edd2,5px 6px 0px #f7edd2,
+    7px 6px 0px #f7edd2,6px 7px 0px #f7edd2;
+}
+
+body.dark-mode .name-entered {
+    background-color: #382a25;
+    box-shadow: 1px 0px 0px #f7edd2,0px 1px 0px#f7edd2,
+    2px 1px 0px #f7edd2,1px 2px 0px #f7edd2,
+    3px 2px 0px #f7edd2,2px 3px 0px #f7edd2,
+    4px 3px 0px #f7edd2,3px 4px 0px #f7edd2,
+    5px 4px 0px #f7edd2,4px 5px 0px #f7edd2,
+    6px 5px 0px #f7edd2,5px 6px 0px #f7edd2,
+    7px 6px 0px #f7edd2,6px 7px 0px #f7edd2;
+}
+
+body.dark-mode .best-scores {
     background-color: #382a25;
     box-shadow: 1px 0px 0px #f7edd2,0px 1px 0px#f7edd2,
     2px 1px 0px #f7edd2,1px 2px 0px #f7edd2,
