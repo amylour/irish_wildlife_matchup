@@ -1,6 +1,7 @@
 // General Variables
 const cards = document.querySelectorAll('.game-card');
 const movesTaken = document.getElementById('moves-taken');
+const timeTaken = document.getElementById('time-taken');
 
 let hasTurnedCard = false; // checks if card has been clicked
 let firstCard, secondCard; // checks for matching cards
@@ -70,6 +71,7 @@ movesTaken.innerHTML = 00;
 
 function recordMove() {
     moves++;
+    // adds '0' to moves counter to ensure 0 before single digit - adapted from https://stackoverflow.com/questions/26898378/javascript-countdown-timer-need-a-second-digit 
     if(moves < 10){moves = "0" + moves};
     movesTaken.innerHTML = moves;
 }
@@ -78,6 +80,31 @@ function resetBoard() {
    [hasTurnedCard, lockBoard] = [false, false];
    [firstCard, secondCard] = [null, null];
 }
+
+// timer - function learned, practised and adapted from https://foolishdeveloper.com/create-a-simple-stopwatch-using-javascript-tutorial-code/
+let time = 0;
+let minutes = 0;
+let seconds = 0;
+let timeStart = false;
+if(seconds < 0){seconds = "0" + seconds};
+if(minutes < 0){minutes = "0" + minutes};
+timeTaken.innerHTML = minutes + ":" + seconds;
+
+function timer() {
+    time = setInterval(function() {
+        seconds++;
+        if (seconds === 59) {
+            minutes++;
+            seconds = 0;
+        }
+        timeTaken.innerHTML = minutes + ":" + seconds;
+    }, 1000);
+}
+
+function stopTime() {
+    clearInterval(time);
+}
+
 
 /* shuffleCards function wrapped in IIFE to invoke function immediately */
 (function shuffleCards() {
