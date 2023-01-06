@@ -92,9 +92,11 @@ let time = 00;
 let minutes = 00;
 let seconds = 00;
 let timeStart = false;
-if(seconds < 0){seconds = "0" + seconds};
-if(minutes < 0){minutes = "0" + minutes};
+
 timeTaken.innerHTML = "00" + ":" + "00";
+
+seconds = seconds < 10 ? "0" + seconds: seconds;
+minutes = minutes < 10 ? "0" + minutes: minutes; 
 
 function timer() {
     time = setInterval(function() {
