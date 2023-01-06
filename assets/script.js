@@ -1,3 +1,40 @@
+// General Variables
+const cards = document.querySelectorAll('.game-card');
+
+
+let firstCard, secondCard;
+
+/** card flip and game play function learned, 
+* practised and adapted from freeCodeCamp Youtube 
+* tutorial by Marina Ferreira */
+function flipCard() {
+    this.classList.toggle('flip');
+}
+
+if(!hasTurnedCard) {
+    //first click
+    hasTurnedCard = true;
+    firstCard = this;
+}  else  {
+    //second click
+    hasTurnedCard = false;
+    secondCard = this;
+
+    //are the cards a match?
+    if(firstCard.)
+}
+
+
+
+cards.forEach(card => card.addEventListener('click', flipCard));
+
+
+
+
+
+
+
+
 // light/dark toggle
 
 function lightDark() {
@@ -30,12 +67,3 @@ function changeImage() {
 }
 
 
-// card flip function
-
-const cards = document.querySelectorAll('.game-card');
-
-function flipCard() {
-    this.classList.toggle('flip');
-}
-
-cards.forEach(card => card.addEventListener('click', flipCard));
