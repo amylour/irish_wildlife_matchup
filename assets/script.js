@@ -1,9 +1,11 @@
 // General Variables
 const cards = document.querySelectorAll('.game-card');
+const movesTaken = document.getElementById('moves-taken');
 
 let hasTurnedCard = false; // checks if card has been clicked
 let firstCard, secondCard; // checks for matching cards
 let lockBoard = false;
+let moves = 0;
 
 
 //Events
@@ -32,9 +34,10 @@ function flipCard() {
       checkCardMatch();
 }
 
+// check cards match 
 function checkCardMatch() {
     let isMatch = firstCard.dataset.name === secondCard.dataset.name; 
-    // ternary operator to remove if/else block    
+    // ternary operator to remove if/else block to remove matched cards from play   
     isMatch ? disableCards() : unflipCards();
    }
 
@@ -46,6 +49,7 @@ function disableCards() {
     resetBoard();
 }
 
+
 function unflipCards() {
     lockBoard = true;
 
@@ -55,6 +59,19 @@ function unflipCards() {
 
         resetBoard();
     }, 1200);
+
+    // record move
+    recordMove();
+}
+
+//counter for moves
+moves = 0;
+movesTaken.innerHTML = 00;
+
+function recordMove() {
+    moves++;
+    if(moves < 10){moves = "0" + moves};
+    movesTaken.innerHTML = moves;
 }
 
 function resetBoard() {

@@ -93,6 +93,9 @@ body {
     6px 5px 0px #382A25,5px 6px 0px #382A25,
     7px 6px 0px #382A25,6px 7px 0px #382A25;
     border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .name {
@@ -106,9 +109,8 @@ body {
 }
 
 .digits {
-    text-align: center;
     font-size: 28px;
-    line-height: 33px;
+    margin-bottom: 10px;
 }
 
 .game-container {
