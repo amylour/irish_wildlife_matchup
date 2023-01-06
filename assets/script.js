@@ -17,21 +17,21 @@ function flipCard() {
     //first click
       hasTurnedCard = true;
       firstCard = this;
-  }  else  {
+
+      return;
+  } 
+
     //second click
       hasTurnedCard = false;
       secondCard = this;
 
       checkCardMatch();
-  }
 }
 
 function checkCardMatch() {
-    //are the cards a match?
-    if(firstCard.dataset.name === secondCard.dataset.name) {
-        disableCards();
-    }  else  {}
-        unflipCards();
+    let isMatch = firstCard.dataset.name === secondCard.dataset.name; 
+    // ternary operator to remove if/else block    
+    isMatch ? disableCards() : unflipCards();
    }
 
 
@@ -46,6 +46,14 @@ function unflipCards() {
         secondCard.classList.remove('flip');
     }, 1200);
 }
+
+/* shuffleCards function wrapped in IIFE to invoke function immediately */
+(function shuffleCards() {
+    cards.forEach(card => {
+        let randomPosition = Math.floor(Math.random()* 12);
+        card.style.order = randomPosition;
+    });
+})();
 
 
 
