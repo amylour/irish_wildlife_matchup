@@ -2,12 +2,15 @@
 const cards = document.querySelectorAll('.game-card');
 const movesTaken = document.getElementById('moves-taken');
 const timeTaken = document.getElementById('time-taken');
+const finishMatch = 6;
 
 let startGame = false;
+let allMatched= 0;
 let hasTurnedCard = false; // checks if card has been clicked
 let firstCard, secondCard; // checks for matching cards
 let lockBoard = false;
 let moves = 00;
+let endTime = "";
 
 
 //Events
@@ -44,8 +47,12 @@ function flipCard() {
 // check cards match 
 function checkCardMatch() {
     let isMatch = firstCard.dataset.name === secondCard.dataset.name; 
+    if (isMatch) allMatched += 1;
     // ternary operator to remove if/else block to remove matched cards from play   
     isMatch ? disableCards() : unflipCards();
+
+    if (allMatched === finishMatch) endGame();
+
    }
 
 
@@ -87,6 +94,11 @@ function resetBoard() {
    [firstCard, secondCard] = [null, null];
 }
 
+// end match
+function endGame() {
+    stopTime();
+}
+
 // timer - function learned, practised and adapted from https://foolishdeveloper.com/create-a-simple-stopwatch-using-javascript-tutorial-code/
 let time = 00;
 let minutes = 00;
@@ -97,9 +109,6 @@ seconds = seconds < 10 ? "0" + seconds: seconds;
 minutes = minutes < 10 ? "0" + minutes: minutes;  
 
 timeTaken.innerHTML = "00" + ":" + "00";
-
-
-
 
 function timer() {
     time = setInterval(function() {
