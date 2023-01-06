@@ -3,6 +3,8 @@ const cards = document.querySelectorAll('.game-card');
 
 let hasTurnedCard = false; // checks if card has been clicked
 let firstCard, secondCard; // checks for matching cards
+let lockBoard = false;
+
 
 //Events
 cards.forEach(card => card.addEventListener('click', flipCard));
@@ -11,6 +13,9 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 * practised and adapted from freeCodeCamp Youtube 
 * tutorial by Marina Ferreira */
 function flipCard() {
+    if (lockBoard) return;
+    if (this === firstCard) return; // returns firstCard, secondCard relevant function for unflip and match
+
     this.classList.add('flip');
 
     if(!hasTurnedCard) {
@@ -22,7 +27,6 @@ function flipCard() {
   } 
 
     //second click
-      hasTurnedCard = false;
       secondCard = this;
 
       checkCardMatch();
@@ -38,13 +42,24 @@ function checkCardMatch() {
 function disableCards() {
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
+
+    resetBoard();
 }
 
 function unflipCards() {
-     setTimeout(() =>{
+    lockBoard = true;
+
+    setTimeout(() =>{
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
+
+        resetBoard();
     }, 1200);
+}
+
+function resetBoard() {
+   [hasTurnedCard, lockBoard] = [false, false];
+   [firstCard, secondCard] = [null, null];
 }
 
 /* shuffleCards function wrapped in IIFE to invoke function immediately */
