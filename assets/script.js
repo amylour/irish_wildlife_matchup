@@ -3,10 +3,11 @@ const cards = document.querySelectorAll('.game-card');
 const movesTaken = document.getElementById('moves-taken');
 const timeTaken = document.getElementById('time-taken');
 
+let startGame = false;
 let hasTurnedCard = false; // checks if card has been clicked
 let firstCard, secondCard; // checks for matching cards
 let lockBoard = false;
-let moves = 0;
+let moves = 00;
 
 
 //Events
@@ -16,6 +17,11 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 * practised and adapted from freeCodeCamp Youtube 
 * tutorial by Marina Ferreira */
 function flipCard() {
+    if(!startGame) {
+        startGame = true;
+        timer();
+    }
+
     if (lockBoard) return;
     if (this === firstCard) return; // returns firstCard, secondCard relevant function for unflip and match
 
@@ -67,7 +73,7 @@ function unflipCards() {
 
 //counter for moves
 moves = 0;
-movesTaken.innerHTML = 00;
+movesTaken.innerHTML = "00";
 
 function recordMove() {
     moves++;
@@ -82,13 +88,13 @@ function resetBoard() {
 }
 
 // timer - function learned, practised and adapted from https://foolishdeveloper.com/create-a-simple-stopwatch-using-javascript-tutorial-code/
-let time = 0;
-let minutes = 0;
-let seconds = 0;
+let time = 00;
+let minutes = 00;
+let seconds = 00;
 let timeStart = false;
 if(seconds < 0){seconds = "0" + seconds};
 if(minutes < 0){minutes = "0" + minutes};
-timeTaken.innerHTML = minutes + ":" + seconds;
+timeTaken.innerHTML = "00" + ":" + "00";
 
 function timer() {
     time = setInterval(function() {
