@@ -93,18 +93,23 @@ let minutes = 00;
 let seconds = 00;
 let timeStart = false;
 
+seconds = seconds < 10 ? "0" + seconds: seconds;
+minutes = minutes < 10 ? "0" + minutes: minutes;  
+
 timeTaken.innerHTML = "00" + ":" + "00";
 
-seconds = seconds < 10 ? "0" + seconds: seconds;
-minutes = minutes < 10 ? "0" + minutes: minutes; 
+
+
 
 function timer() {
     time = setInterval(function() {
         seconds++;
+        seconds = seconds < 10 ? "0" + seconds: seconds;
         if (seconds === 59) {
             minutes++;
+            minutes = minutes < 10 ? "0" + minutes: minutes; 
             seconds = 0;
-        }
+        } 
         timeTaken.innerHTML = minutes + ":" + seconds;
     }, 1000);
 }

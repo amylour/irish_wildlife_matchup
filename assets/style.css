@@ -81,7 +81,7 @@ body {
 .timer,
 .moves,
 .name-entered {
-    height: 40px;
+    height: 44px;
     width: 140px;
     background-color: #f7edd2;
     /* solid box-shadow code - adapted from https://webdesignerhut.com/3d-buttons-with-css-dropshadow/ */ 
