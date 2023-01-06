@@ -21,7 +21,15 @@ if(!hasTurnedCard) {
     secondCard = this;
 
     //are the cards a match?
-    if(firstCard.)
+    if(firstCard.dataset.name === secondCard.dataset.name) {
+        //it's a match!
+        firstCard.removeEventListener('click', flipCard);
+        secondCard.removeEventListener('click', flipCard);
+    }  else  {
+        //not a match
+        firstCard.classList.remove('flip');
+        secondCard.classList.remove('flip');
+    }
 }
 
 

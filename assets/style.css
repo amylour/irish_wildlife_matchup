@@ -1,3 +1,4 @@
+/* imported Google font */
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400&display=swap');
 
 * {
@@ -6,6 +7,7 @@
     box-sizing: border-box;
 }
 
+/* gameboard area */
 body {
     height: 100vh;
     background-image: url("../assets/images/day.png");
@@ -13,6 +15,7 @@ body {
     color: #382A25;
 }
 
+/* light/dark theme-background image */
 .dark-mode {
     background-image: url("../assets/images/night_scene.png");
     height: 100vh;
@@ -20,6 +23,7 @@ body {
     color: #edc88c;
 }
 
+/* light/dark theme + volume toggles */
 .gamescreen-top {
     width: 100%;
     display: flex;
@@ -47,6 +51,7 @@ body {
     margin: 15px 0px 0px 0px;
 }
 
+/* gameboard area */
 .gamescreen-middle {
     display: flex;
     flex-direction: row;
@@ -79,6 +84,7 @@ body {
     height: 40px;
     width: 140px;
     background-color: #f7edd2;
+    /* solid box-shadow code - adapted from https://webdesignerhut.com/3d-buttons-with-css-dropshadow/ */ 
     box-shadow: 1px 0px 0px #382A25,0px 1px 0px #382A25,
     2px 1px 0px #382A25,1px 2px 0px #382A25,
     3px 2px 0px #382A25,2px 3px 0px #382A25,
@@ -134,6 +140,7 @@ body {
     position: relative;
 }
 
+/* card flip action and 3D perspective adapted from freeCodeCamp Memory Game tutorial */
 .game-card {
     width:calc(25% - 10px);
     height:calc(33.333% - 10px);
@@ -151,10 +158,12 @@ body {
     transition: transform .4s;
 }
 
+
 .game-card.flip {
     transform: rotateY(180deg);
 }
 
+/* game cards - animal artwork by myself*/
 .front-card,
 .back-card {
     width: 100%;
@@ -174,6 +183,7 @@ img {
     width: 80px;
 }
 
+/* game start button */
 .start {
     display: flex;
     justify-content: center;
@@ -196,6 +206,7 @@ img {
     transition: transform .4s;
 }
 
+/* best scores area */
 .best-scores {
     display: flex;
     flex-direction: column;
@@ -215,6 +226,7 @@ img {
     border-radius: 8px;
 }
 
+/*toggled dark mode styling */
 body.dark-mode .digits {
     color: #edc88c;
 }
