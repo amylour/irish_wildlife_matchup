@@ -1,40 +1,52 @@
 // General Variables
 const cards = document.querySelectorAll('.game-card');
 
+let hasTurnedCard = false; // checks if card has been clicked
+let firstCard, secondCard; // checks for matching cards
 
-let firstCard, secondCard;
+//Events
+cards.forEach(card => card.addEventListener('click', flipCard));
 
 /** card flip and game play function learned, 
 * practised and adapted from freeCodeCamp Youtube 
 * tutorial by Marina Ferreira */
 function flipCard() {
-    this.classList.toggle('flip');
+    this.classList.add('flip');
+
+    if(!hasTurnedCard) {
+    //first click
+      hasTurnedCard = true;
+      firstCard = this;
+  }  else  {
+    //second click
+      hasTurnedCard = false;
+      secondCard = this;
+
+      checkCardMatch();
+  }
 }
 
-if(!hasTurnedCard) {
-    //first click
-    hasTurnedCard = true;
-    firstCard = this;
-}  else  {
-    //second click
-    hasTurnedCard = false;
-    secondCard = this;
-
+function checkCardMatch() {
     //are the cards a match?
     if(firstCard.dataset.name === secondCard.dataset.name) {
-        //it's a match!
-        firstCard.removeEventListener('click', flipCard);
-        secondCard.removeEventListener('click', flipCard);
-    }  else  {
-        //not a match
-        firstCard.classList.remove('flip');
-        secondCard.classList.remove('flip');
-    }
+        disableCards();
+    }  else  {}
+        unflipCards();
+   }
+
+
+function disableCards() {
+    firstCard.removeEventListener('click', flipCard);
+    secondCard.removeEventListener('click', flipCard);
 }
 
+function unflipCards() {
+     setTimeout(() =>{
+        firstCard.classList.remove('flip');
+        secondCard.classList.remove('flip');
+    }, 1200);
+}
 
-
-cards.forEach(card => card.addEventListener('click', flipCard));
 
 
 
