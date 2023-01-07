@@ -76,6 +76,8 @@ body {
     width: 600px;
     height:400px;
     margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -83,7 +85,8 @@ body {
 .x-close {
     color: #382A25;
     float: right;
-    font-size: 30px;
+    margin-top: -40px;
+    font-size: 35px;
     font-weight: bold;
 }
 
