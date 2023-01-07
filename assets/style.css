@@ -54,10 +54,17 @@ body {
 /* modal - centering code obtained from https://stackoverflow.com/questions/39627549/how-to-center-modal-to-the-center-of-screen*/
 .modal {
     position: absolute;
-    float: left;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+}
+
+.modal-background {
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
 }
 
 .modal-content {
@@ -70,23 +77,26 @@ body {
     6px 5px 0px #382A25,5px 6px 0px #382A25,
     7px 6px 0px #382A25,6px 7px 0px #382A25;
     border-radius: 8px;
-    margin: 50%;
     padding: 20px;
-    width: 60%;
     width: 600px;
     height:400px;
     margin: 10px;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* close modal */
 .x-close {
     color: #382A25;
     float: right;
-    margin-top: -40px;
-    font-size: 35px;
+    margin-top: -45px;
+    margin-right: -7px;
+    font-size: 33px;
     font-weight: bold;
 }
 
@@ -248,6 +258,8 @@ img {
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .4s;
+    cursor: pointer;
+    font-size: 20px;
 }
 
 .start:active {
