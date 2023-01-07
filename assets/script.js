@@ -17,12 +17,17 @@ let endTime = "";
 cards.forEach(card => card.addEventListener('click', flipCard));
 
 // Modal 
-var modal = document.getElementById('start-modal');
-var span = document.getElementsByClassName('x-close')[0];
+document.querySelector('.x-close').addEventListener('click', function() {
+    document.querySelector('#start-modal').style.display = "none";
+});
 
-window.onload = startModal() {
-    modal.style.display = "block";
-}
+window.addEventListener('load', function(){
+    this.setTimeout(
+        function open(event){
+            document.querySelector('.start-modal').style.display = "block";
+        },2000)
+});
+
 
 /** card flip and game play function learned, 
 * practised and adapted from freeCodeCamp Youtube 
