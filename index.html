@@ -8,7 +8,7 @@
     <title>Irish Wildlife MatchUp</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon/android-chrome-512x512.png">
 </head>
-<body>
+<body onload="startModal()">
 <!-- light/dark theme toggle and volume/mute toggle -->
     <div class="gamescreen-top">
         <div class="toggles">
@@ -104,7 +104,16 @@
     </div>
   </div>
 
-    <footer></footer>
+  <footer></footer>
+
+  <!-- Onload rules and user name modal to start the game: adapted from https://www.w3schools.com/howto/howto_css_modals.asp -->
+  <div id="start-modal" class="modal">
+    <div class="modal-content">
+      <span class="x-close">&times;</span>
+      <p>Welcome to Irish Wildlife MatchUp<br>Flip the cards, two at a time, to match<br>
+      Try to remember where all of the animals are!<br>Ádh mór ort! (Good Luck!)</p>
+    </div>
+  </div>
 
 
   <!-- JavaScript file -->

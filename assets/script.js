@@ -16,6 +16,14 @@ let endTime = "";
 //Events
 cards.forEach(card => card.addEventListener('click', flipCard));
 
+// Modal 
+var modal = document.getElementById('start-modal');
+var span = document.getElementsByClassName('x-close')[0];
+
+window.onload = startModal() {
+    modal.style.display = "block";
+}
+
 /** card flip and game play function learned, 
 * practised and adapted from freeCodeCamp Youtube 
 * tutorial by Marina Ferreira */
