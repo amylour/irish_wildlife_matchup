@@ -188,4 +188,14 @@ function changeImage() {
     }
 }
 
+// click volume icon to mute
+
+function volumeChange() {
+    if (document.getElementById("ld-vol").src.endsWith('volume.png')  == true) {
+        document.getElementById("ld-vol").src = "assets/images/volume-mute.png";
+    }  else if (document.getElementById("ld-vol").src.endsWith('volume-mute.png') == true) {
+        document.getElementById("ld-vol").src = "assets/images/volume.png";
+    }
+}
+
 
