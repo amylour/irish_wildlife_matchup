@@ -36,19 +36,19 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     height: 30px;
-    width: 250px;
+    width: 220px;
 }
 
 .light_dark {
     width: 55px;
     height: 55px;
-    margin: 13px 15px 0px 15px;
+    margin: 13px 15px 0px 40px;
 }
 
 .vol-icon {
     width: 50px;
     height: 50px;
-    margin: 15px 0px 0px 0px;
+    margin: 14px 16px 0px 0px;
 }
 
 /* modal - centering code obtained from https://stackoverflow.com/questions/39627549/how-to-center-modal-to-the-center-of-screen*/
