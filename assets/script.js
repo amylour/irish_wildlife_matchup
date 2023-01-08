@@ -181,20 +181,25 @@ function changeImage() {
         document.getElementById("ld-vol").src = "assets/images/volume.png";
     }
 
-    if (document.getElementById("ld-vol-mute").src.endsWith('volume-mute.png') == true) {
-        document.getElementById("ld-vol-mute").src = "assets/images/volume-mute_light.png";
-    }  else if (document.getElementById("ld-vol-mute").src.endsWith('volume-mute_light.png') == true) {
-        document.getElementById("ld-vol-mute").src = "assets/images/volume-mute.png";
+    if (document.getElementById("ld-vol").src.endsWith('volume-mute.png') == true) {
+        document.getElementById("ld-vol").src = "assets/images/volume-mute_light.png";
+    }  else if (document.getElementById("ld-vol").src.endsWith('volume-mute_light.png') == true) {
+        document.getElementById("ld-vol").src = "assets/images/volume-mute.png";
     }
 }
 
 // click volume icon to mute
-
 function volumeChange() {
     if (document.getElementById("ld-vol").src.endsWith('volume.png')  == true) {
         document.getElementById("ld-vol").src = "assets/images/volume-mute.png";
     }  else if (document.getElementById("ld-vol").src.endsWith('volume-mute.png') == true) {
         document.getElementById("ld-vol").src = "assets/images/volume.png";
+    }
+
+    if (document.getElementById("ld-vol").src.endsWith('volume_light.png')  == true) {
+        document.getElementById("ld-vol").src = "assets/images/volume-mute_light.png";
+    }  else if (document.getElementById("ld-vol").src.endsWith('volume-mute_light.png') == true) {
+        document.getElementById("ld-vol").src = "assets/images/volume_light.png";
     }
 }
 
