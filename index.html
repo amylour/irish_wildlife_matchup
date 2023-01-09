@@ -19,7 +19,7 @@
         <div class="toggles">
           <img class ="light_dark" id="ld-theme" src="assets/images/night_in_day.png" onclick="lightDark();changeImage();" alt="toggle">
             <div class="vol-toggles">
-              <img class="vol-icon" id="ld-vol" src="assets/images/volume.png" onClick="volumeChange()" alt="volume up">
+              <img class="vol-icon" id="ld-vol" src="assets/images/volume.png" onclick="volumeChange()" alt="volume up">
           </div>
         </div>  
     </div>
@@ -100,7 +100,7 @@
     <div class="player-details">
       <div class="name-score">
         <p class="name">Name</p>
-        <div class="name-entered">
+        <div class="name-entered" id="nameEntered">
           <p class="digits"></p>
         </div>
           <p class="name">Best Scores</p>
@@ -124,10 +124,10 @@
           Flip the cards, two at a time, to match<br>
         Try to remember where all of the animals are!<br>
         - Ádh mór ort! (Good Luck!) -</p>
-        <form class="modal-form">
+        <form class="modal-form" method="dialog" autocomplete="off">
           <label for="username" aria-label="Enter username"><span>Enter your name:</span></label><br>
           <input type="text" id="username" name="username"><br>
-          <button type="submit" class="tick-button"><img class="username-tick" src="assets/images/check-mark.png" alt="checkmark-click to enter username"></button>
+          <button type="submit" id="name-button" class="tick-button" onclick="enterPlayerName()"><img class="username-tick" src="assets/images/check-mark.png" alt="checkmark-click to enter username"></button>
         </form>
       </div>
   </div>

@@ -1,8 +1,10 @@
 // General Variables
+
 const cards = document.querySelectorAll('.game-card');
 const movesTaken = document.getElementById('moves-taken');
 const timeTaken = document.getElementById('time-taken');
 const finishMatch = 6;
+
 
 let startGame = false;
 let allMatched= 0;
@@ -16,10 +18,13 @@ let endTime = "";
 //Events
 cards.forEach(card => card.addEventListener('click', flipCard));
 
+
+
 // Modal - code adapted from PMCoder Youtube https://www.youtube.com/watch?v=IFoG8-oAELM
 document.querySelector('.x-close').addEventListener('click', function() {
     document.querySelector('#start-modal').style.display = "none";
 });
+
 
 window.addEventListener('load', function(){
     this.setTimeout(
@@ -27,6 +32,18 @@ window.addEventListener('load', function(){
             document.querySelector('.start-modal').style.display = "block";
         },2000)
 });
+
+
+// take playername, clsoe modal and dislay playername in 'Name' window - code adapted from Keith Paterson https://www.youtube.com/watch?v=KB6Yg5hNrqc
+function enterPlayerName() {
+    let username = document.querySelector('#username');
+    let nameEntered = document.querySelector('#nameEntered');
+
+    const modal = document.querySelector('#start-modal');
+    modal.style.display = 'none';
+
+    nameEntered.innerHTML = username.value;
+}
 
 
 /** card flip and game play function learned, 
