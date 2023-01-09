@@ -8,8 +8,10 @@
     <meta name="description" content="An Irish Wildlife themed memory card game">
     <link rel="stylesheet" href="assets/style.css">
     <title>Irish Wildlife MatchUp</title>
+    <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="assets/favicon/android-chrome-512x512.png">
 </head>
+
 <body>
   
 <!-- light/dark theme toggle and volume/mute toggle -->
@@ -111,15 +113,21 @@
 
   <footer></footer>
 
-  <!-- Onload rules and user name modal to start the game: adapted from https://www.w3schools.com/howto/howto_css_modals.asp -->
+  <!-- Modal: Onload rules and user name modal to start the game: adapted from https://www.w3schools.com/howto/howto_css_modals.asp -->
   
   <div id="start-modal" class="modal">
     <div class="modal-background"> 
       <div class="modal-content">
         <span class="x-close">&times;</span>
         <h2>Welcome to Irish Wildlife MatchUp</h2>
-        <p>Flip the cards, two at a time, to match<br>
-        Try to remember where all of the animals are!<br>Ádh mór ort! (Good Luck!)</p>
+        <p>Enter your name and click 'Play' to start the timer<br>
+          Flip the cards, two at a time, to match<br>
+        Try to remember where all of the animals are!<br>
+        - Ádh mór ort! (Good Luck!) -</p>
+        <form class="modal-form">
+          <label for="username" aria-label="Enter username"><span>Enter your name:</span></label><br>
+          <input type="text" id="username" name="username"><br>
+        </form>
       </div>
   </div>
     </div>
