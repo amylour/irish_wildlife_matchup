@@ -1,5 +1,4 @@
 // General Variables
-
 const cards = document.querySelectorAll('.game-card');
 const movesTaken = document.getElementById('moves-taken');
 const timeTaken = document.getElementById('time-taken');
@@ -17,7 +16,6 @@ let endTime = "";
 
 //Events
 cards.forEach(card => card.addEventListener('click', flipCard));
-
 
 
 // Modal - code adapted from PMCoder Youtube https://www.youtube.com/watch?v=IFoG8-oAELM

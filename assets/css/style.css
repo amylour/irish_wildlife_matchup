@@ -10,14 +10,14 @@
 /* gameboard area */
 body {
     height: 100vh;
-    background-image: url("../assets/images/day.png");
+    background-image: url("../images/day.png");
     font-family: 'Inknut Antiqua', serif;
     color: #382A25;
 }
 
 /* light/dark theme-background image */
 .dark-mode {
-    background-image: url("../assets/images/night_scene.png");
+    background-image: url("../images/night_scene.png");
     height: 100vh;
     background-size: cover;
     color: #edc88c;
