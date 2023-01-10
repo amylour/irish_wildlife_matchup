@@ -49,9 +49,7 @@ function enterPlayerName() {
 // Play button to start timer
 let start = document.querySelector('#start');
 
-start.addEventListener('click', function() {
-    timer();
-});
+start.onclick = timer;
 
 
 /** card flip and game play function learned, 
@@ -137,9 +135,9 @@ function endGame() {
 }
 
 // timer - function learned, practised and adapted from https://foolishdeveloper.com/create-a-simple-stopwatch-using-javascript-tutorial-code/
-let time = 00;
-let minutes = 00;
-let seconds = 00;
+let time = 0;
+let minutes = 0;
+let seconds = 0;
 let timeStart = false;
 
 
@@ -152,7 +150,7 @@ function timer() {
     time = setInterval(function() {
         seconds++;
         seconds = seconds < 10 ? "0" + seconds: seconds;
-        if (seconds === 59) {
+        if (seconds === 60) {
             minutes++;
             minutes = minutes < 10 ? "0" + minutes: minutes; 
             seconds = 0;

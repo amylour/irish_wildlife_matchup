@@ -308,6 +308,7 @@ img {
     transform: scale(0.97);
     transition: transform .4s;
     box-shadow: 0 5px 7px 0 #382A25;
+    
 }
 
 .start-btn {
@@ -317,6 +318,8 @@ img {
     background: none;
     border: none;
     font-family: inherit;
+    /* added margin-left to fix bug of button text jumping to right when clicked - help source - https://stackoverflow.com/a/26908722 */
+    margin-left: 1px;
 }
 
 /* best scores area */
