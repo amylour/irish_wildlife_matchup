@@ -302,12 +302,21 @@ img {
     transform-style: preserve-3d;
     transition: transform .4s;
     cursor: pointer;
-    font-size: 20px;
 }
 
 .start:active {
     transform: scale(0.97);
     transition: transform .4s;
+    box-shadow: 0 5px 7px 0 #382A25;
+}
+
+.start-btn {
+    font-size: 22px;
+    outline: none;
+    color: #382A25;
+    background: none;
+    border: none;
+    font-family: inherit;
 }
 
 /* best scores area */

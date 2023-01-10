@@ -46,13 +46,20 @@ function enterPlayerName() {
 }
 
 
+// Play button to start timer
+let start = document.querySelector('#start');
+
+start.addEventListener('click', function() {
+    timer();
+});
+
+
 /** card flip and game play function learned, 
 * practised and adapted from freeCodeCamp Youtube 
 * tutorial by Marina Ferreira */
 function flipCard() {
     if(!startGame) {
         startGame = true;
-        timer();
     }
 
     if (lockBoard) return;
@@ -134,6 +141,7 @@ let time = 00;
 let minutes = 00;
 let seconds = 00;
 let timeStart = false;
+
 
 seconds = seconds < 10 ? "0" + seconds: seconds;
 minutes = minutes < 10 ? "0" + minutes: minutes;  
