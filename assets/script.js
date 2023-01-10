@@ -51,6 +51,11 @@ let start = document.querySelector('#start');
 
 start.onclick = timer;
 
+start.addEventListener('click',function() {
+    //disable the button once clicked so it does not increase clock increment, will reset with boardReset()
+    this.disabled = true;
+});
+
 
 /** card flip and game play function learned, 
 * practised and adapted from freeCodeCamp Youtube 
