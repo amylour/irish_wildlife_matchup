@@ -18,6 +18,8 @@ let endTime = "";
 cards.forEach(card => card.addEventListener('click', flipCard));
 
 
+
+
 // Modal - code adapted from PMCoder Youtube https://www.youtube.com/watch?v=IFoG8-oAELM
 document.querySelector('.x-close').addEventListener('click', function() {
     document.querySelector('#start-modal').style.display = "none";
@@ -157,7 +159,7 @@ function stopTime() {
 }
 
 
-/* shuffleCards function wrapped in IIFE to invoke function immediately */
+// shuffleCards function wrapped in IIFE to invoke function immediately 
 (function shuffleCards() {
     cards.forEach(card => {
         let randomPosition = Math.floor(Math.random()* 12);
@@ -165,29 +167,12 @@ function stopTime() {
     });
 })();
 
-// reset game button for new game
+
+
+//reset game button for new game
 function resetGame() {
-    document.querySelector('#reset').addEventListener('click', function() {
-    setTimeout(() => {
-    stopTime();
-    startGame = false;
-    allMatched= 0;
-    hasTurnedCard = false; 
-    [firstCard, secondCard] = [null, null]; 
-    timeStart = false;
-    seconds = 0;
-    minutes = 0;
-    timeTaken.innerHTML = "00:00";
-    moves = 0;
-    movesTaken.innerHTML = "00";
-    document.querySelectorAll('.game-card').forEach((card) => {
-        card.classList.remove('flip');
-        });
-    shuffleCards();
-    cards.forEach(card => card.addEventListener('click', flipCard));
-}, 300);
-    });
-}
+   window.location.reload();
+} 
 
 
 // light/dark toggle
