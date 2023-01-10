@@ -284,8 +284,8 @@ img {
     width: 80px;
 }
 
-/* game start button */
-.start {
+/* game reset button */
+.reset {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -304,14 +304,14 @@ img {
     cursor: pointer;
 }
 
-.start:active {
+.reset:active {
     transform: scale(0.97);
     transition: transform .4s;
     box-shadow: 0 5px 7px 0 #382A25;
     
 }
 
-.start-btn {
+.reset-btn {
     font-size: 22px;
     outline: none;
     color: #382A25;
@@ -320,6 +320,7 @@ img {
     font-family: inherit;
     /* added margin-left to fix bug of button text jumping to right when clicked - help source - https://stackoverflow.com/a/26908722 */
     margin-left: 1px;
+    cursor: pointer;
 }
 
 /* best scores area */

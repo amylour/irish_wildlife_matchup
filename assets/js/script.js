@@ -44,23 +44,13 @@ function enterPlayerName() {
 }
 
 
-// Play button to start timer
-let start = document.querySelector('#start');
-
-start.onclick = timer;
-
-start.addEventListener('click',function() {
-    //disable the button once clicked so it does not increase clock increment, will reset with boardReset()
-    this.disabled = true;
-});
-
-
 /** card flip and game play function learned, 
 * practised and adapted from freeCodeCamp Youtube 
 * tutorial by Marina Ferreira */
 function flipCard() {
     if(!startGame) {
         startGame = true;
+        timer();
     }
 
     if (lockBoard) return;
@@ -175,12 +165,29 @@ function stopTime() {
     });
 })();
 
-
-
-
-
-
-
+// reset game button for new game
+function resetGame() {
+    document.querySelector('#reset').addEventListener('click', function() {
+    setTimeout(() => {
+    stopTime();
+    startGame = false;
+    allMatched= 0;
+    hasTurnedCard = false; 
+    [firstCard, secondCard] = [null, null]; 
+    timeStart = false;
+    seconds = 0;
+    minutes = 0;
+    timeTaken.innerHTML = "00:00";
+    moves = 0;
+    movesTaken.innerHTML = "00";
+    document.querySelectorAll('.game-card').forEach((card) => {
+        card.classList.remove('flip');
+        });
+    shuffleCards();
+    cards.forEach(card => card.addEventListener('click', flipCard));
+}, 300);
+    });
+}
 
 
 // light/dark toggle
