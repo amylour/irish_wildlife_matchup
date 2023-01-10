@@ -78,8 +78,8 @@ body {
     7px 6px 0px #382A25,6px 7px 0px #382A25;
     border-radius: 8px;
     padding: 20px;
-    width: 600px;
-    height:470px;
+    width: 620px;
+    height:520px;
     margin: 10px;
     font-size: 18px;
     font-weight: bold;
@@ -88,6 +88,10 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.modal-form {
+    margin-top: 12px;
 }
 
 /* close modal */
@@ -109,7 +113,7 @@ body {
 
 input {
     height: 50px;
-    width: 200px;
+    width: 250px;
     border: 2px solid #382A25;
     border-radius: 6px;
     margin: 10px;
@@ -131,9 +135,9 @@ span {
 }
 
 .username-tick {
-    height: 45px;
-    width: 45px;
-    margin: 6px;
+    height: 50px;
+    width: 50px;
+    margin: 20px;
     transform: scale(1);
     transition: transform .5s;
 }
