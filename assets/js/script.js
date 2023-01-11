@@ -168,6 +168,8 @@ function stopTime() {
     });
 })();
 
+
+
 //reset game button for new game
 function resetGame() {
    window.location.reload();
