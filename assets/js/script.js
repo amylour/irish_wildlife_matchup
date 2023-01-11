@@ -129,6 +129,23 @@ function endGame() {
     stopTime();
 }
 
+// card flip click sound
+const sound = document.getElementById('cardflip-s');
+const cardFlipSound = document.getElementById('cardclick');
+
+cardFlipSound.addEventListener('click', function() {
+    sound.play();
+})
+
+
+/*function playFlipSound() {
+    document.querySelectorAll('#cardclick').addEventListener('click', function() {
+        sound.play();
+    });
+    
+};*/
+
+
 // timer - function learned, practised and adapted from https://foolishdeveloper.com/create-a-simple-stopwatch-using-javascript-tutorial-code/
 let time = 0;
 let minutes = 0;
