@@ -17,15 +17,6 @@ let endTime = "";
 //Events
 cards.forEach(card => card.addEventListener('click', flipCard));
 
-
-
-
-// Modal - code adapted from PMCoder Youtube https://www.youtube.com/watch?v=IFoG8-oAELM
-document.querySelector('.x-close').addEventListener('click', function() {
-    document.querySelector('#start-modal').style.display = "none";
-});
-
-
 window.addEventListener('load', function(){
     this.setTimeout(
         function open(event){

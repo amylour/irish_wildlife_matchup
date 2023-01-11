@@ -153,6 +153,10 @@ span {
     background-color: inherit;
 }
 
+#win-modal {
+    display: hidden;
+}
+
 /* gameboard area */
 .gamescreen-middle {
     display: flex;
