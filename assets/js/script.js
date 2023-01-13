@@ -185,11 +185,14 @@ function winMessageDisplay() {
     document.getElementById('win-moves-value').innerHTML = moves;
 }
 
+
+
 // play again button in win modal
 function playAgain() {
-    let playAgainBtn = document.getElementById('win-button');
+    /*let playAgainBtn = document.getElementById('win-button');*/
 
-    playAgainBtn.addEventListener('click', function () {
+    document.querySelector('#win-button').addEventListener('click', event => {
+       
         
        setTimeout(() => { 
         resetBoard();
