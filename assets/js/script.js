@@ -115,9 +115,12 @@ function resetBoard() {
    [firstCard, secondCard] = [null, null];
 }
 
-// end match
+// end match - stop time, display win message
 function endGame() {
     stopTime();
+    setTimeout(() =>{
+       winMessageDisplay();
+    }, 1000);
 }
 
 
@@ -166,6 +169,39 @@ function resetGame() {
    window.location.reload();
 } 
 
+// win modal pop up
+function winMessageDisplay() {
+    const winModal = document.querySelector('#win-modal');
+    winModal.style.display = 'block';
+    
+    const timeWinScore = document.querySelector('#moves-taken');
+    let timeWinDisplay = document.querySelector('#win-time-value');
+
+    winTimeDisplay.innerHTML = timeWinScore.value;
+}
+
+
+
+
+
+/*// win modal score record - display winning scores on win modal
+let timeWinScore = document.querySelector('#moves-taken');
+let timeWinDisplay = document.querySelector('#win-time-value');
+
+const winModal = document.querySelector('#win-modal');
+
+winTimeDisplay.innerHTML = timeWinScore.value;
+
+
+/*function enterPlayerName() {
+    let username = document.querySelector('#username');
+    let nameEntered = document.querySelector('#nameEntered');
+
+    const modal = document.querySelector('#start-modal');
+    modal.style.display = 'none';
+
+    nameEntered.innerHTML = username.value;
+} */
 
 // light/dark toggle
 
