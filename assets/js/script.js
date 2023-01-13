@@ -17,6 +17,7 @@ let endTime = "";
 //Events
 cards.forEach(card => card.addEventListener('click', flipCard));
 
+// open rules and playname modal on load
 window.addEventListener('load', function(){
     this.setTimeout(
         function open(event){
@@ -35,6 +36,11 @@ function enterPlayerName() {
 
     nameEntered.innerHTML = username.value;
 }
+
+// display user's high score for user to beat 
+
+
+
 
 
 /** card flip and game play function learned, 
@@ -179,28 +185,42 @@ function winMessageDisplay() {
     document.getElementById('win-moves-value').innerHTML = moves;
 }
 
+// play again button in win modal
+function playAgain() {
+    let playAgainBtn = document.getElementById('win-button');
 
+    playAgainBtn.addEventListener('click', function () {
+        
+       setTimeout(() => { 
+        resetBoard();
 
+        cards.forEach(card => card.classList.remove('flip'));
+        cards.forEach(card => card.addEventListener('click', flipCard));
 
+        
+        cards.forEach(card => {
+        let randomPosition = Math.floor(Math.random()* 12);
+        card.style.order = randomPosition;
+        });
+        
+        
+        time = 0;
+        moves = 0;
+        minutes = 0;
+        seconds = 0;
+        timeTaken.innerHTML = "00" + ":" + "00";
+        movesTaken.innerHTML = '00';
+        startGame = false;
+        allMatched= 0;
+        hasTurnedCard = false; 
+        firstCard, secondCard; // checks for matching cards
+        lockBoard = false;
 
-/*// win modal score record - display winning scores on win modal
-let timeWinScore = document.querySelector('#moves-taken');
-let timeWinDisplay = document.querySelector('#win-time-value');
-
-const winModal = document.querySelector('#win-modal');
-
-winTimeDisplay.innerHTML = timeWinScore.value;
-
-
-/*function enterPlayerName() {
-    let username = document.querySelector('#username');
-    let nameEntered = document.querySelector('#nameEntered');
-
-    const modal = document.querySelector('#start-modal');
-    modal.style.display = 'none';
-
-    nameEntered.innerHTML = username.value;
-} */
+        const winModal = document.querySelector('#win-modal');
+        winModal.style.display = 'none';
+    }, 600);
+    });
+}
 
 // light/dark toggle
 
