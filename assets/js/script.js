@@ -174,10 +174,8 @@ function winMessageDisplay() {
     const winModal = document.querySelector('#win-modal');
     winModal.style.display = 'block';
     
-    const timeWinScore = document.querySelector('#moves-taken');
-    let timeWinDisplay = document.querySelector('#win-time-value');
-
-    winTimeDisplay.innerHTML = timeWinScore.value;
+    document.getElementById('win-time-value').innerHTML = time;
+    document.getElementById('win-moves-value').innerHTML = moves;
 }
 
 
