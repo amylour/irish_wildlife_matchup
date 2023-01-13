@@ -13,6 +13,7 @@ body {
     background-image: url("../images/day.png");
     font-family: 'Inknut Antiqua', serif;
     color: #382A25;
+    
 }
 
 /* light/dark theme-background image */
@@ -94,7 +95,21 @@ body {
     margin-top: 12px;
 }
 
-/* close modal */
+.score-display {
+    font-size: 24px;
+    height: 310px;
+    line-height: 3.75rem;
+}
+
+.win-time, .win-moves {
+    font-size: 30px;
+}
+
+.play-again {
+    font-size: 30px;
+}
+
+/* close modal 
 .x-close {
     color: #382A25;
     float: right;
@@ -109,7 +124,7 @@ body {
     color: black;
     text-decoration: none;
     cursor: pointer;
-}
+} */
 
 input {
     height: 50px;
@@ -131,7 +146,7 @@ input:focus {
 }
 
 span {
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .username-tick {
@@ -151,10 +166,6 @@ span {
     border: none;
     cursor: pointer;
     background-color: inherit;
-}
-
-#win-modal {
-    display: hidden;
 }
 
 /* gameboard area */
