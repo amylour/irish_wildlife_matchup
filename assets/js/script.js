@@ -173,8 +173,9 @@ function resetGame() {
 function winMessageDisplay() {
     const winModal = document.querySelector('#win-modal');
     winModal.style.display = 'block';
+    winTime = timeTaken.innerHTML;
     
-    document.getElementById('win-time-value').innerHTML = time;
+    document.getElementById('win-time-value').innerHTML = winTime;
     document.getElementById('win-moves-value').innerHTML = moves;
 }
 
