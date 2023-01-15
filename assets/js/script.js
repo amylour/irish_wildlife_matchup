@@ -38,6 +38,22 @@ playMusic.addEventListener('click', function() {
     }
 });
 
+let daySongAudio = document.getElementById('daysong');
+let nightSongAudio = document.getElementById('nightsong');
+let toggleMusic = document.getElementById('ld-theme');
+let isDayTheme = false;
+
+toggleMusic.addEventListener('click', function () {
+    if (isDayTheme) {
+        daySongAudio.play();
+        isDayTheme = true;
+    }  else {
+        daySongAudio.pause();
+        nightSongAudio.play();
+        isDayTheme = false;
+    } 
+});
+
 
 
 
