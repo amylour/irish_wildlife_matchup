@@ -22,14 +22,31 @@ window.addEventListener('load', function(){
     this.setTimeout(
         function open(event){
             document.querySelector('.start-modal').style.display = "block";
+            audio.play();
         },2000)
 });
 
 // play music onload
 
 let playMusic = document.getElementById('ld-vol');
-let audio = document.getElementById('daysong');
+let audioSongs = [new Audio('assets/audio/daysongcom.mp3'), new Audio('assets/audio/nightsongcom.mp3')];
+let songPlaying = 0;
 
+audioSongs.forEach(function(audio) {
+    audio.loop = true;
+});
+
+audioSongs[songPlaying].play();
+
+playMusic.addEventListener('click', function() {
+    if (audioSongs[songPlaying].muted) {
+        audioSongs[songPlaying].muted = true;
+    }  else  {
+        audioSongs[songPlaying].muted = false;
+    }
+});
+
+/*function musicStartStop() {
 playMusic.addEventListener('click', function() {
     if (audio.paused) {
         audio.play();
@@ -37,22 +54,29 @@ playMusic.addEventListener('click', function() {
         audio.pause();
     }
 });
+}*/
+
 
 let daySongAudio = document.getElementById('daysong');
 let nightSongAudio = document.getElementById('nightsong');
 let toggleMusic = document.getElementById('ld-theme');
-let isDayTheme = false;
 
-toggleMusic.addEventListener('click', function () {
-    if (isDayTheme) {
-        daySongAudio.play();
-        isDayTheme = true;
-    }  else {
-        daySongAudio.pause();
-        nightSongAudio.play();
-        isDayTheme = false;
-    } 
+toggleMusic.addEventListener('load', (event) => {
+
+if (document.getElementById("ld-theme").src.endsWith('night_in_day.png') == true) {
+    document.getElementById("daysong").src = "assets/audio/daysongcom.mp3";
+    daySongAudio.play();
+    nightSongAudio.pause();
+}  else if  (document.getElementById("ld-theme").src.endsWith('day_in_night.png') == true) {
+    document.getElementById("nightsong").src = "assets/audio/nightsongcom.mp3";
+    nightSongAudio.play();
+    daySongAudio.pause();
+}
+
 });
+
+
+
 
 
 
