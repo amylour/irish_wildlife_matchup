@@ -189,24 +189,20 @@ function winMessageDisplay() {
 
 // play again button in win modal
 function playAgain() {
-    /*let playAgainBtn = document.getElementById('win-button');*/
 
-    document.querySelector('#win-button').addEventListener('click', event => {
-       
-        
-       setTimeout(() => { 
+    setTimeout(() => {
         resetBoard();
 
         cards.forEach(card => card.classList.remove('flip'));
         cards.forEach(card => card.addEventListener('click', flipCard));
 
-        
+
         cards.forEach(card => {
-        let randomPosition = Math.floor(Math.random()* 12);
-        card.style.order = randomPosition;
+            let randomPosition = Math.floor(Math.random() * 12);
+            card.style.order = randomPosition;
         });
-        
-        
+
+
         time = 0;
         moves = 0;
         minutes = 0;
@@ -214,16 +210,17 @@ function playAgain() {
         timeTaken.innerHTML = "00" + ":" + "00";
         movesTaken.innerHTML = '00';
         startGame = false;
-        allMatched= 0;
-        hasTurnedCard = false; 
+        allMatched = 0;
+        hasTurnedCard = false;
         firstCard, secondCard; // checks for matching cards
         lockBoard = false;
 
         const winModal = document.querySelector('#win-modal');
         winModal.style.display = 'none';
     }, 600);
-    });
 }
+
+document.querySelector('#win-button').addEventListener('click', playAgain());
 
 // light/dark toggle
 
