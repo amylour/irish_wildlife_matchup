@@ -25,6 +25,21 @@ window.addEventListener('load', function(){
         },2000)
 });
 
+// play music onload
+
+let playMusic = document.getElementById('ld-vol');
+let audio = document.getElementById('daysong');
+
+playMusic.addEventListener('click', function() {
+    if (audio.paused) {
+        audio.play();
+    }  else {
+        audio.pause();
+    }
+});
+
+
+
 
 // take playername, clsoe modal and dislay playername in 'Name' window - code adapted from Keith Paterson https://www.youtube.com/watch?v=KB6Yg5hNrqc
 function enterPlayerName() {

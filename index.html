@@ -19,7 +19,7 @@
         <div class="toggles">
           <img class ="light_dark" id="ld-theme" src="assets/images/night_in_day.png" onclick="lightDark();changeImage();" alt="toggle">
             <div class="vol-toggles">
-              <img class="vol-icon" id="ld-vol" src="assets/images/volume.png" onclick="volumeChange()" alt="volume up">
+              <img class="vol-icon" id="ld-vol" src="assets/images/volume-mute.png" onclick="volumeChange()" alt="volume up">
           </div>
         </div>  
     </div>
@@ -153,7 +153,11 @@
       </div>
     </div>
 
-
+  <!-- Audio files -->
+  <audio autoplay loop id="daysong">
+    <source src="assets/audio/daysong.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
   
 
   <!-- JavaScript file -->
