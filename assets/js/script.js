@@ -28,7 +28,7 @@ window.addEventListener('load', function(){
 
 // play music onload
 
-let playMusic = document.getElementById('ld-vol');
+/*let playMusic = document.getElementById('ld-vol');
 let audioSongs = [new Audio('assets/audio/daysongcom.mp3'), new Audio('assets/audio/nightsongcom.mp3')];
 let songPlaying = 0;
 
@@ -57,7 +57,7 @@ playMusic.addEventListener('click', function() {
 }*/
 
 
-let daySongAudio = document.getElementById('daysong');
+/*let daySongAudio = document.getElementById('daysong');
 let nightSongAudio = document.getElementById('nightsong');
 let toggleMusic = document.getElementById('ld-theme');
 
@@ -75,7 +75,7 @@ if (document.getElementById("ld-theme").src.endsWith('night_in_day.png') == true
 
 });
 
-
+*/
 
 
 
