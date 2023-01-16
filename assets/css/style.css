@@ -410,9 +410,16 @@ body.dark-mode .best-scores {
 
 @media only screen and (max-width: 480px) and (min-width: 320px) {
     .modal-content {
-        width: 310px;
+        width: 300px;
         height: auto;
+        margin: auto;
         font-size: 12px;
+    }
+
+    .modal-background {
+        height: 700px;
+        width: 500px;
+        overflow: hidden;
     }
 
     span {
@@ -537,6 +544,10 @@ body.dark-mode .best-scores {
         position: relative;
         border-radius: 6px;
         box-shadow: 1px 3px 3px #382a25;
+    }
+
+    .front-card {
+        padding: 10px;
     }
 
     .name-score {
