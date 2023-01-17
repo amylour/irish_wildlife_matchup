@@ -423,50 +423,49 @@ body.dark-mode .best-scores {
     }
 
     span {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     input {
         height: 45px;
-        width: 210px;
+        width: 205px;
         font-size: 26px;
+        margin: 15px;
     }
 
     .username-tick {
         height: 45px;
         width: 45px;
-        margin: 10px;
+        margin: 5px;
     }
 
 
     .vol-icon {
-        width: 40px;
-        height: 40px;
-        margin: 9px -20px 0px 0px;
+        width: 30px;
+        height: 30px;
+        margin: 50px -30px 0px 0px;
     }
 
     .light_dark {
-        width: 45px;
-        height: 45px;
-        margin: 13px 15px 0px 40px;
-        margin: 7px -25px 0px 55px;
+        width: 35px;
+        height: 35px;
+        margin: 10px -82px 0px 55px;
     }
 
     .toggles {
         height: 5px;
-        width: 186px;
+        width: 160px;
     }
 
     .gamescreen-middle {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-top: 15px;
+        margin-top: 5px;
     }
 
     .score {
-        height: 180px;
-        width: 15%;
+        height: 100px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -480,12 +479,14 @@ body.dark-mode .best-scores {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        height: 60px;
+        margin-right: 60px;
         
     }
     .timer,
     .moves {
-        height: 40px;
-        width: 120px;
+        height: 34px;
+        width: 110px;
         background-color: #f7edd2;
         margin: 0px 20px 0px 20px;   
     }
@@ -494,17 +495,16 @@ body.dark-mode .best-scores {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        font-size: 25px;
-        line-height: 30px;
-        margin-top: 10px;
+        font-size: 20px;
+        line-height: 18px;
         margin-bottom: 10px;
         text-align: center;
     }
     
     .digits {
         text-align: center;
-        font-size: 26px;
-        line-height: 33px;
+        font-size: 20px;
+       
     }
       
     .scores-flex {
@@ -519,8 +519,8 @@ body.dark-mode .best-scores {
     .game-container {
         background-image: linear-gradient(#C28B51,#EDC88C);
         border-radius: 8px;
-        width: 350px;
-        height: 600px;
+        width: 340px;
+        height: 545px;
         display: flex;
         margin: 0 auto;
     }
@@ -528,12 +528,12 @@ body.dark-mode .best-scores {
     .game-board {
         margin: auto;
         border-radius: 8px;
-        width: 300px;
-        height: 440px;
+        width: 290px;
+        height: 425px;
         display: flex;
         flex-wrap: wrap;
         perspective: 1000px;
-        margin-top: 50px;
+        margin-top: 30px;
         position: relative;
     }
     
@@ -547,6 +547,10 @@ body.dark-mode .best-scores {
     }
 
     .front-card {
+        padding: 5px;
+    }
+
+    .back-card {
         padding: 10px;
     }
 
@@ -575,11 +579,22 @@ body.dark-mode .best-scores {
     }
       
     .player-details {
-    height: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 15px;
+        height: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .reset {
+        height: 35px;
+        width: 110px;
+        margin-top: -70px;
+    }
+
+
+    .reset-btn {
+        font-size: 18px;
     }
 
 
