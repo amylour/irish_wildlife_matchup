@@ -213,6 +213,7 @@ span {
     line-height: 42px;
     margin-top: 10px;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 .digits {
@@ -366,7 +367,7 @@ body.dark-mode .timer {
     5px 4px 0px #f7edd2,4px 5px 0px #f7edd2,
     6px 5px 0px #f7edd2,5px 6px 0px #f7edd2,
     7px 6px 0px #f7edd2,6px 7px 0px #f7edd2;
-    border: 2px solid #f7edd2;
+  
 }
 
 body.dark-mode .moves {
@@ -378,7 +379,7 @@ body.dark-mode .moves {
     5px 4px 0px #f7edd2,4px 5px 0px #f7edd2,
     6px 5px 0px #f7edd2,5px 6px 0px #f7edd2,
     7px 6px 0px #f7edd2,6px 7px 0px #f7edd2;
-    border: 2px solid #f7edd2;
+   
 }
 
 body.dark-mode .game-container {
@@ -393,7 +394,7 @@ body.dark-mode .game-container {
     7px 6px 0px #f7edd2,6px 7px 0px #f7edd2,
     8px 7px 0px #f7edd2,7px 8px 0px #f7edd2,
     9px 8px 0px #f7edd2,8px 9px 0px #f7edd2;
-    border: 2px solid #f7edd2;
+   
 }
 
 body.dark-mode .reset {
@@ -426,7 +427,7 @@ body.dark-mode .name-entered {
     5px 4px 0px #f7edd2,4px 5px 0px #f7edd2,
     6px 5px 0px #f7edd2,5px 6px 0px #f7edd2,
     7px 6px 0px #f7edd2,6px 7px 0px #f7edd2;
-    border: 2px solid #f7edd2;
+    
 }
 
 body.dark-mode .best-scores {
@@ -438,10 +439,12 @@ body.dark-mode .best-scores {
     5px 4px 0px #f7edd2,4px 5px 0px #f7edd2,
     6px 5px 0px #f7edd2,5px 6px 0px #f7edd2,
     7px 6px 0px #f7edd2,6px 7px 0px #f7edd2;
-    border: 2px solid #f7edd2;
+    
 }
 
 /* Media Queries */
+
+
 /*For small screens (480px-320px)*/
 
 @media only screen and (max-width: 480px) and (min-width: 320px) {
