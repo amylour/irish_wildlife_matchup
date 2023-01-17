@@ -556,7 +556,7 @@ body.dark-mode .best-scores {
     .game-container {
         background-image: linear-gradient(#C28B51,#EDC88C);
         border-radius: 8px;
-        width: 340px;
+        width: 335px;
         height: 545px;
         display: flex;
         margin: 0 auto;
@@ -565,7 +565,7 @@ body.dark-mode .best-scores {
     .game-board {
         margin: auto;
         border-radius: 8px;
-        width: 290px;
+        width: 300px;
         height: 425px;
         display: flex;
         flex-wrap: wrap;
