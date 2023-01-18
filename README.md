@@ -58,26 +58,25 @@ Irish Wildlife MatchUp has been designed to be eaily accessible and fun for all 
   - A user can decide which size gameboard they would prefer to play with, controlling the level of difficulty.
   - A user can toggle the display to Light/Dark mode.
   - A user can expect the timer and moves counter to start once they've click the first card.
-  - A user receives visual and acoustic feedback from the cards if they match and if they don't.
-  - A user can control the game sounds and music.
+  - A user can control the game music.
   - A user can click the cards to turn them over and play the game.
   - A user can see their progress via a timer and moves counter.
   - A user can reset the game via a reset button.
   - A user can see that the timer stops once they match the final cards.
-  - A user can expect their scores to be displayed at the end via a modal window with an 'x' button in the corner to exit the window back to the gameboard.
+  - A user can expect their scores to be displayed at the end via a modal window.
 
 ### **Returning Visitor**
 
   - A user is familiar with the rules and can start the game via a start button.
   - A user can enter their name to be recorded on the gamescore board.
-  - A user can set up their gamescreen using buttons for theme, gameboard size and audio playback.
+  - A user can set up their gamescreen using buttons for gameboard size and audio playback.
   - A user can use the timer and moves counter to improve on their previous score and develop their memory skills.
 
 ### **Frequent Visitor**
 
   - A user can set out to beat their previous scores using the timer and moves counter.
   - A user can reset their game using the reset button if they do not acheive their desired score.
-  - A user can visit the linked interactive page that features the animals from the game to learn more about them.
+  - (A user can visit the linked interactive page that features the animals from the game to learn more about them.)
 
 ---
 
@@ -96,10 +95,10 @@ The game must be responsive and playable on mobile, tablet and desktop sized dev
 
   - The game will have two playable sizes; 4x3 and 6x4 grid layouts. The player can choose which size by clicking a button.
   - The game will have a light theme and a dark theme.
-  - The game will play a soundtrack of forest sounds and offer feedback to the user with sound effects when buttons are selected and cards are flipped.
+  - The game will play a soundtrack of forest sounds.
   - The game will track the time taken and moves made by the player.
-  - The game will record the scores and names of players from previous plays.
-  - A link will be displayed in the footer to an interactive page of the animals featured in the game for the player to learn more about them.
+  - The game will record the scores for the player from previous plays.
+  - (A link will be displayed in the footer to an interactive page of the animals featured in the game for the player to learn more about them.)
 
 ### **3. Structural**
 
@@ -114,11 +113,11 @@ Clear pathways to interactivity are essential for this games success.
 
 The game site will have a clean layout with every feature identifiable and interactive.
 
-  - On loading, the game page will display a modal window front and centre for the user to immediately start the game (click the 'Start Game' button). This window will also offer an optional input section to enter the user's name. A 'tick' icon submits the name. An 'x' in the top, right corner exits the window.
+  - On loading, the game page will display a modal window front and centre for the user to immediately start the game (click the 'Tick' button). This window will also offer an optional input section to enter the user's name. A 'tick' icon submits the name. 
   - The gameboard is situated in the center of the screen with the default size of 4x3 displayed.
   - A toggle button is displayed top right of the game screen to control the Light/Dark mode.
-  - Volume controls are situated above the gameboard to the right.
-  - Timer and moves counter are located above the gameboard to the left.
+  - An audio control is situated above the gameboard to the right.
+  - Timer and moves counter are located above the gameboard to the left for larger screens and on top for smaller screens.
   - A reset button is located centered, below the cards on the gameboard.
   - The gameboard is centered over background art of an Irish landscape which changes to reflect the Light/Dark mode.
 ### Wireframes
@@ -206,7 +205,8 @@ I chose the serif font 'Inknut Antiqua' from [Google Fonts](https://fonts.google
 
 ### **Frameworks, Libraries, Technologies & Programs Used** 
 
-- Procreate - used to create wireframes and edit images 
+- Procreate - used to create the animal artwork and edit images
+- Figma - used to produce wireframes and background vector artwork 
 - GitHub - used to save and store all files for this website  
 - Git - used for version control
 - Google Fonts - fonts were imported from here 
@@ -215,6 +215,7 @@ I chose the serif font 'Inknut Antiqua' from [Google Fonts](https://fonts.google
 - Remove.bg - for image background removal 
 - Favicon.io - for badger favicon  
 - Tiny PNG - to compress images 
+- Online Audio Convertor - to compress mp3 files
 - Google Dev Tools - to debug and for testing responsiveness 
 - Google Lighthouse - for auditing the website
 - W3C Validator - for validating the HTML and CSS code 
