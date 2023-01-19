@@ -224,6 +224,10 @@ function playAgain() {
         firstCard, secondCard; // checks for matching cards
         lockBoard = false;
 
+        winMoves = document.getElementById('win-moves-value').innerHTML;
+        document.getElementById('playerBestTime').innerHTML = winTime;
+        document.getElementById('playerBestMoves').innerHTML = winMoves;
+
         const winModal = document.querySelector('#win-modal');
         winModal.style.display = 'none';
     }, 600);
