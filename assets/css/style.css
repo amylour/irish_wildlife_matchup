@@ -894,19 +894,19 @@ body.dark-mode .best-scores {
     .light_dark {
         width: 45px;
         height: 45px;
-        margin: 8px 10px 0px 55px;
+        margin: 8px 0px 0px 0px;
     }
 
     .toggles {
         height: 5px;
-        width: 160px;
+        width: 110px;
     }
 
     .gamescreen-middle {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-top: 5px;
+        margin-top: 20px;
     }
 
     .score {
@@ -1100,12 +1100,12 @@ body.dark-mode .best-scores {
     .light_dark {
         width: 35px;
         height: 35px;
-        margin: 10px -82px 0px 55px;
+        margin: 10px -73px 0px 55px;
     }
 
     .toggles {
         height: 5px;
-        width: 160px;
+        width: 140px;
     }
 
     .gamescreen-middle {
@@ -1164,7 +1164,7 @@ body.dark-mode .best-scores {
     }
     
     .gamearea {
-        height: 580px;
+        height: 540px;
     }
 
     .game-container {
