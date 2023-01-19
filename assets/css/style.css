@@ -110,6 +110,10 @@ body {
     line-height: 3.75rem;
 }
 
+#playerName {
+    font-size: 36px;
+}
+
 .win-time, .win-moves {
     font-size: 30px;
 }
@@ -222,11 +226,13 @@ span {
 .digits {
     font-size: 28px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .scores-flex {
     margin-bottom: 30px;
 }
+
 
 .game-container {
     background-image: linear-gradient(#C28B51,#EDC88C);
@@ -946,6 +952,10 @@ body.dark-mode .best-scores {
         margin-bottom: 12px;
         text-align: center;
     }
+
+    #playerName {
+        font-size: 32px;
+    }
     
     .digits {
         text-align: center;
@@ -1090,6 +1100,10 @@ body.dark-mode .best-scores {
         margin: 5px;
     }
 
+
+    #playerName {
+        font-size: 24px;
+    }
 
     .vol-icon {
         width: 30px;

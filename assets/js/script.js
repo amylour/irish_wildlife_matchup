@@ -36,7 +36,7 @@ playMusic.addEventListener('click', () => {
 
 
 
-// take playername, clsoe modal and dislay playername in 'Name' window - code adapted from Keith Paterson https://www.youtube.com/watch?v=KB6Yg5hNrqc
+// take playername, close modal and dislay playername in 'Name' window - code adapted from Keith Paterson https://www.youtube.com/watch?v=KB6Yg5hNrqc
 function enterPlayerName() {
     let username = document.querySelector('#username');
     let nameEntered = document.querySelector('#nameEntered');
@@ -45,30 +45,6 @@ function enterPlayerName() {
     modal.style.display = 'none';
 
     nameEntered.innerHTML = username.value;
-}
-
-// display user's high score for user to beat 
-
-
-// store and display player's high score
-
-let bestTime = document.getElementById('win-time-value');
-let bestMoves = document.getElementById('win-moves-value');
-
-localStorage.setItem(nameEntered, bestTime.toString(), bestMoves.toString());
-
-var savedTime = localStorage.getItem(nameEntered);
-var savedMoves = localStorage.getItem(nameEntered);
-
-var topTime = '';
-for (var i = 0; i < localStorage.length;)
-
-function getBestTime() {
-    // retrieve lowest time taken from localStorage
-}
-
-function getBestMoves() {
-    // retrieve lowest move count from localStorage
 }
 
 
@@ -209,6 +185,10 @@ function winMessageDisplay() {
     const winModal = document.querySelector('#win-modal');
     winModal.style.display = 'block';
     winTime = timeTaken.innerHTML;
+
+    
+
+    document.getElementById('playerName').innerHTML = username.value;
     
     document.getElementById('win-time-value').innerHTML = winTime;
     document.getElementById('win-moves-value').innerHTML = moves;
@@ -296,5 +276,4 @@ function volumeChange() {
         document.getElementById("ld-vol").src = "assets/images/volume_light.png";
     }
 }
-
 

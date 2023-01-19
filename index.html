@@ -113,7 +113,8 @@
         <div class="name-scores-flex">
           <p class="name">Best<br>Scores</p>
         <div class="best-scores">
-          <p class="digits"></p>
+          <p class="digits" id="playerBestTime">00:00</p>
+          <p class="digits"id="playerBestMoves">00</p>
           </div>
         </div>
       </div>
@@ -146,7 +147,7 @@
     <div id="win-modal" class="modal">
       <div class="modal-background">
         <div class="modal-content">
-          <h1>Well done!</h1>
+          <h1>Well done <span id="playerName"></span>!</h1>
           <div class="win-scores">
             <p class="score-display">Your time:<br>
               <span class="win-time" id="win-time-value">00:00</span><br>
