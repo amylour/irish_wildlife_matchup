@@ -1100,9 +1100,22 @@ body.dark-mode .best-scores {
         margin: 5px;
     }
 
-
     #playerName {
         font-size: 24px;
+    }
+
+    .score-display {
+        font-size: 20px;
+        line-height: 3.5rem;
+    }
+
+    .win-time,
+    .win-moves {
+        font-size: 2px;
+    }
+
+    .play-again {
+        font-size: 26px;
     }
 
     .vol-icon {
