@@ -50,7 +50,26 @@ function enterPlayerName() {
 // display user's high score for user to beat 
 
 
+// store and display player's high score
 
+let bestTime = document.getElementById('win-time-value');
+let bestMoves = document.getElementById('win-moves-value');
+
+localStorage.setItem(nameEntered, bestTime.toString(), bestMoves.toString());
+
+var savedTime = localStorage.getItem(nameEntered);
+var savedMoves = localStorage.getItem(nameEntered);
+
+var topTime = '';
+for (var i = 0; i < localStorage.length;)
+
+function getBestTime() {
+    // retrieve lowest time taken from localStorage
+}
+
+function getBestMoves() {
+    // retrieve lowest move count from localStorage
+}
 
 
 /** card flip and game play function learned, 
