@@ -67,9 +67,12 @@ body {
 }
 
 .modal-background {
-    background-color: rgba(0,0,0,0.4);
-    width: 100%;
-    height: 100%;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        background-color: rgba(0,0,0,0.6);
+        background-size: cover;
+        background-position: center;
 }
 
 .modal-content {
@@ -451,6 +454,23 @@ body.dark-mode .best-scores {
     7px 6px 0px #f7edd2,6px 7px 0px #f7edd2;
 }
 
+body.dark-mode .modal-content {
+    background-image: linear-gradient(#382a25,#C28B51);
+    border-radius: 8px;
+    box-shadow: 1px 0px 0px #f7edd2,0px 1px 0px #f7edd2,
+    2px 1px 0px #f7edd2,1px 2px 0px #f7edd2,
+    3px 2px 0px #f7edd2,2px 3px 0px #f7edd2,
+    4px 3px 0px #f7edd2,3px 4px 0px #f7edd2,
+    5px 4px 0px #f7edd2,4px 5px 0px #f7edd2,
+    6px 5px 0px #f7edd2,5px 6px 0px #f7edd2,
+    7px 6px 0px #f7edd2,6px 7px 0px #f7edd2;
+    color: #EDC88C;
+}
+
+body.dark-mode .modal-background {
+    background-color: rgba(0,0,0,0.4);
+}
+
 /* Media Queries */
 
 /*For desktops & large screens (1025px-1200px)*/
@@ -464,11 +484,12 @@ body.dark-mode .best-scores {
     }
 
     .modal-background {
-        margin: 0 auto;
-        height: 120%;
-        width: 120%;
+        height: 110vh;
+        width: 100%;
         overflow: hidden;
         background-color: rgba(0,0,0,0.6);
+        background-size: cover;
+        background-position: center;
     }
 
     span {
@@ -666,11 +687,12 @@ body.dark-mode .best-scores {
     }
 
     .modal-background {
-        margin: 0 auto;
-        height: 1024px;
-        width: 1024px;
+        height: 120vh;
+        width: 100%;
         overflow: hidden;
         background-color: rgba(0,0,0,0.6);
+        background-size: cover;
+        background-position: center;
     }
 
     span {
