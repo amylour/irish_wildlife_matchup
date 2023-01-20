@@ -10,7 +10,7 @@
 /* gameboard area */
 body {
     height: 100vh;
-    background-image: url("../images/day.png");
+    background-image: url("../images/daybg.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -22,7 +22,7 @@ body {
 
 /* light/dark theme-background image */
 .dark-mode {
-    background-image: url("../images/night_scene.png");
+    background-image: url("../images/nightbgcom.png");
     height: 100vh;
     background-size: cover;
     color: #edc88c;
