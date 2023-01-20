@@ -22,19 +22,19 @@ window.addEventListener('load', function(){
     this.setTimeout(
         function open(event){
             document.querySelector('.start-modal').style.display = "block";
-            audio.play();
         },2000)
 });
 
 // play music onload
 
+function playSong() {
 let playMusic = document.getElementById('ld-vol');
 playMusic.addEventListener('click', () => {
     let daySong = document.getElementById('daysong');
     return daySong.paused ? daySong.play() : daySong.pause();
 })
 
-
+}
 
 // take playername, close modal and dislay playername in 'Name' window - code adapted from Keith Paterson https://www.youtube.com/watch?v=KB6Yg5hNrqc
 function enterPlayerName() {
@@ -227,6 +227,8 @@ function playAgain() {
         winMoves = document.getElementById('win-moves-value').innerHTML;
         document.getElementById('playerBestTime').innerHTML = winTime;
         document.getElementById('playerBestMoves').innerHTML = winMoves;
+
+       
 
         const winModal = document.querySelector('#win-modal');
         winModal.style.display = 'none';

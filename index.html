@@ -136,7 +136,7 @@
         <form class="modal-form" method="dialog" autocomplete="off">
           <label for="username" aria-label="Enter username"><span>Enter your name:</span></label><br>
           <input type="text" id="username" name="username"><br>
-          <button type="submit" id="name-button" class="tick-button" onclick="enterPlayerName()"><img class="username-tick" src="assets/images/check-mark.png" alt="checkmark-click to enter username"></button>
+          <button type="submit" id="name-button" class="tick-button" onclick="enterPlayerName(), playSong()"><img class="username-tick" src="assets/images/check-mark.png" alt="checkmark-click to enter username"></button>
         </form>
       </div>
   </div>
@@ -163,7 +163,7 @@
     </div>
 
   <!-- Audio files --> 
-  <audio autoplay loop id="daysong" preload="auto">
+  <audio loop id="daysong">
     <source src="assets/audio/daysongcom.mp3" type="audio/mp3">
     Your browser does not support the audio element.
   </audio>

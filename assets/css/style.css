@@ -867,10 +867,12 @@ body.dark-mode .best-scores {
     }
 
     .modal-background {
-        height: 950px;
-        width: 800px;
+        height: 130vh;
+        width: 100%;
         overflow: hidden;
         background-color: rgba(0,0,0,0.6);
+        background-size: cover;
+        background-position: center;
     }
 
     span {
@@ -894,13 +896,13 @@ body.dark-mode .best-scores {
     .vol-icon {
         width: 40px;
         height: 40px;
-        margin: 10px 15px 0px 0px;
+        margin: 22px 15px 0px 0px;
     }
 
     .light_dark {
         width: 45px;
         height: 45px;
-        margin: 8px 0px 0px 0px;
+        margin: 20px 0px 0px 0px;
     }
 
     .toggles {
@@ -912,7 +914,7 @@ body.dark-mode .best-scores {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
     .score {
@@ -974,8 +976,8 @@ body.dark-mode .best-scores {
     .game-container {
         background-image: linear-gradient(#C28B51,#EDC88C);
         border-radius: 8px;
-        width: 355px;
-        height: 560px;
+        width: 390px;
+        height: 565px;
         display: flex;
         margin: 0 auto;
     }
@@ -983,8 +985,8 @@ body.dark-mode .best-scores {
     .game-board {
         margin: auto;
         border-radius: 8px;
-        width: 310px;
-        height: 435px;
+        width: 320px;
+        height: 440px;
         display: flex;
         flex-wrap: wrap;
         perspective: 1000px;
@@ -1077,10 +1079,12 @@ body.dark-mode .best-scores {
     }
 
     .modal-background {
-        height: 950px;
-        width: 500px;
+        height: 130vh;
+        width: 100%;
         overflow: hidden;
         background-color: rgba(0,0,0,0.6);
+        background-size: cover;
+        background-position: center;
     }
 
     span {
@@ -1111,7 +1115,7 @@ body.dark-mode .best-scores {
 
     .win-time,
     .win-moves {
-        font-size: 2px;
+        font-size: 26px;
     }
 
     .play-again {
@@ -1139,11 +1143,11 @@ body.dark-mode .best-scores {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-top: 5px;
+        margin-top: 10px;
     }
 
     .score {
-        height: 100px;
+        height: 90px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -1191,14 +1195,14 @@ body.dark-mode .best-scores {
     }
     
     .gamearea {
-        height: 540px;
+        height: 500px;
     }
 
     .game-container {
         background-image: linear-gradient(#C28B51,#EDC88C);
         border-radius: 8px;
         width: 335px;
-        height: 545px;
+        height: 520px;
         display: flex;
         margin: 0 auto;
     }
@@ -1206,12 +1210,12 @@ body.dark-mode .best-scores {
     .game-board {
         margin: auto;
         border-radius: 8px;
-        width: 300px;
-        height: 425px;
+        width: 295px;
+        height: 415px;
         display: flex;
         flex-wrap: wrap;
         perspective: 1000px;
-        margin-top: 30px;
+        margin-top: 20px;
         position: relative;
     }
     
@@ -1274,7 +1278,7 @@ body.dark-mode .best-scores {
     .reset {
         height: 35px;
         width: 110px;
-        margin-top: -70px;
+        margin-top: -65px;
     }
 
 
