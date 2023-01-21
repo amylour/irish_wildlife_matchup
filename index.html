@@ -105,8 +105,9 @@
         </div>
       </div>
       <!-- Game reset button -->
-      <div class="reset" onclick="resetGame();"><button class="reset-btn" id="reset"
-          onclick="resetGame();">Reset</button></div>
+      <div class="reset" id="reset">
+        <button class="reset-btn">Reset</button>
+      </div>
     </div>
 
     <!-- player name and recent score -->
@@ -144,7 +145,7 @@
         <form class="modal-form" method="dialog" autocomplete="off">
           <label for="username" aria-label="Enter username"><span>Enter your name:</span></label><br>
           <input type="text" id="username" name="username"><br>
-          <button type="submit" id="name-button" class="tick-button" onclick="enterPlayerName(), playSong()"><img
+          <button type="submit" id="name-button" class="tick-button"><img
               class="username-tick" src="assets/images/check-mark.png" alt="checkmark- optional click to enter username and/or start game"></button>
         </form>
       </div>
