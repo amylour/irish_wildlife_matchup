@@ -1,56 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="memory card game, concentration, brain training, animal card game, Irish themed card game">
-    <meta name="description" content="An Irish Wildlife themed memory card game">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Irish Wildlife MatchUp</title>
-    <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/favicon/android-chrome-512x512.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords"
+    content="memory card game, concentration, brain training, animal card game, Irish themed card game">
+  <meta name="description" content="An Irish Wildlife themed memory card game">
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Irish Wildlife MatchUp</title>
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon/android-chrome-512x512.png">
 </head>
 
 <body>
-  
-<!-- light/dark theme toggle and volume/mute toggle -->
-    <div class="gamescreen-top">
-        <div class="toggles">
-          <img class ="light_dark" id="ld-theme" src="assets/images/night_in_day.png" onclick="lightDark();changeImage();" alt="toggle">
-            <div class="vol-toggles">
-              <img class="vol-icon" id="ld-vol" src="assets/images/volume-mute.png" onclick="volumeChange()" alt="volume up">
-          </div>
-        </div>  
-    </div>
 
-<!-- score-timer/moves --> 
+  <!-- light/dark theme toggle and volume/mute toggle -->
+  <div class="gamescreen-top">
+    <div class="toggles">
+      <img class="light_dark" id="ld-theme" src="assets/images/night_in_day.png" onclick="lightDark();changeImage();"
+        alt="light/dark theme toggle">
+      <div class="vol-toggles">
+        <img class="vol-icon" id="ld-vol" src="assets/images/volume-mute.png" onclick="volumeChange()"
+          alt="volume on/mute toggle">
+      </div>
+    </div>
+  </div>
+
+  <!-- score-timer/moves -->
   <div class="gamescreen-middle">
     <div class="score">
       <div class="timer-moves">
         <div class="scores-flex">
-        <p class="name">Time</p>
-        <div class="timer">
-          <span class="digits" id="time-taken">00:00</span>
+          <p class="name">Time</p>
+          <div class="timer">
+            <span class="digits" id="time-taken">00:00</span>
           </div>
         </div>
         <div class="scores-flex">
-        <p class="name">Moves</p>
-        <div class="moves">
-          <span class="digits" id="moves-taken">00</span>
+          <p class="name">Moves</p>
+          <div class="moves">
+            <span class="digits" id="moves-taken">00</span>
+          </div>
         </div>
-      </div>
       </div>
     </div>
 
-<!-- gameboard, cards and start button -->
+    <!-- gameboard, cards and reset button -->
     <div class="gamearea">
       <div class="game-container">
+        <!-- Game board area -->
         <div class="game-board">
+          <!-- Game card area -->
           <div class="game-card" data-name="bee">
-            <img class="front-card" src="assets/images/beecom.png"  alt="bee">
+            <img class="front-card" src="assets/images/beecom.png" alt="bee">
             <img class="back-card" src="assets/images/cardback.png" alt="green honeycomb pattern">
-            
           </div>
           <div class="game-card" data-name="bee">
             <img class="front-card" src="assets/images/beecom.png" alt="bee">
@@ -86,11 +92,11 @@
           </div>
           <div class="game-card" data-name="fox">
             <img class="front-card" src="assets/images/foxcom.png" alt="fox">
-            <img class="back-card" src="assets/images/cardback.png" id="cardFlipAudio" alt="green honeycomb pattern">
+            <img class="back-card" src="assets/images/cardback.png" alt="green honeycomb pattern">
           </div>
           <div class="game-card" data-name="hedgehog">
             <img class="front-card" src="assets/images/hedgehogcom.png" alt="hedgehog">
-            <img class="back-card" src="assets/images/cardback.png" id="cardFlipAudio" alt="green honeycomb pattern">
+            <img class="back-card" src="assets/images/cardback.png" alt="green honeycomb pattern">
           </div>
           <div class="game-card" data-name="hedgehog">
             <img class="front-card" src="assets/images/hedgehogcom.png" alt="hedgehog">
@@ -98,23 +104,25 @@
           </div>
         </div>
       </div>
-      <div class="reset" onclick="resetGame();"><button class="reset-btn" id="reset" onclick="resetGame();">Reset</button></div>
+      <!-- Game reset button -->
+      <div class="reset" onclick="resetGame();"><button class="reset-btn" id="reset"
+          onclick="resetGame();">Reset</button></div>
     </div>
 
-    <!-- player-name and best score -->
+    <!-- player name and recent score -->
     <div class="player-details">
       <div class="name-score">
         <div class="name-scores-flex">
-        <p class="name">Name</p>
-        <div class="name-entered" id="nameEntered">
-          <p class="digits"></p>
-        </div>
+          <p class="name">Name</p>
+          <div class="name-entered" id="nameEntered">
+            <p class="digits"></p>
+          </div>
         </div>
         <div class="name-scores-flex">
           <p class="name">Recent<br>Score</p>
-        <div class="best-scores">
-          <p class="digits" id="playerBestTime">00:00</p>
-          <p class="digits"id="playerBestMoves">00</p>
+          <div class="recent-scores">
+            <p class="digits" id="playerBestTime">00:00</p>
+            <p class="digits" id="playerBestMoves">00</p>
           </div>
         </div>
       </div>
@@ -123,54 +131,53 @@
 
   <footer></footer>
 
-  <!-- Modal: Onload rules and user name modal to start the game: adapted from https://www.w3schools.com/howto/howto_css_modals.asp -->
-  
+  <!-- Modal: Onload - rules and user name modal to start the game: adapted from https://www.w3schools.com/howto/howto_css_modals.asp -->
   <div id="start-modal" class="modal">
-    <div class="modal-background"> 
+    <div class="modal-background">
       <div class="modal-content">
         <h2>Welcome to Irish Wildlife MatchUp</h2>
         <p>Enter your name and click the button to start the timer.<br>
           Flip the cards, two at a time, to match.<br>
-        Try to remember where all of the animals are!<br>
-        - Ádh mór ort! (Good Luck!) -</p>
+          Try to remember where all of the animals are!<br>
+          - Ádh mór ort! (Good Luck!) -</p>
+          <!-- Optional enter name to personalise board -->
         <form class="modal-form" method="dialog" autocomplete="off">
           <label for="username" aria-label="Enter username"><span>Enter your name:</span></label><br>
           <input type="text" id="username" name="username"><br>
-          <button type="submit" id="name-button" class="tick-button" onclick="enterPlayerName(), playSong()"><img class="username-tick" src="assets/images/check-mark.png" alt="checkmark-click to enter username"></button>
+          <button type="submit" id="name-button" class="tick-button" onclick="enterPlayerName(), playSong()"><img
+              class="username-tick" src="assets/images/check-mark.png" alt="checkmark- optional click to enter username and/or start game"></button>
         </form>
       </div>
-  </div>
     </div>
+  </div>
 
-    <!-- Win modal: displays message and scores  -->
-
-    <div id="win-modal" class="modal">
-      <div class="modal-background">
-        <div class="modal-content">
-          <h1>Well done <span id="playerName"></span>!</h1>
-          <div class="win-scores">
-            <p class="score-display">Your time:<br>
-              <span class="win-time" id="win-time-value">00:00</span><br>
-              Your moves count:<br>
-              <span class="win-moves" id="win-moves-value">00</span><br>
-              <span class="play-again">Play Again?</span>
-            </p>
-          </div>
-          <button type="submit"  class="tick-button" id="win-button" onclick="playAgain()"><img class="username-tick"
-              src="assets/images/check-mark.png" alt="checkmark-click to play again"></button>
+  <!-- Win modal: displays message and scores  -->
+  <div id="win-modal" class="modal">
+    <div class="modal-background">
+      <div class="modal-content">
+        <h1>Well done <span id="playerName"></span>!</h1>
+        <div class="win-scores">
+          <p class="score-display">Your time:<br>
+            <span class="win-time" id="win-time-value">00:00</span><br>
+            Your moves count:<br>
+            <span class="win-moves" id="win-moves-value">00</span><br>
+            <span class="play-again">Play Again?</span>
+          </p>
         </div>
+        <button type="submit" class="tick-button" id="win-button" onclick="playAgain()"><img class="username-tick"
+            src="assets/images/check-mark.png" alt="checkmark-click to play again"></button>
       </div>
     </div>
+  </div>
 
-  <!-- Audio files --> 
+  <!-- Audio file plays (default muted) when start modal button is clicked -->
   <audio loop id="daysong">
     <source src="assets/audio/daysongcom.mp3" type="audio/mp3">
     Your browser does not support the audio element.
   </audio>
 
-  
-
-  <!-- JavaScript file -->
+  <!-- JavaScript file for gamplay, modals, sounds and themes-->
   <script src="assets/js/script.js"></script>
 </body>
+
 </html>

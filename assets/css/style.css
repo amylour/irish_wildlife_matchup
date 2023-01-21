@@ -1,6 +1,7 @@
 /* imported Google font */
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400&display=swap');
 
+/* reset page style and set border-box property */
 * {
     padding: 0;
     margin: 0;
@@ -10,14 +11,13 @@
 /* gameboard area */
 body {
     height: 100vh;
-    background-image: url("../images/dayscenecom.png");
+    background-image: url("../images/daybgcom.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Inknut Antiqua', serif;
     color: #382A25;
-    
 }
 
 /* light/dark theme-background image */
@@ -56,7 +56,7 @@ body {
     margin: 14px 0px 0px 0px;
 }
 
-/* modal - centering code obtained from https://stackoverflow.com/questions/39627549/how-to-center-modal-to-the-center-of-screen*/
+/* modals - centering code obtained from https://stackoverflow.com/questions/39627549/how-to-center-modal-to-the-center-of-screen*/
 .modal {
     position: absolute;
     top: 50%;
@@ -67,27 +67,28 @@ body {
 }
 
 .modal-background {
-        height: 100vh;
-        width: 100%;
-        overflow: hidden;
-        background-color: rgba(0,0,0,0.6);
-        background-size: cover;
-        background-position: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    background-position: center;
 }
 
 .modal-content {
-    background-image: linear-gradient(#C28B51,#EDC88C);
-    box-shadow: 1px 0px 0px #382A25,0px 1px 0px #382A25,
-    2px 1px 0px #382A25,1px 2px 0px #382A25,
-    3px 2px 0px #382A25,2px 3px 0px #382A25,
-    4px 3px 0px #382A25,3px 4px 0px #382A25,
-    5px 4px 0px #382A25,4px 5px 0px #382A25,
-    6px 5px 0px #382A25,5px 6px 0px #382A25,
-    7px 6px 0px #382A25,6px 7px 0px #382A25;
+    background-image: linear-gradient(#C28B51, #EDC88C);
+    /* solid box-shadow code - adapted from https://webdesignerhut.com/3d-buttons-with-css-dropshadow/ */
+    box-shadow: 1px 0px 0px #382A25, 0px 1px 0px #382A25,
+        2px 1px 0px #382A25, 1px 2px 0px #382A25,
+        3px 2px 0px #382A25, 2px 3px 0px #382A25,
+        4px 3px 0px #382A25, 3px 4px 0px #382A25,
+        5px 4px 0px #382A25, 4px 5px 0px #382A25,
+        6px 5px 0px #382A25, 5px 6px 0px #382A25,
+        7px 6px 0px #382A25, 6px 7px 0px #382A25;
     border-radius: 8px;
     padding: 20px;
     width: 620px;
-    height:520px;
+    height: 520px;
     margin: 10px;
     font-size: 18px;
     font-weight: bold;
@@ -117,7 +118,8 @@ body {
     font-size: 36px;
 }
 
-.win-time, .win-moves {
+.win-time,
+.win-moves {
     font-size: 30px;
 }
 
@@ -136,7 +138,7 @@ input {
     font-family: 'Inknut Antiqua', serif;
     color: #382A25;
     background-color: #fffdf7;
-    box-shadow: 0px 0px 9px 3px #c28b51; 
+    box-shadow: 0px 0px 9px 3px #c28b51;
 }
 
 input:focus {
@@ -144,6 +146,7 @@ input:focus {
     outline: none;
 }
 
+/* span for player name enter, time, moves and play again */
 span {
     font-size: 24px;
 }
@@ -152,6 +155,7 @@ span {
     height: 50px;
     width: 50px;
     margin: 20px;
+    /* button presses inwards when pressed effect */
     transform: scale(1);
     transition: transform .5s;
 }
@@ -176,7 +180,7 @@ span {
 }
 
 .score,
-.player-details  {
+.player-details {
     height: 280px;
     width: 15%;
     display: flex;
@@ -200,14 +204,13 @@ span {
     height: 44px;
     width: 140px;
     background-color: #f7edd2;
-    /* solid box-shadow code - adapted from https://webdesignerhut.com/3d-buttons-with-css-dropshadow/ */ 
-    box-shadow: 1px 0px 0px #382A25,0px 1px 0px #382A25,
-    2px 1px 0px #382A25,1px 2px 0px #382A25,
-    3px 2px 0px #382A25,2px 3px 0px #382A25,
-    4px 3px 0px #382A25,3px 4px 0px #382A25,
-    5px 4px 0px #382A25,4px 5px 0px #382A25,
-    6px 5px 0px #382A25,5px 6px 0px #382A25,
-    7px 6px 0px #382A25,6px 7px 0px #382A25;
+    box-shadow: 1px 0px 0px #382A25, 0px 1px 0px #382A25,
+        2px 1px 0px #382A25, 1px 2px 0px #382A25,
+        3px 2px 0px #382A25, 2px 3px 0px #382A25,
+        4px 3px 0px #382A25, 3px 4px 0px #382A25,
+        5px 4px 0px #382A25, 4px 5px 0px #382A25,
+        6px 5px 0px #382A25, 5px 6px 0px #382A25,
+        7px 6px 0px #382A25, 6px 7px 0px #382A25;
     border-radius: 8px;
     display: flex;
     justify-content: center;
@@ -236,22 +239,21 @@ span {
     margin-bottom: 30px;
 }
 
-
 .game-container {
-    background-image: linear-gradient(#C28B51,#EDC88C);
+    background-image: linear-gradient(#C28B51, #EDC88C);
     border-radius: 8px;
     width: 838px;
     height: 645px;
     display: flex;
-    box-shadow: 1px 0px 0px #382A25,0px 1px 0px #382A25,
-    2px 1px 0px #382A25,1px 2px 0px #382A25,
-    3px 2px 0px #382A25,2px 3px 0px #382A25,
-    4px 3px 0px #382A25,3px 4px 0px #382A25,
-    5px 4px 0px #382A25,4px 5px 0px #382A25,
-    6px 5px 0px #382A25,5px 6px 0px #382A25,
-    7px 6px 0px #382A25,6px 7px 0px #382A25,
-    8px 7px 0px #382A25,7px 8px 0px #382A25,
-    9px 8px 0px #382A25,8px 9px 0px #382A25;
+    box-shadow: 1px 0px 0px #382A25, 0px 1px 0px #382A25,
+        2px 1px 0px #382A25, 1px 2px 0px #382A25,
+        3px 2px 0px #382A25, 2px 3px 0px #382A25,
+        4px 3px 0px #382A25, 3px 4px 0px #382A25,
+        5px 4px 0px #382A25, 4px 5px 0px #382A25,
+        6px 5px 0px #382A25, 5px 6px 0px #382A25,
+        7px 6px 0px #382A25, 6px 7px 0px #382A25,
+        8px 7px 0px #382A25, 7px 8px 0px #382A25,
+        9px 8px 0px #382A25, 8px 9px 0px #382A25;
 }
 
 .game-board {
@@ -266,10 +268,10 @@ span {
     position: relative;
 }
 
-/* card flip action and 3D perspective adapted from freeCodeCamp Memory Game tutorial */
+/* card flip action and 3D perspective adapted from freeCodeCamp Memory Game tutorial by Marina Ferreira - https://www.freecodecamp.org/news/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae/ */
 .game-card {
-    width:calc(25% - 10px);
-    height:calc(33.333% - 10px);
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
     margin: 5px;
     position: relative;
     border-radius: 6px;
@@ -289,7 +291,7 @@ span {
     transform: rotateY(180deg);
 }
 
-/* game cards - animal artwork by myself*/
+/* game cards - animal artwork by myself, hexagonal pattern on card back by https://pattern.monster/hexagon-2/*/
 .front-card,
 .back-card {
     width: 100%;
@@ -347,8 +349,8 @@ img {
     cursor: pointer;
 }
 
-/* best scores area */
-.best-scores {
+/* recent scores area */
+.recent-scores {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -357,13 +359,13 @@ img {
     height: 170px;
     width: 140px;
     background-color: #f7edd2;
-    box-shadow: 1px 0px 0px #382A25,0px 1px 0px #382A25,
-    2px 1px 0px #382A25,1px 2px 0px #382A25,
-    3px 2px 0px #382A25,2px 3px 0px #382A25,
-    4px 3px 0px #382A25,3px 4px 0px #382A25,
-    5px 4px 0px #382A25,4px 5px 0px #382A25,
-    6px 5px 0px #382A25,5px 6px 0px #382A25,
-    7px 6px 0px #382A25,6px 7px 0px #382A25;
+    box-shadow: 1px 0px 0px #382A25, 0px 1px 0px #382A25,
+        2px 1px 0px #382A25, 1px 2px 0px #382A25,
+        3px 2px 0px #382A25, 2px 3px 0px #382A25,
+        4px 3px 0px #382A25, 3px 4px 0px #382A25,
+        5px 4px 0px #382A25, 4px 5px 0px #382A25,
+        6px 5px 0px #382A25, 5px 6px 0px #382A25,
+        7px 6px 0px #382A25, 6px 7px 0px #382A25;
     border-radius: 8px;
 }
 
@@ -372,44 +374,40 @@ body.dark-mode .digits {
     color: #edc88c;
 }
 
-
 body.dark-mode .timer {
     background-color: #382a25;
-    box-shadow: 1px 0px 0px #f7edd2,0px 1px 0px#f7edd2,
-    2px 1px 0px #f7edd2,1px 2px 0px #f7edd2,
-    3px 2px 0px #f7edd2,2px 3px 0px #f7edd2,
-    4px 3px 0px #f7edd2,3px 4px 0px #f7edd2,
-    5px 4px 0px #f7edd2,4px 5px 0px #f7edd2,
-    6px 5px 0px #f7edd2,5px 6px 0px #f7edd2,
-    7px 6px 0px #f7edd2,6px 7px 0px #f7edd2;
-  
+    box-shadow: 1px 0px 0px #f7edd2, 0px 1px 0px#f7edd2,
+        2px 1px 0px #f7edd2, 1px 2px 0px #f7edd2,
+        3px 2px 0px #f7edd2, 2px 3px 0px #f7edd2,
+        4px 3px 0px #f7edd2, 3px 4px 0px #f7edd2,
+        5px 4px 0px #f7edd2, 4px 5px 0px #f7edd2,
+        6px 5px 0px #f7edd2, 5px 6px 0px #f7edd2,
+        7px 6px 0px #f7edd2, 6px 7px 0px #f7edd2;
 }
 
 body.dark-mode .moves {
     background-color: #382a25;
-    box-shadow: 1px 0px 0px #f7edd2,0px 1px 0px#f7edd2,
-    2px 1px 0px #f7edd2,1px 2px 0px #f7edd2,
-    3px 2px 0px #f7edd2,2px 3px 0px #f7edd2,
-    4px 3px 0px #f7edd2,3px 4px 0px #f7edd2,
-    5px 4px 0px #f7edd2,4px 5px 0px #f7edd2,
-    6px 5px 0px #f7edd2,5px 6px 0px #f7edd2,
-    7px 6px 0px #f7edd2,6px 7px 0px #f7edd2;
-   
+    box-shadow: 1px 0px 0px #f7edd2, 0px 1px 0px#f7edd2,
+        2px 1px 0px #f7edd2, 1px 2px 0px #f7edd2,
+        3px 2px 0px #f7edd2, 2px 3px 0px #f7edd2,
+        4px 3px 0px #f7edd2, 3px 4px 0px #f7edd2,
+        5px 4px 0px #f7edd2, 4px 5px 0px #f7edd2,
+        6px 5px 0px #f7edd2, 5px 6px 0px #f7edd2,
+        7px 6px 0px #f7edd2, 6px 7px 0px #f7edd2;
 }
 
 body.dark-mode .game-container {
-    background-image: linear-gradient(#382a25,#C28B51);
+    background-image: linear-gradient(#382a25, #C28B51);
     border-radius: 8px;
-    box-shadow: 1px 0px 0px #f7edd2,0px 1px 0px #f7edd2,
-    2px 1px 0px #f7edd2,1px 2px 0px #f7edd2,
-    3px 2px 0px #f7edd2,2px 3px 0px #f7edd2,
-    4px 3px 0px #f7edd2,3px 4px 0px #f7edd2,
-    5px 4px 0px #f7edd2,4px 5px 0px #f7edd2,
-    6px 5px 0px #f7edd2,5px 6px 0px #f7edd2,
-    7px 6px 0px #f7edd2,6px 7px 0px #f7edd2,
-    8px 7px 0px #f7edd2,7px 8px 0px #f7edd2,
-    9px 8px 0px #f7edd2,8px 9px 0px #f7edd2;
-   
+    box-shadow: 1px 0px 0px #f7edd2, 0px 1px 0px #f7edd2,
+        2px 1px 0px #f7edd2, 1px 2px 0px #f7edd2,
+        3px 2px 0px #f7edd2, 2px 3px 0px #f7edd2,
+        4px 3px 0px #f7edd2, 3px 4px 0px #f7edd2,
+        5px 4px 0px #f7edd2, 4px 5px 0px #f7edd2,
+        6px 5px 0px #f7edd2, 5px 6px 0px #f7edd2,
+        7px 6px 0px #f7edd2, 6px 7px 0px #f7edd2,
+        8px 7px 0px #f7edd2, 7px 8px 0px #f7edd2,
+        9px 8px 0px #f7edd2, 8px 9px 0px #f7edd2;
 }
 
 body.dark-mode .reset {
@@ -422,7 +420,6 @@ body.dark-mode .reset:active {
     transform: scale(0.97);
     transition: transform .4s;
     box-shadow: 0 5px 7px 0 #382A25;
-    
 }
 
 body.dark-mode .reset-btn {
@@ -434,41 +431,41 @@ body.dark-mode .reset-btn {
 
 body.dark-mode .name-entered {
     background-color: #382a25;
-    box-shadow: 1px 0px 0px #f7edd2,0px 1px 0px#f7edd2,
-    2px 1px 0px #f7edd2,1px 2px 0px #f7edd2,
-    3px 2px 0px #f7edd2,2px 3px 0px #f7edd2,
-    4px 3px 0px #f7edd2,3px 4px 0px #f7edd2,
-    5px 4px 0px #f7edd2,4px 5px 0px #f7edd2,
-    6px 5px 0px #f7edd2,5px 6px 0px #f7edd2,
-    7px 6px 0px #f7edd2,6px 7px 0px #f7edd2;
+    box-shadow: 1px 0px 0px #f7edd2, 0px 1px 0px#f7edd2,
+        2px 1px 0px #f7edd2, 1px 2px 0px #f7edd2,
+        3px 2px 0px #f7edd2, 2px 3px 0px #f7edd2,
+        4px 3px 0px #f7edd2, 3px 4px 0px #f7edd2,
+        5px 4px 0px #f7edd2, 4px 5px 0px #f7edd2,
+        6px 5px 0px #f7edd2, 5px 6px 0px #f7edd2,
+        7px 6px 0px #f7edd2, 6px 7px 0px #f7edd2;
 }
 
-body.dark-mode .best-scores {
+body.dark-mode .recent-scores {
     background-color: #382a25;
-    box-shadow: 1px 0px 0px #f7edd2,0px 1px 0px#f7edd2,
-    2px 1px 0px #f7edd2,1px 2px 0px #f7edd2,
-    3px 2px 0px #f7edd2,2px 3px 0px #f7edd2,
-    4px 3px 0px #f7edd2,3px 4px 0px #f7edd2,
-    5px 4px 0px #f7edd2,4px 5px 0px #f7edd2,
-    6px 5px 0px #f7edd2,5px 6px 0px #f7edd2,
-    7px 6px 0px #f7edd2,6px 7px 0px #f7edd2;
+    box-shadow: 1px 0px 0px #f7edd2, 0px 1px 0px#f7edd2,
+        2px 1px 0px #f7edd2, 1px 2px 0px #f7edd2,
+        3px 2px 0px #f7edd2, 2px 3px 0px #f7edd2,
+        4px 3px 0px #f7edd2, 3px 4px 0px #f7edd2,
+        5px 4px 0px #f7edd2, 4px 5px 0px #f7edd2,
+        6px 5px 0px #f7edd2, 5px 6px 0px #f7edd2,
+        7px 6px 0px #f7edd2, 6px 7px 0px #f7edd2;
 }
 
 body.dark-mode .modal-content {
-    background-image: linear-gradient(#382a25,#C28B51);
+    background-image: linear-gradient(#382a25, #C28B51);
     border-radius: 8px;
-    box-shadow: 1px 0px 0px #f7edd2,0px 1px 0px #f7edd2,
-    2px 1px 0px #f7edd2,1px 2px 0px #f7edd2,
-    3px 2px 0px #f7edd2,2px 3px 0px #f7edd2,
-    4px 3px 0px #f7edd2,3px 4px 0px #f7edd2,
-    5px 4px 0px #f7edd2,4px 5px 0px #f7edd2,
-    6px 5px 0px #f7edd2,5px 6px 0px #f7edd2,
-    7px 6px 0px #f7edd2,6px 7px 0px #f7edd2;
+    box-shadow: 1px 0px 0px #f7edd2, 0px 1px 0px #f7edd2,
+        2px 1px 0px #f7edd2, 1px 2px 0px #f7edd2,
+        3px 2px 0px #f7edd2, 2px 3px 0px #f7edd2,
+        4px 3px 0px #f7edd2, 3px 4px 0px #f7edd2,
+        5px 4px 0px #f7edd2, 4px 5px 0px #f7edd2,
+        6px 5px 0px #f7edd2, 5px 6px 0px #f7edd2,
+        7px 6px 0px #f7edd2, 6px 7px 0px #f7edd2;
     color: #EDC88C;
 }
 
 body.dark-mode .modal-background {
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Media Queries */
@@ -487,7 +484,7 @@ body.dark-mode .modal-background {
         height: 110vh;
         width: 100%;
         overflow: hidden;
-        background-color: rgba(0,0,0,0.6);
+        background-color: rgba(0, 0, 0, 0.6);
         background-size: cover;
         background-position: center;
     }
@@ -508,7 +505,6 @@ body.dark-mode .modal-background {
         width: 50px;
         margin: 20px;
     }
-
 
     .vol-icon {
         width: 50px;
@@ -560,7 +556,7 @@ body.dark-mode .modal-background {
         height: 44px;
         width: 140px;
         background-color: #f7edd2;
-        margin: 0px 50px 0px 50px;   
+        margin: 0px 50px 0px 50px;
     }
 
     .name {
@@ -572,31 +568,31 @@ body.dark-mode .modal-background {
         margin-bottom: 20px;
         text-align: center;
     }
-    
+
     .digits {
         text-align: center;
         font-size: 28px;
     }
-      
+
     .scores-flex {
         display: flex;
         flex-direction: column;
         margin-bottom: 30px;
     }
-    
+
     .gamearea {
         height: 600px;
     }
 
     .game-container {
-        background-image: linear-gradient(#C28B51,#EDC88C);
+        background-image: linear-gradient(#C28B51, #EDC88C);
         border-radius: 8px;
         width: 575px;
         height: 740px;
         display: flex;
         margin: 0 auto;
     }
-    
+
     .game-board {
         margin: auto;
         border-radius: 8px;
@@ -608,10 +604,10 @@ body.dark-mode .modal-background {
         margin-top: 40px;
         position: relative;
     }
-    
+
     .game-card {
-        width:calc(33.333% - 10px);
-        height:calc(25% - 10px);
+        width: calc(33.333% - 10px);
+        height: calc(25% - 10px);
         margin: 5px;
         position: relative;
         border-radius: 6px;
@@ -629,9 +625,9 @@ body.dark-mode .modal-background {
     .name-score {
         display: flex;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
     }
-      
+
     .name-scores-flex {
         display: flex;
         flex-direction: column;
@@ -645,7 +641,7 @@ body.dark-mode .modal-background {
         margin-bottom: 25px;
     }
 
-    .best-scores {
+    .recent-scores {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -654,7 +650,7 @@ body.dark-mode .modal-background {
         height: 95px;
         width: 150px;
     }
-      
+
     .player-details {
         display: flex;
         flex-direction: column;
@@ -671,7 +667,6 @@ body.dark-mode .modal-background {
     .reset-btn {
         font-size: 22px;
     }
-
 }
 
 
@@ -690,7 +685,7 @@ body.dark-mode .modal-background {
         height: 120vh;
         width: 100%;
         overflow: hidden;
-        background-color: rgba(0,0,0,0.6);
+        background-color: rgba(0, 0, 0, 0.6);
         background-size: cover;
         background-position: center;
     }
@@ -711,7 +706,6 @@ body.dark-mode .modal-background {
         width: 50px;
         margin: 10px;
     }
-
 
     .vol-icon {
         width: 45px;
@@ -754,12 +748,13 @@ body.dark-mode .modal-background {
         align-items: center;
         height: 85px;
     }
+
     .timer,
     .moves {
         height: 45px;
         width: 120px;
         background-color: #f7edd2;
-        margin: 0px 50px 0px 50px;   
+        margin: 0px 50px 0px 50px;
     }
 
     .name {
@@ -771,30 +766,30 @@ body.dark-mode .modal-background {
         margin-bottom: 14px;
         text-align: center;
     }
-    
+
     .digits {
         text-align: center;
         font-size: 26px;
     }
-      
+
     .scores-flex {
         display: flex;
         flex-direction: column;
     }
-    
+
     .gamearea {
         height: 690px;
     }
 
     .game-container {
-        background-image: linear-gradient(#C28B51,#EDC88C);
+        background-image: linear-gradient(#C28B51, #EDC88C);
         border-radius: 8px;
         width: 485px;
         height: 620px;
         display: flex;
         margin: 0 auto;
     }
-    
+
     .game-board {
         margin: auto;
         border-radius: 8px;
@@ -806,10 +801,10 @@ body.dark-mode .modal-background {
         margin-top: 35px;
         position: relative;
     }
-    
+
     .game-card {
-        width:calc(33.333% - 10px);
-        height:calc(25% - 10px);
+        width: calc(33.333% - 10px);
+        height: calc(25% - 10px);
         margin: 5px;
         position: relative;
         border-radius: 6px;
@@ -828,10 +823,10 @@ body.dark-mode .modal-background {
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin: 0 auto; 
+        margin: 0 auto;
         margin-bottom: 70px;
     }
-      
+
     .name-scores-flex {
         display: flex;
         flex-direction: column;
@@ -846,7 +841,7 @@ body.dark-mode .modal-background {
         margin-bottom: 25px;
     }
 
-    .best-scores {
+    .recent-scores {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -855,7 +850,7 @@ body.dark-mode .modal-background {
         height: 95px;
         width: 150px;
     }
-      
+
     .player-details {
         height: 150px;
         display: flex;
@@ -874,7 +869,6 @@ body.dark-mode .modal-background {
     .reset-btn {
         font-size: 20px;
     }
-
 }
 
 
@@ -892,7 +886,7 @@ body.dark-mode .modal-background {
         height: 130vh;
         width: 100%;
         overflow: hidden;
-        background-color: rgba(0,0,0,0.6);
+        background-color: rgba(0, 0, 0, 0.6);
         background-size: cover;
         background-position: center;
     }
@@ -913,7 +907,6 @@ body.dark-mode .modal-background {
         width: 45px;
         margin: 10px;
     }
-
 
     .vol-icon {
         width: 40px;
@@ -956,7 +949,6 @@ body.dark-mode .modal-background {
         align-items: center;
         height: 75px;
         margin-right: 60px;
-        
     }
 
     .timer,
@@ -964,7 +956,7 @@ body.dark-mode .modal-background {
         height: 40px;
         width: 115px;
         background-color: #f7edd2;
-        margin: 0px 20px 0px 20px;   
+        margin: 0px 20px 0px 20px;
     }
 
     .name {
@@ -980,30 +972,30 @@ body.dark-mode .modal-background {
     #playerName {
         font-size: 32px;
     }
-    
+
     .digits {
         text-align: center;
         font-size: 24px;
     }
-      
+
     .scores-flex {
         display: flex;
         flex-direction: column;
     }
-    
+
     .gamearea {
         height: 615px;
     }
 
     .game-container {
-        background-image: linear-gradient(#C28B51,#EDC88C);
+        background-image: linear-gradient(#C28B51, #EDC88C);
         border-radius: 8px;
         width: 390px;
         height: 565px;
         display: flex;
         margin: 0 auto;
     }
-    
+
     .game-board {
         margin: auto;
         border-radius: 8px;
@@ -1015,10 +1007,10 @@ body.dark-mode .modal-background {
         margin-top: 30px;
         position: relative;
     }
-    
+
     .game-card {
-        width:calc(33.333% - 10px);
-        height:calc(25% - 10px);
+        width: calc(33.333% - 10px);
+        height: calc(25% - 10px);
         margin: 5px;
         position: relative;
         border-radius: 6px;
@@ -1037,10 +1029,10 @@ body.dark-mode .modal-background {
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin: 0 auto; 
+        margin: 0 auto;
         margin-bottom: 70px;
     }
-      
+
     .name-scores-flex {
         display: flex;
         flex-direction: column;
@@ -1055,7 +1047,7 @@ body.dark-mode .modal-background {
         margin-bottom: 50px;
     }
 
-    .best-scores {
+    .recent-scores {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1064,7 +1056,7 @@ body.dark-mode .modal-background {
         height: 95px;
         width: 145px;
     }
-      
+
     .player-details {
         height: 150px;
         display: flex;
@@ -1083,12 +1075,7 @@ body.dark-mode .modal-background {
     .reset-btn {
         font-size: 20px;
     }
-
 }
-
-
-
-
 
 /*For small screens (480px-320px)*/
 
@@ -1104,7 +1091,7 @@ body.dark-mode .modal-background {
         height: 130vh;
         width: 100%;
         overflow: hidden;
-        background-color: rgba(0,0,0,0.6);
+        background-color: rgba(0, 0, 0, 0.6);
         background-size: cover;
         background-position: center;
     }
@@ -1192,7 +1179,7 @@ body.dark-mode .modal-background {
         height: 34px;
         width: 110px;
         background-color: #f7edd2;
-        margin: 0px 20px 0px 20px;   
+        margin: 0px 20px 0px 20px;
     }
 
     .name {
@@ -1204,31 +1191,30 @@ body.dark-mode .modal-background {
         margin-bottom: 10px;
         text-align: center;
     }
-    
+
     .digits {
         text-align: center;
         font-size: 20px;
-       
     }
-      
+
     .scores-flex {
         display: flex;
         flex-direction: column;
     }
-    
+
     .gamearea {
         height: 500px;
     }
 
     .game-container {
-        background-image: linear-gradient(#C28B51,#EDC88C);
+        background-image: linear-gradient(#C28B51, #EDC88C);
         border-radius: 8px;
         width: 335px;
         height: 510px;
         display: flex;
         margin: 0 auto;
     }
-    
+
     .game-board {
         margin: auto;
         border-radius: 8px;
@@ -1240,10 +1226,10 @@ body.dark-mode .modal-background {
         margin-top: 20px;
         position: relative;
     }
-    
+
     .game-card {
-        width:calc(33.333% - 10px);
-        height:calc(25% - 10px);
+        width: calc(33.333% - 10px);
+        height: calc(25% - 10px);
         margin: 5px;
         position: relative;
         border-radius: 6px;
@@ -1262,10 +1248,10 @@ body.dark-mode .modal-background {
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin: 0 auto; 
+        margin: 0 auto;
         margin-bottom: 50px;
     }
-      
+
     .name-scores-flex {
         display: flex;
         flex-direction: column;
@@ -1279,7 +1265,7 @@ body.dark-mode .modal-background {
         font-size: 22px;
     }
 
-    .best-scores {
+    .recent-scores {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1288,7 +1274,7 @@ body.dark-mode .modal-background {
         height: 90px;
         width: 140px;
     }
-      
+
     .player-details {
         height: 10px;
         display: flex;
@@ -1303,11 +1289,7 @@ body.dark-mode .modal-background {
         margin-top: -65px;
     }
 
-
     .reset-btn {
         font-size: 18px;
     }
-
-
-
 }
