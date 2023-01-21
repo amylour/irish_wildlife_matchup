@@ -27,7 +27,7 @@ Irish Wildlife MatchUp is a matching card game built with HTML, CSS and JavaScri
 * [Future Features](#future-features)
 * [Technologies Used](#technologies-used)
   * [Languages Used](#languages-used)
-  * [Frameworks, Libraries, Technologies & Programs Used](#frameworks-libraries-technologies--programs-used)
+  * [Technologies & Programs Used](#technologies--programs-used)
 * [Deployment](#deployment)
   * [How to deploy](#how-to-deploy)
   * [How to clone](#how-to-clone)
@@ -203,23 +203,28 @@ I chose the serif font 'Inknut Antiqua' from [Google Fonts](https://fonts.google
 
 I wished to create the artwork for the game, instead of using photographs, to give the game a more 'playful' feeling. I gathered a selection of copyright free images as my reference material and used colours picked from the images to create the artwork in Procreate.
 
+
+![selection of artwork in Irish Wildlife MatchUp](docs/images/iw_animals_art.png)
+
+<br>
+
 ### **Sounds**
 
+Once the main gameboard has been accessed, by pressing the start 'Tick' button, the forest soundtrack will start playing. The soundtrack is muted and the volume button must be selected for the user to hear the nature sounds. Birds can be heard chirping, leaves rustling in the wind and a stream can be heard babbling.
+
+I considered the use of additional audio feedback with card flip sounds and 'pings' to indicate successful cards matches, however I felt it did not fit with the relaxed game environment that I was seeking.
+
+
+[Pixabay Sound Effects](https://pixabay.com/sound-effects/forest-with-small-river-birds-and-nature-field-recording-6735/)
+
+<br>
 
 ### **Accessibility**
-  
 
-<details open>
-<summary>Adobe Color Accessibility Tools used to check for colour blind safeness in main colour palette</summary>
-
-![adobe color colour blind checker for main swatch](docs/images/irishwildlife01cbs.png)
-</details>
-
-<details>
-<summary>Adobe Color Accessibility Tools used to check for colour blind safeness in gameboard colour palette</summary>
+Adobe Color Accessibility Tools used to check for colour blind safeness in gameboard colour palette
 
 ![adobe color colour blind checker for main swatch](docs/images/gameboard_cbs.png)
-</details>
+
 
 ---
 
@@ -227,6 +232,9 @@ I wished to create the artwork for the game, instead of using photographs, to gi
 
 ## Future Features
 
+- As mentioned earlier in the README, I had wished to include the option for a larger 6x4 gameboard. Time did not allow me to create more artwork for the game but this will be included in the next version.
+- In addition, the next version will allow for the complete array of animal artwork to be shuffled and used, no matter the size of the gameboard. The selection of cards will be greater and present fresh boards to encourage the user to continue playing and practising their memory skills.
+- I would like to include a high score board with all of user's names entered and their top scores so that a user can compete against others.
 ---
 
 ## Technologies Used
@@ -237,7 +245,7 @@ I wished to create the artwork for the game, instead of using photographs, to gi
 - CSS3
 - JavaScript
 
-### **Frameworks, Libraries, Technologies & Programs Used** 
+### **Technologies & Programs Used** 
 
 - Procreate - used to create the animal artwork and edit images
 - Figma - used to produce wireframes and background vector artwork 
@@ -290,8 +298,17 @@ GitHub was used to deploy the website. These were the steps taken to acheive thi
 
 ### **Media References**
 
-  - [Pexels](https://www.pexels.com/), [Unsplash](https://unsplash.com/), and [Pixabay](https://pixabay.com/) for all reference material for creating the animals and background imagery.  
+  - [Pexels](https://www.pexels.com/), [Unsplash](https://unsplash.com/), and [Pixabay](https://pixabay.com/) for all reference material for creating the animals and background imagery: 
+    - Red fox (credit: Adam Sondel)
+    - Frog (credit: Inspired Images)
+    - Robin (credit: Hans)
+    - Falcon (credit: Iulian Ursache)
+    - Hedgehog (credit: Amaya Eguizába)
+    - Bee (credit: Myriams-Fotos)
   - [Favicon](https://favicon.io/) for the favicon used for this site.
+  - [Freepik](https://www.freepik.com/) for the volume icon (credit: Amazona Adorada), theme toggle (credit: Saepul Nahwan) and tick button (credit: Vectors Market).
+  - [Pixabay](https://pixabay.com/) for the forest soundtrack (credit: Garuda1982).
+
   
 
 
