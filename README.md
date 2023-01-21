@@ -1,6 +1,6 @@
 # Irish Wildlife MatchUp
 
-[View live project here on Github]
+[View live project here on Github](https://amylour.github.io/irish_wildlife_matchup/)
 
 Irish Wildlife MatchUp is a matching card game built with HTML, CSS and JavaScript. It is my first JavaScript project built for the Code Institute's Full Stack Software Development course.
 
