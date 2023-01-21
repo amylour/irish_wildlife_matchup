@@ -21,7 +21,7 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 window.addEventListener('load', function () {
     this.setTimeout(
         function open(event) {
-            document.querySelector('.start-modal').style.display = "block";
+            document.querySelector('#start-modal').style.display = "block";
         }, 2000);
 });
 

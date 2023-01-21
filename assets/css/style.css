@@ -259,12 +259,12 @@ span {
 .game-board {
     margin: auto;
     border-radius: 8px;
-    width: 695px;
-    height: 490px;
+    width: 683px;
+    height: 512px;
     display: flex;
     flex-wrap: wrap;
     perspective: 1000px;
-    margin-top: 50px;
+    margin-top: 35px;
     position: relative;
 }
 
@@ -320,7 +320,7 @@ img {
     height: 40px;
     width: 120px;
     margin: 0 auto;
-    margin-top: -80px;
+    margin-top: -75px;
     margin-bottom: 150px;
     background-color: #f7edd2;
     box-shadow: 0 4px 6px 0 #382A25;
@@ -794,7 +794,7 @@ body.dark-mode .modal-background {
         margin: auto;
         border-radius: 8px;
         width: 365px;
-        height: 490px;
+        height: 487px;
         display: flex;
         flex-wrap: wrap;
         perspective: 1000px;
@@ -999,7 +999,7 @@ body.dark-mode .modal-background {
     .game-board {
         margin: auto;
         border-radius: 8px;
-        width: 320px;
+        width: 330px;
         height: 440px;
         display: flex;
         flex-wrap: wrap;
@@ -1209,7 +1209,7 @@ body.dark-mode .modal-background {
     .game-container {
         background-image: linear-gradient(#C28B51, #EDC88C);
         border-radius: 8px;
-        width: 335px;
+        width: 330px;
         height: 510px;
         display: flex;
         margin: 0 auto;
@@ -1218,7 +1218,7 @@ body.dark-mode .modal-background {
     .game-board {
         margin: auto;
         border-radius: 8px;
-        width: 300px;
+        width: 304px;
         height: 405px;
         display: flex;
         flex-wrap: wrap;
