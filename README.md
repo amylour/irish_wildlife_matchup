@@ -43,22 +43,21 @@ Irish Wildlife MatchUp is a matching card game built with HTML, CSS and JavaScri
 
 ### **Primary Goal**
 
-Irish Wildlife MatchUp is an online memory card game styled with my own artwork of Irish flora and fauna. It is suitable for all ages with two gameboard sizes available. The game has a Light/Dark mode with the design changing to reflect this. Sounds of nature also play with an option for the user to mute the game.
+Irish Wildlife MatchUp is an online memory card game styled with my own artwork of Irish animals. It is suitable for all ages. The game has a Light/Dark mode with the design changing to reflect this. An audio track of nature also plays with an option for the user to mute/unmute the sounds.
 
 ### **Visitor Goals**
 
-Irish Wildlife MatchUp has been designed to be eaily accessible and fun for all ages. It is a grid style card game that allows the user to flip two cards at a time in order to match them; testing their memory skills. The combination of artwork, music and nature sounds seek to bring the user into the wild environment as they play the game. Design and styling will be responsive to different media screen sizes and the user will have control over the aesthetic and the sounds played. A timer and moves counter will inform the user of their progress.
+Irish Wildlife MatchUp has been designed to be easily accessible and fun for all ages. It is a grid style card game that allows the user to flip two cards at a time in order to match them; testing their memory skills. The combination of artwork and nature sounds seek to bring the user into the wild environment as they play the game. Design and styling will be responsive to different media screen sizes and the user will have control over the aesthetic and the sounds played. A timer and moves counter will inform the user of their progress.
 
 
 ### **First Time Visitor**
 
   - A user can learn the game rules via a modal window.
-  - A user can start the game via a start button.
-  - A user can enter their name to personalise the game screen and record their score.
-  - A user can decide which size gameboard they would prefer to play with, controlling the level of difficulty.
+  - A user can start the game via a start 'Tick' button.
+  - A user can enter their name to personalise the game screen and record their score, this is optional.
   - A user can toggle the display to Light/Dark mode.
   - A user can expect the timer and moves counter to start once they've click the first card.
-  - A user can control the game music.
+  - A user can control the game sounds.
   - A user can click the cards to turn them over and play the game.
   - A user can see their progress via a timer and moves counter.
   - A user can reset the game via a reset button.
@@ -69,14 +68,14 @@ Irish Wildlife MatchUp has been designed to be eaily accessible and fun for all 
 
   - A user is familiar with the rules and can start the game via a start button.
   - A user can enter their name to be recorded on the gamescore board.
-  - A user can set up their gamescreen using buttons for gameboard size and audio playback.
-  - A user can use the timer and moves counter to improve on their previous score and develop their memory skills.
+  - A user can set up their gamescreen using buttons for theme and audio playback.
+  - A user can see their previous score displayed in the 'Recent Score' section when they choose to 'Play Again'. Seeing this score encourages the user to beat it on the next round.
 
 ### **Frequent Visitor**
 
-  - A user can set out to beat their previous scores using the timer and moves counter.
-  - A user can reset their game using the reset button if they do not acheive their desired score.
-  - (A user can visit the linked interactive page that features the animals from the game to learn more about them.)
+  - A user can set out to beat their previous scores using the timer and moves counter and recent score display.
+  - A user can reset their game using the reset button if they wish to change the name of the user.
+ 
 
 ---
 
@@ -87,40 +86,81 @@ Irish Wildlife MatchUp has been designed to be eaily accessible and fun for all 
 The project goal was to build an interactive, memory game suitable for all ages. I wished to use my own artwork to personalise the styling of the game. The theme of the game is 'Irish Wildlife', with different animals displayed on the cards to be matched, and the game environment styled to reflect the Irish landscape.
 
   - The user will be able to familiarise themselves with the game rules before personalising the gameboard with visual and acoustic features. 
-  - The user can develop their memory skills using the timer, moves counter and gamescore board which displays previous users' scores or play in a relaxed manner listening to the background nature soundtrack.
+  - The user can develop their memory skills using the timer, moves counter and gamescore board which displays the user's recent score or play in a relaxed manner listening to the background nature soundtrack.
 
 ### **2. Scope**
 
 The game must be responsive and playable on mobile, tablet and desktop sized devices. To assist with this, the styling and artwork will be clean, vectorised graphics that will adjust appropriately to the resizing of the screens.
 
-  - The game will have two playable sizes; 4x3 and 6x4 grid layouts. The player can choose which size by clicking a button.
+  - The game will allow the user to personalise their board with their name.
   - The game will have a light theme and a dark theme.
   - The game will play a soundtrack of forest sounds.
   - The game will track the time taken and moves made by the player.
-  - The game will record the scores for the player from previous plays.
-  - (A link will be displayed in the footer to an interactive page of the animals featured in the game for the player to learn more about them.)
+  - The game will record the score for the player from the previous play.
+  - The game will have two playable sizes; 4x3 and 6x4 grid layouts. The player can choose which size by clicking a button.*
+
+  * Producing artwork for the 6x4 board was at this time not possible due to time restraints, however the larger gameboard will be added in the future with a wider variety of animals displayed on the cards. I wish to have the cards shuffle through all of the available artwork, no matter the gameboard size, so that the user can challenge their skills.
 
 ### **3. Structural**
 
 Clear pathways to interactivity are essential for this games success. 
 
-  - The player is informed of the rules via a modal window and a start button to bring them to the gameboard. This window also grants an option to enter the players name to record their scores, but this is optional.
-  - Buttons and toggles along the perimeter of the gameboard give the player the options to control the visual and acoustic aspects of the game. Game size choice is also made available. 
-  - The player is informed of their win, time taken and moves made by a modal window when the final cards are matched.
+  - The player is informed of the rules via a modal window and a start 'Tick' button to bring them to the gameboard. This window also presents an input section to enter the players name to record their recent score, but this is optional.
+  - Buttons and toggles along the perimeter of the gameboard give the player the options to control the visual and acoustic aspects of the game. (Game size choice will be made available in future versions.)
+  - The player is informed of their win, time taken and moves made by modal window when the final cards are matched. This modal is personalised with the user's name if they choose to enter it in the 'start' modal.
   - The layout and design of the gameboard changes very minimally between screen sizes to keep the experience consistent, and gameplay familiar.
 
 ### **4. Skeleton**
 
 The game site will have a clean layout with every feature identifiable and interactive.
 
-  - On loading, the game page will display a modal window front and centre for the user to immediately start the game (click the 'Tick' button). This window will also offer an optional input section to enter the user's name. A 'tick' icon submits the name. 
-  - The gameboard is situated in the center of the screen with the default size of 4x3 displayed.
-  - A toggle button is displayed top right of the game screen to control the Light/Dark mode.
-  - An audio control is situated above the gameboard to the right.
+  - On loading, the game page will display a modal window front and centre for the user to immediately start the game (click the 'Tick' button). This window will also offer an optional input section to enter the user's name. The 'Tick' button submits the name. 
+  - The gameboard is situated in the center of the screen with the size of 4x3 gamecards displayed.
+  - A theme toggle button is displayed top right of the game screen to control the Light/Dark mode.
+  - An audio control is situated beside the theme toggle to unmute/mute the nature sounds.
   - Timer and moves counter are located above the gameboard to the left for larger screens and on top for smaller screens.
   - A reset button is located centered, below the cards on the gameboard.
   - The gameboard is centered over background art of an Irish landscape which changes to reflect the Light/Dark mode.
 ### Wireframes
+
+<details open>
+<summary>Wireframe - Desktop main window</summary>
+
+![main desktop window wireframe](docs/images/wf_desktop.png)
+</details>
+<details open>
+<summary>Wireframe - Desktop Start modal window</summary>
+
+![desktop start modal wireframe](docs/images/wf_desktop_start.png)
+</details>
+<details>
+<summary>Wireframe - Desktop Win modal window</summary>
+
+![desktop win modal wireframe](docs/images/wf_desktop_win.png)
+</details>
+<details>
+<summary>Wireframe - Desktop Gameboard</summary>
+
+![gameboard wireframe](docs/images/playboard.png)
+</details>
+
+<details open>
+<summary>Wireframe - Mobile main window</summary>
+
+![main mobile window wireframe](docs/images/wf_mob.png)
+</details>
+<details >
+<summary>Wireframe - Mobile Start window</summary>
+
+![main desktop window wireframe](docs/images/wf_mob_start.png)
+</details>
+<details >
+<summary>Wireframe - Mobile Win window</summary>
+
+![main desktop window wireframe](docs/images/wf_mobile_win.png)
+</details>  
+
+<br>  
 
 ### **5. Surface**
 
@@ -130,14 +170,7 @@ The game site will have a clean layout with every feature identifiable and inter
 
 ### **Colour Scheme**
 
-Using the natural, vibrant colours present in the Irish landscape, I created a selection of colour palettes for the project using the Adobe Color program. 
-
-![main color palette swatch](docs/images/iw_color.png)
-_Main colour palette for the game_
-
-The main palette will be used for the buttons, toggles and interactive elements of the gamepage.
-
-<br>
+Using the Adobe Color website, I used the colour picker to select colours from landscape photographs and created palettes from these to create the themed backgrounds. Shades of brown were used to create the gameboard palette. These colours are used throught the gameboard and buttons/toggles, and in both of the Light/Dark Themes.
 
 ![gameboard colour palette swatch](docs/images/iw_gameboard.png)
 _Colour palette for the gameboard_
@@ -168,6 +201,7 @@ I chose the serif font 'Inknut Antiqua' from [Google Fonts](https://fonts.google
 
 ### **Imagery**
 
+I wished to create the artwork for the game, instead of using photographs, to give the game a more 'playful' feeling. I gathered a selection of copyright free images as my reference material and used colours picked from the images to create the artwork in Procreate.
 
 ### **Sounds**
 
@@ -213,6 +247,8 @@ I chose the serif font 'Inknut Antiqua' from [Google Fonts](https://fonts.google
 - Font Awesome - icons and their associated kit were downloaded from here  
 - Adobe Color - for all color palettes and accessibility contrast ratios 
 - Remove.bg - for image background removal 
+- Simple Image Resizer - to resize all artwork
+- Convertio - to convert PNG files to WEBP files
 - Favicon.io - for badger favicon  
 - Tiny PNG - to compress images 
 - Online Audio Convertor - to compress mp3 files
