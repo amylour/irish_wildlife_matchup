@@ -676,14 +676,14 @@ body.dark-mode .modal-background {
 @media only screen and (max-width: 1024px) and (min-width: 769px) {
     .modal-content {
         width: 600px;
-        height: auto;
+        height: 550px;
         margin: 0 auto;
         font-size: 18px;
     }
 
     .modal-background {
         height: 120vh;
-        width: 100%;
+        width: 850px;
         overflow: hidden;
         background-color: rgba(0, 0, 0, 0.6);
         background-size: cover;
@@ -877,14 +877,14 @@ body.dark-mode .modal-background {
 @media only screen and (max-width: 768px) and (min-width: 481px) {
     .modal-content {
         width: 400px;
-        height: auto;
+        height: 590px;
         margin: 0 auto;
         font-size: 16px;
     }
 
     .modal-background {
         height: 130vh;
-        width: 100%;
+        width: 500px;
         overflow: hidden;
         background-color: rgba(0, 0, 0, 0.6);
         background-size: cover;
@@ -1082,14 +1082,14 @@ body.dark-mode .modal-background {
 @media only screen and (max-width: 480px) and (min-width: 320px) {
     .modal-content {
         width: 310px;
-        height: auto;
-        margin: auto;
+        height: 510px;
+        margin: 0 auto;
         font-size: 12px;
     }
 
     .modal-background {
         height: 130vh;
-        width: 100%;
+        width: 390px;
         overflow: hidden;
         background-color: rgba(0, 0, 0, 0.6);
         background-size: cover;
@@ -1143,10 +1143,10 @@ body.dark-mode .modal-background {
         margin: 10px -73px 0px 55px;
     }
 
-    .toggles {
+    /*.toggles {
         height: 5px;
-        width: 140px;
-    }
+        width: 65px;
+    }*/
 
     .gamescreen-middle {
         display: flex;

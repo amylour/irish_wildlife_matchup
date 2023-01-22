@@ -27,13 +27,13 @@ window.addEventListener('load', function () {
 
 // play music - volume on or mute button
 
-    let playMusic = document.getElementById('ld-vol');
-    playMusic.addEventListener('click', () => {
-        let daySong = document.getElementById('daysong');
-        // execute song pause/play for mute button
-        return daySong.paused ? daySong.play() : daySong.pause();
-    });
+   let playMusic = document.getElementById('ld-vol');
+   playMusic.addEventListener('click', () => {
+       let daySong = document.getElementById('daysong');
+       // execute song pause/play for mute button
+       return daySong.paused ? daySong.play() : daySong.pause();
 
+   });
 
 // take OPTIONAL player name, close modal and display player name in 'Name' window - code adapted from Keith Paterson https://www.youtube.com/watch?v=KB6Yg5hNrqc
 
@@ -47,7 +47,6 @@ window.addEventListener('load', function () {
 
     nameEntered.innerHTML = username.value;
 });
-
 
 /** card flip and game play function learned, 
  * practised and adapted from freeCodeCamp Youtube 
