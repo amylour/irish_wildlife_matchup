@@ -6,7 +6,7 @@ Irish Wildlife MatchUp is a matching card game built with HTML, CSS and JavaScri
 
 <br>
 
-![screenshot of webpage on various media devices]
+![screenshot of webpage on various media devices](docs/images/web_mockup_com.png)
 
 ---
 
@@ -159,7 +159,6 @@ The game site will have a clean layout with every feature identifiable and inter
 
 ![main desktop window wireframe](docs/images/wf_mobile_win.png)
 </details>  
-
 <br>  
 
 ### **5. Surface**
@@ -216,7 +215,6 @@ I considered the use of additional audio feedback with card flip sounds and 'pin
 
 
 [Pixabay Sound Effects](https://pixabay.com/sound-effects/forest-with-small-river-birds-and-nature-field-recording-6735/)
-
 <br>
 
 ### **Accessibility**
@@ -229,6 +227,29 @@ Adobe Color Accessibility Tools used to check for colour blind safeness in gameb
 ---
 
 ## Page Features
+
+### **Start Modal**
+![screenshot of start modal](docs/images/feature_startmodal.png)  
+  
+### **Game Board**
+![screenshot of game board](docs/images/feature_gameboard_com.png)  
+  
+### **Timer & Moves Counter**
+![screenshot of timer and moves counter](docs/images/feature_time_moves.png)  
+  
+### **Player Name & Recent Score**
+![screenshot of player name and recent score](docs/images/feature_recentscore.png)  
+  
+### **Theme & Volume Toggles**
+![screenshot of theme and volume toggles](docs/images/feature_toggles.png)  
+  
+### **Win Modal**
+![screenshot of win modal](docs/images/feature_winmodal.png)
+
+### **Dark Theme**
+![screenshot of game in dark theme](docs/images/feature_darkmode_com.png)
+
+
 
 ## Future Features
 
@@ -292,9 +313,22 @@ GitHub was used to deploy the website. These were the steps taken to acheive thi
 ### **Content References**
 
   - All content created is of my own design using copyright-free resources and is intended for educational purposes.
+  - [Free Code Camp](https://tinyurl.com/mpfnzhbt) for their Memory Card Game tutorial which I have practised, understood and adapted to fit my game.
   - [Code Institute](https://codeinstitute.net/ie/) for their HTML/CSS/JavaScript learning material.
-  - [W3Schools](https://www.w3schools.com/) for additional learning material.
+  - [W3Schools](https://www.w3schools.com/) for additional learning material:
+      - Modal how to -  https://www.w3schools.com/howto/howto_css_modals.asp
   - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript) for JavaScript best-practise, tutorials and guidance.
+  - [Stack Overflow](https://stackoverflow.com/) for assistance:
+      - Add '0' to minutes/seconds in timer - https://stackoverflow.com/questions/26898378/javascript-countdown-timer-need-a-second-digit 
+      - Centering modals - https://stackoverflow.com/questions/39627549/how-to-center-modal-to-the-center-of-screen
+      - Fix text jumping when button clicked - https://stackoverflow.com/a/26908722
+  - [Web Designer Hut](https://webdesignerhut.com/3d-buttons-with-css-dropshadow/) for solid drop shadow tutorial.
+  - [Keith Paterson Youtube](https://www.youtube.com/watch?v=KB6Yg5hNrqc) for modal user input and response assistance.
+  - [Foolish Developer](https://foolishdeveloper.com/create-a-simple-stopwatch-using-javascript-tutorial-code/) for help in creating a timer function.
+  - [Eyehunts.com](https://tutorial.eyehunts.com/js/swap-images-in-javascript-simple-onclick-image-swap-example/) for swapping images using JavaScript.
+
+  
+
 
 ### **Media References**
 
@@ -305,6 +339,7 @@ GitHub was used to deploy the website. These were the steps taken to acheive thi
     - Falcon (credit: Iulian Ursache)
     - Hedgehog (credit: Amaya Eguizába)
     - Bee (credit: Myriams-Fotos)
+  - [Pattern Monster](https://pattern.monster/hexagon-2/) for hexagonal pattern on back of cards.
   - [Favicon](https://favicon.io/) for the favicon used for this site.
   - [Freepik](https://www.freepik.com/) for the volume icon (credit: Amazona Adorada), theme toggle (credit: Saepul Nahwan) and tick button (credit: Vectors Market).
   - [Pixabay](https://pixabay.com/) for the forest soundtrack (credit: Garuda1982).

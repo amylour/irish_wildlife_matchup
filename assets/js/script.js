@@ -95,7 +95,7 @@ function disableCards() {
     resetBoard();
 }
 
-// if there is no match then flip cards face down again, board is loscked until cards are flipped back
+// if there is no match then flip cards face down again, board is locked until cards are flipped back
 function unflipCards() {
     lockBoard = true;
 
