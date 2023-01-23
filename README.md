@@ -294,13 +294,13 @@ Adobe Color Accessibility Tools used to check for colour blind safeness in gameb
 
 GitHub was used to deploy the website. These were the steps taken to acheive this:  
 
-1. Login to GitHub account
-2. Navigate to the project repository, irish-wildlife-matchup
-3. Click the Settings button near the top of the page
-4. In the left-hand menu, find and click on the Pages button
-5. In the Source section, choose 'main' from the drop-down, select branch menu
-6. Select 'root' from the drop-down folder menu
-7. Click 'Save' and after a few moments the project will have been made live and a link is visible at the top of the page
+1. Login to GitHub account.
+2. Navigate to the project repository, irish-wildlife-matchup.
+3. Click the Settings button near the top of the page.
+4. In the left-hand menu, find and click on the Pages button.
+5. In the Source section, choose 'main' from the drop-down, select branch menu.
+6. Select 'root' from the drop-down folder menu.
+7. Click 'Save' and after a few moments the project will have been made live and a link is visible at the top of the page.
 
 ---
 
