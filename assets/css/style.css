@@ -683,7 +683,7 @@ body.dark-mode .modal-background {
 
     .modal-background {
         height: 120vh;
-        width: 1px;
+        width: 900px;
         overflow: hidden;
         background-color: rgba(0, 0, 0, 0.6);
         background-size: cover;
