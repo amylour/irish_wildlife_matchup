@@ -343,6 +343,14 @@ To make a copy of this GitHub repository that allows you to view the content and
 
 ## Testing
 
+### **Validation**
+  
+The [W3C Validator](https://validator.w3.org/) was used to validate HTML and the CSS file was validated in the [Jigsaw W3C validator](https://jigsaw.w3.org/css-validator/). [JSHint](https://jshint.com/) was used to validate the JavaScript file. Below are the records of these validations:
+    
+
+
+
+
 ---
 
 ## Credits
