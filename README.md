@@ -36,6 +36,7 @@ Irish Wildlife MatchUp is a matching card game built with HTML, CSS and JavaScri
 * [Credits](#credits) 
 
 ---
+<br>
 
 ## User Experience (UX)
 
@@ -52,32 +53,25 @@ Irish Wildlife MatchUp has been designed to be easily accessible and fun for all
 
 ### **First Time Visitor**
 
-  - A user can learn the game rules via a modal window.
-  - A user can start the game via a start 'Tick' button.
-  - A user can enter their name to personalise the game screen and record their score, this is optional.
-  - A user can toggle the display to Light/Dark mode.
-  - A user can expect the timer and moves counter to start once they've click the first card.
-  - A user can control the game sounds.
-  - A user can click the cards to turn them over and play the game.
-  - A user can see their progress via a timer and moves counter.
-  - A user can reset the game via a reset button.
-  - A user can see that the timer stops once they match the final cards.
-  - A user can expect their scores to be displayed at the end via a modal window.
+  - As a first time user, I want to know the rules of the game.
+  - As a first time user, I want to choose when to start the game.
+  - As a first time user, I want to have the choice of a Light/Dark mode.
+  - As a first time user, I want to control any audio playing.
+  - As a first time user, I want a visually pleasing experience.
+  - As a first time user, I want a friendly, challenging play experience.
+  - As a first time user, I want my progress to be recorded.
+  - As a first time user, I want to be able to play against my previous score.
+  - As a first time user, I want positive feedback when I complete the game.
 
 ### **Returning Visitor**
 
-  - A user is familiar with the rules and can start the game via a start button.
-  - A user can enter their name to be recorded on the gamescore board.
-  - A user can set up their gamescreen using buttons for theme and audio playback.
-  - A user can see their previous score displayed in the 'Recent Score' section when they choose to 'Play Again'. Seeing this score encourages the user to beat it on the next round.
-
-### **Frequent Visitor**
-
-  - A user can set out to beat their previous scores using the timer and moves counter and recent score display.
-  - A user can reset their game using the reset button if they wish to change the name of the user.
- 
-
+  - As a returning user, I want to be able to personalise my gameboard.
+  - As a returning user, I want to be able to configure my gamescreen and experience.
+  - As a returning visitor, I want to be able to reset the gamescreen quickly if I share it with another user for their try.
+  - As a returning visitor, I want to be able to play the game on different devices.
+  
 ---
+<br>
 
 ## Creation Process
 
@@ -228,34 +222,52 @@ Adobe Color Accessibility Tools used to check for colour blind safeness in gameb
 
 ## Page Features
 
-### **Start Modal**
+### **Start Modal** 
 ![screenshot of start modal](docs/images/feature_startmodal.png)  
+
+The start modal greets the user when the page first loads. It details the rules and offers the option to enter a player name to personalise the gameboard. Pressing the 'Tick' button starts the game.
+
+<br>
   
 ### **Game Board**
 ![screenshot of game board](docs/images/feature_gameboard_com.png)  
+
+The gameboard offered is a 4x3 grid style gameboard. A hexagonal pattern decorates the backs of the cards to reflect traditional playing card graphics. are flipped, two at a time, revealing artwork created by myself. Matched cards stay facing up. Unmatched cards flip back over and increase the 'Moves' counter by one. A 'Reset' button is present which will reset the game experience for the current player or to set it up for a new player.
+
+<br>
   
 ### **Timer & Moves Counter**
 ![screenshot of timer and moves counter](docs/images/feature_time_moves.png)  
+
+The timer starts when the first card is clicked and works as a stopwatch recording the time taken, instead of counting down from a set time. This is to allow the player to choose whether they wish to play a relaxed game or to try to beat their recent score. A moves counter increases every time two cards, which don't match, are selected.
   
 ### **Player Name & Recent Score**
 ![screenshot of player name and recent score](docs/images/feature_recentscore.png)  
+
+The optional player name input from the start modal displays the entered name above the score section. The recent score displayed is the winning time and moves count from the player's last round when they choose to continue playing. This score can be some visual encouragement for the player to beat. 
   
 ### **Theme & Volume Toggles**
 ![screenshot of theme and volume toggles](docs/images/feature_toggles.png)  
+
+The player has the option to turn on the volume for the nature soundtrack that plays when the game loads, they can then also mute it. The player also has the option to choose a dark theme over the default light theme for a different play experience.
   
 ### **Win Modal**
-![screenshot of win modal](docs/images/feature_winmodal.png)
+![screenshot of win modal](docs/images/feature_winmodal.png)  
+
+The win modal displays the player's name if they chosen to enter it initially. It also displays the winning time and moves count for the player to see. Pressing the 'Play Again?' button allows the player to continue the same game experience with a shuffled gameboard, reset timer and moves counter and their previous score displayed in the 'Recent Score' section.
 
 ### **Dark Theme**
-![screenshot of game in dark theme](docs/images/feature_darkmode_com.png)
+![screenshot of game in dark theme](docs/images/feature_darkmode_com.png)  
 
+The dark theme is accessed via a theme toggle located at the top, right hand corner of the screen. It changes the default day theme to a night-time background, with darker gameboard, timer, moves counter, name and score area. The theme and volume toggles change colour also to standout against the background. Both the day and night themed backgrounds were created by myself in Figma.
 
+<br>
 
 ## Future Features
 
-- As mentioned earlier in the README, I had wished to include the option for a larger 6x4 gameboard. Time did not allow me to create more artwork for the game but this will be included in the next version.
+- As mentioned earlier in the README, I had wished to include the option for a larger 6x4 gameboard. Creation of more artwork was beyond the scope for this version, but will be included in the next one.
 - In addition, the next version will allow for the complete array of animal artwork to be shuffled and used, no matter the size of the gameboard. The selection of cards will be greater and present fresh boards to encourage the user to continue playing and practising their memory skills.
-- I would like to include a high score board with all of user's names entered and their top scores so that a user can compete against others.
+- I would like to include a high score board with all of the player's names entered and their top scores so that players can compete against others.
 ---
 
 ## Technologies Used
