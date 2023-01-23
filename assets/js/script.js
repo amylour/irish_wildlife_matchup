@@ -22,7 +22,7 @@ window.addEventListener('load', function () {
     this.setTimeout(
         function open(event) {
             document.querySelector('#start-modal').style.display = "block";
-        }, 2000);
+        }, 1000);
 });
 
 // play music - volume on or mute button
