@@ -222,41 +222,41 @@ Adobe Color Accessibility Tools used to check for colour blind safeness in gameb
 
 ## Page Features
 
-### **Start Modal** 
+### **1. Start Modal** 
 ![screenshot of start modal](docs/images/feature_startmodal.png)  
 
 The start modal greets the user when the page first loads. It details the rules and offers the option to enter a player name to personalise the gameboard. Pressing the 'Tick' button starts the game.
 
 <br>
   
-### **Game Board**
+### **2. Game Board**
 ![screenshot of game board](docs/images/feature_gameboard_com.png)  
 
 The gameboard offered is a 4x3 grid style gameboard. A hexagonal pattern decorates the backs of the cards to reflect traditional playing card graphics. are flipped, two at a time, revealing artwork created by myself. Matched cards stay facing up. Unmatched cards flip back over and increase the 'Moves' counter by one. A 'Reset' button is present which will reset the game experience for the current player or to set it up for a new player.
 
 <br>
   
-### **Timer & Moves Counter**
+### **3. Timer & Moves Counter**
 ![screenshot of timer and moves counter](docs/images/feature_time_moves.png)  
 
 The timer starts when the first card is clicked and works as a stopwatch recording the time taken, instead of counting down from a set time. This is to allow the player to choose whether they wish to play a relaxed game or to try to beat their recent score. A moves counter increases every time two cards, which don't match, are selected.
   
-### **Player Name & Recent Score**
+### **4. Player Name & Recent Score**
 ![screenshot of player name and recent score](docs/images/feature_recentscore.png)  
 
 The optional player name input from the start modal displays the entered name above the score section. The recent score displayed is the winning time and moves count from the player's last round when they choose to continue playing. This score can be some visual encouragement for the player to beat. 
   
-### **Theme & Volume Toggles**
+### **5. Theme & Volume Toggles**
 ![screenshot of theme and volume toggles](docs/images/feature_toggles.png)  
 
 The player has the option to turn on the volume for the nature soundtrack that plays when the game loads, they can then also mute it. The player also has the option to choose a dark theme over the default light theme for a different play experience.
   
-### **Win Modal**
+### **6. Win Modal**
 ![screenshot of win modal](docs/images/feature_winmodal.png)  
 
 The win modal displays the player's name if they chosen to enter it initially. It also displays the winning time and moves count for the player to see. Pressing the 'Play Again?' button allows the player to continue the same game experience with a shuffled gameboard, reset timer and moves counter and their previous score displayed in the 'Recent Score' section.
 
-### **Dark Theme**
+### **7. Dark Theme**
 ![screenshot of game in dark theme](docs/images/feature_darkmode_com.png)  
 
 The dark theme is accessed via a theme toggle located at the top, right hand corner of the screen. It changes the default day theme to a night-time background, with darker gameboard, timer, moves counter, name and score area. The theme and volume toggles change colour also to standout against the background. Both the day and night themed backgrounds were created by myself in Figma.
@@ -269,6 +269,7 @@ The dark theme is accessed via a theme toggle located at the top, right hand cor
 - In addition, the next version will allow for the complete array of animal artwork to be shuffled and used, no matter the size of the gameboard. The selection of cards will be greater and present fresh boards to encourage the user to continue playing and practising their memory skills.
 - I would like to include a high score board with all of the player's names entered and their top scores so that players can compete against others.
 ---
+<br>
 
 ## Technologies Used
 
@@ -314,6 +315,30 @@ GitHub was used to deploy the website. These were the steps taken to acheive thi
 6. Select 'root' from the drop-down folder menu.
 7. Click 'Save' and after a few moments the project will have been made live and a link is visible at the top of the page.
 
+<br>
+
+### **How to run this project locally**  
+
+To clone this project from GitHub:  
+
+1. Visit the [Irish Wildlife MatchUp repository](https://github.com/amylour/irish_wildlife_matchup).
+2. Click on the <b>Code</b> dropdown menu located beside the green <b>GitPod</b> button. 
+3. Choosing your preferred cloning option of <b>HTTPS, SSH</b> or <b>GitHub CLI</b>, click on the clipboard icon to copy the displayed URL. 
+4. Open the terminla in your code editor and change the working directory to the location that you wish to use for the cloned directory.
+5. Type 'git clone' into the terminal, paste your copied link and press enter.
+
+<br>  
+
+### **To fork the repository on GitHub** 
+  
+To make a copy of this GitHub repository that allows you to view the content and make changes without affecting the original repository, please take the following steps:
+  
+1. Login to <b>GitHub</b> and find [this repository](https://github.com/amylour/irish_wildlife_matchup).
+2. Locate the <b>Fork</b> button in the top, right hand side of the page.
+3. Click on the <b>Fork</b> button to create a copy of the repository in your GitHub account.
+
+<br>  
+
 ---
 
 ## Testing
@@ -339,8 +364,7 @@ GitHub was used to deploy the website. These were the steps taken to acheive thi
   - [Foolish Developer](https://foolishdeveloper.com/create-a-simple-stopwatch-using-javascript-tutorial-code/) for help in creating a timer function.
   - [Eyehunts.com](https://tutorial.eyehunts.com/js/swap-images-in-javascript-simple-onclick-image-swap-example/) for swapping images using JavaScript.
 
-  
-
+<br>
 
 ### **Media References**
 
@@ -356,8 +380,7 @@ GitHub was used to deploy the website. These were the steps taken to acheive thi
   - [Freepik](https://www.freepik.com/) for the volume icon (credit: Amazona Adorada), theme toggle (credit: Saepul Nahwan) and tick button (credit: Vectors Market).
   - [Pixabay](https://pixabay.com/) for the forest soundtrack (credit: Garuda1982).
 
-  
-
+<br> 
 
 ### **Acknowledgements**
 
