@@ -345,8 +345,31 @@ To make a copy of this GitHub repository that allows you to view the content and
 
 ### **Validation**
   
-The [W3C Validator](https://validator.w3.org/) was used to validate HTML and the CSS file was validated in the [Jigsaw W3C validator](https://jigsaw.w3.org/css-validator/). [JSHint](https://jshint.com/) was used to validate the JavaScript file. Below are the records of these validations:
+The [W3C Validator](https://validator.w3.org/) was used to validate HTML and the CSS file was validated in the [Jigsaw W3C validator](https://jigsaw.w3.org/css-validator/). [JSHint](https://jshint.com/) was used to validate the JavaScript file. Below are the records of these validations:  
+  
+<details>
+<summary>W3C HTML Validation - no errors or warnings to show </summary>
 
+![html w3c validation](docs/validation/html_validation.png)
+</details>
+
+<details>
+<summary>W3C Jigsaw CSS Validation - no errors found</summary>
+
+![css w3c validation](docs/validation/css_validated.png)
+</details>
+
+<details>
+<summary>Lighthouse Scores for Desktop</summary>
+
+![desktop lighthouse scores](docs/validation/desktop_lighthouse.png)
+</details>
+
+<details>
+<summary>Lighthouse Scores for Mobile</summary>
+
+![desktop lighthouse scores](docs/validation/mobile_lighthouse.png)
+</details>
     
 
 
