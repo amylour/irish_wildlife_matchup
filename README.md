@@ -366,7 +366,7 @@ On my iPad Pro I had access to Safari but not the Safari Dev Tools/Web Inspector
 The results of feature testing in <b>Chrome</b>, <b>Firefox</b>, <b>Edge</b> and <b>Safarai</b> are as follows:
 
 | Feature | Test | Chrome(Windows) | Firefox(Windows) | Edge(Windows) | Chrome(Android) | Safari (iPadOS) |
-| :----| :----| :--------:|
+| :----: | :---------: | :----:| :----:| :----:| :----:| :----:| 
 | Start Modal | Modal appears on main window load, centered with opaque background | Pass | Pass | Pass | Pass | Fail(Bug no.) |
 | Start Modal | Input field allows input | Pass | Pass | Pass | Pass | Pass (*Bug no.) |
 | Start Modal Tick Button | Removes modal from view and places player name in Name section when clicked/touched | Pass | Pass | Pass | Pass | Pass |
