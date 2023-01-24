@@ -350,10 +350,10 @@ The primary goal with this project was to create a visually pleasing, responsive
 - Acer Aspire 3 Laptop (1920 X 1080)  
 - Huawei AD80HW 24" Monitor
 - iPad Pro 2021
-- iPhone SE(2016)
-- Huawei p30 Lite 
+- iPhone SE(2016) 
 - iPhone 13
 - Samsung Galaxy s10
+- Oppo Reno 8 Lite
 
 On desktop, the browsers that I had access to for testing were:
 
@@ -361,12 +361,12 @@ On desktop, the browsers that I had access to for testing were:
 - Firefox 
 - Edge  
   
-On my iPad Pro I had access to Safari but not the Safari Dev Tools/Web Inspector. This would have been helpful to solve an ongoing bug with the start modal's height being clipped near the bottom, interrupting the user's ability to enter their name. This is detailed more in the Bugs section.
+On my iPad Pro I had access to Safari but not the Safari Dev Tools/Web Inspector. This would have been helpful to solve an ongoing bug with the start modal's height appearing clipped near the bottom, interrupting the user's ability to enter their name. This is detailed more in the Bugs section.
 
 The results of feature testing in <b>Chrome</b>, <b>Firefox</b>, <b>Edge</b> and <b>Safarai</b> are as follows:
 
 | Feature | Test | Chrome(Windows) | Firefox(Windows) | Edge(Windows) | Chrome(Android) | Safari (iPadOS) |
-| :----: | :---------: | :----:| :----:| :----:| :----:| :----:| 
+|----|---------|----|----|----|----|----| 
 | Start Modal | Modal appears on main window load, centered with opaque background | Pass | Pass | Pass | Pass | Fail(Bug no.) |
 | Start Modal | Input field allows input | Pass | Pass | Pass | Pass | Pass (*Bug no.) |
 | Start Modal Tick Button | Removes modal from view and places player name in Name section when clicked/touched | Pass | Pass | Pass | Pass | Pass |
@@ -383,7 +383,21 @@ The results of feature testing in <b>Chrome</b>, <b>Firefox</b>, <b>Edge</b> and
 | Win Modal | Modal win message personalised with entered players name from Start modal | Pass | Pass | Pass | Pass | Pass |
 | Win Modal | Modal shows winning time and moves counter value | Pass | Pass | Pass | Pass | Pass |
 | Win Modal Tick Button | Removes modal from view, resets timer/moves counter, flips over and shuffles cards, keeps player name in name section, winning time/moves displayed in Recent Score section, player theme/audio preferences retained from current session, when clicked/touched | Pass | Pass | Pass | Pass | Pass |
-| Reset Button | Resets entire gameboard to fresh, loaded state with no player personalisation | Pass | Pass | Pass | Pass | Pass |
+| Reset Button | Resets entire gameboard to fresh, loaded state with no player personalisation | Pass | Pass | Pass | Pass | Pass |  
+  
+<br>  
+  
+### **Bugs** - unfinished section !!!
+
+ 
+| Bug | Feature | Status | Fix |
+|-----|---------|--------|-----|
+|time incorrectly displayed | Timer | | |
+|previously matched cards not resetting correctly for next session | Gameboard | Resolved | |
+|double click cards for response | Gameboard | Resolved | Placing EventListener outside of function |
+|card flip sound sporadic | Gameboard | Feature removed | Card flip noise detracted from peaceful feeling of the game |
+|
+
   
 
 ### **Validation**
