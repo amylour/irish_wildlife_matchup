@@ -342,6 +342,26 @@ To make a copy of this GitHub repository that allows you to view the content and
 ---
 
 ## Testing
+  
+### **Initial testing plan**  
+  
+The primary goal with this project was to create a visually pleasing, responsive web application that delivers a positive experience for the user. I have used Chrome Dev Tools to test my game through all stages. Using the console to debug my JavaScript was a new experience and skill which will continue to be developed on. I deployed my page early on in the build to test on real world devices. These devices included:
+  
+- Acer Aspire 3 Laptop (1920 X 1080)  
+- Huawei AD80HW 24" Monitor
+- iPad Pro 2021
+- iPhone SE(2016)
+- Huawei p30 Lite 
+- iPhone 13
+
+On desktop, the browsers that I had access to for testing were:
+
+- Chrome
+- Firefox 
+- Edge  
+  
+On iPad Pro I had access to Safari but not the Safari Dev Tools/Web Inspector. This would have been helpful to solve an ongoing bug with the start modal's height being clipped near the bottom, interrupting the user's ability to enter their name. This is detailed more in the Bugs section.
+  
 
 ### **Validation**
   
