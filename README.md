@@ -360,6 +360,13 @@ The [W3C Validator](https://validator.w3.org/) was used to validate HTML and the
 </details>
 
 <details>
+<summary>JSHint for JavaScript validation</summary>
+
+![JSHint for JavaScript validation](docs/validation/jshint_validation.png)
+</details>
+
+
+<details>
 <summary>Lighthouse Scores for Desktop</summary>
 
 ![desktop lighthouse scores](docs/validation/desktop_lighthouse.png)
@@ -369,6 +376,12 @@ The [W3C Validator](https://validator.w3.org/) was used to validate HTML and the
 <summary>Lighthouse Scores for Mobile</summary>
 
 ![desktop lighthouse scores](docs/validation/mobile_lighthouse.png)
+</details>
+
+<details>
+<summary>WAVE report for accessibility</summary>
+
+![WAVE report for accessibility](docs/validation/wave_validation.png)
 </details>
     
 
