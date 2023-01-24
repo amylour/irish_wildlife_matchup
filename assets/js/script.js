@@ -161,6 +161,8 @@ function timer() {
     }, 1000);
 }
 
+
+
 // stop time function - used when all cards are matched to give player's total time taken
 function stopTime() {
     clearInterval(time);
