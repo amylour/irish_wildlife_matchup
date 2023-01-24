@@ -345,7 +345,7 @@ To make a copy of this GitHub repository that allows you to view the content and
   
 ### **Initial testing plan**  
   
-The primary goal with this project was to create a visually pleasing, responsive web application that delivers a positive experience for the user. I have used Chrome Dev Tools to test my game through all stages. Using the console to debug my JavaScript was a new experience and skill which will continue to be developed on. I deployed my page early on in the build to test on real world devices. These devices included:
+The primary goal with this project was to create a visually pleasing, responsive web application that delivers a positive experience for the user. I have used Chrome Dev Tools to thoroughly test my game through all stages. Using the console to debug my JavaScript was a new experience and skill which will continue to be developed on. I deployed my page early on in the build to ensure that I could test on real world devices. These devices included:
   
 - Acer Aspire 3 Laptop (1920 X 1080)  
 - Huawei AD80HW 24" Monitor
@@ -353,6 +353,7 @@ The primary goal with this project was to create a visually pleasing, responsive
 - iPhone SE(2016)
 - Huawei p30 Lite 
 - iPhone 13
+- Samsung Galaxy s10
 
 On desktop, the browsers that I had access to for testing were:
 
@@ -360,7 +361,29 @@ On desktop, the browsers that I had access to for testing were:
 - Firefox 
 - Edge  
   
-On iPad Pro I had access to Safari but not the Safari Dev Tools/Web Inspector. This would have been helpful to solve an ongoing bug with the start modal's height being clipped near the bottom, interrupting the user's ability to enter their name. This is detailed more in the Bugs section.
+On my iPad Pro I had access to Safari but not the Safari Dev Tools/Web Inspector. This would have been helpful to solve an ongoing bug with the start modal's height being clipped near the bottom, interrupting the user's ability to enter their name. This is detailed more in the Bugs section.
+
+The results of feature testing in <b>Chrome</b>, <b>Firefox</b>, <b>Edge</b> and <b>Safarai</b> are as follows:
+
+| Feature | Test | Chrome(Windows) | Firefox(Windows) | Edge(Windows) | Chrome(Android) | Safari (iPadOS) |
+| :----| :----| :--------:|
+| Start Modal | Modal appears on main window load, centered with opaque background | Pass | Pass | Pass | Pass | Fail(Bug no.) |
+| Start Modal | Input field allows input | Pass | Pass | Pass | Pass | Pass (*Bug no.) |
+| Start Modal Tick Button | Removes modal from view and places player name in Name section when clicked/touched | Pass | Pass | Pass | Pass | Pass |
+| Light/Dark Theme toggle | Toggle changes game design themes on click/touch | Pass | Pass | Pass | Pass | Pass |
+| Volume/Mute toggle | Sound is muted when window loads and is audible when volume is unmuted | Pass | Pass | Pass | Pass | Pass |
+| Gameboard | Cards are responsive and flip when clicked/touched | Pass | Pass | Pass | Pass | Pass |
+| Gameboard | Only two cards are responsivenes to click/touch at a time | Pass | Pass | Pass | Pass | Pass |
+| Gameboard | Cards flip back over when not matched | Pass | Pass | Pass | Pass | Pass |
+| Gameboard | Cards that match stay facing up | Pass | Pass | Pass | Pass | Pass |
+| Timer | Timer starts when first card is clicked/touched | Pass | Pass | Pass | Pass | Pass |
+| Timer | Timer stops when all cards are matched | Pass | Pass | Pass | Pass | Pass |
+| Moves counter | Moves counter increases by one when two non-matching cards are clicked/touched | Pass | Pass | Pass | Pass | Pass |
+| Win Modal | Modal appears centered with opaque background | Pass | Pass | Pass | Pass | Pass |
+| Win Modal | Modal win message personalised with entered players name from Start modal | Pass | Pass | Pass | Pass | Pass |
+| Win Modal | Modal shows winning time and moves counter value | Pass | Pass | Pass | Pass | Pass |
+| Win Modal Tick Button | Removes modal from view, resets timer/moves counter, flips over and shuffles cards, keeps player name in name section, winning time/moves displayed in Recent Score section, player theme/audio preferences retained from current session, when clicked/touched | Pass | Pass | Pass | Pass | Pass |
+| Reset Button | Resets entire gameboard to fresh, loaded state with no player personalisation | Pass | Pass | Pass | Pass | Pass |
   
 
 ### **Validation**
