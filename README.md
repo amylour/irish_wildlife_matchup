@@ -1,8 +1,8 @@
 # Irish Wildlife MatchUp
 
-[View live project here on Github](https://amylour.github.io/irish_wildlife_matchup/)
+[View live project here on Github Pages](https://amylour.github.io/irish_wildlife_matchup/)
 
-Irish Wildlife MatchUp is a matching card game built with HTML, CSS and JavaScript. The aim of the game is enjoy the matching experience in a non-competitive, relaxed environment where the visual and audio aspects have been thoughtfully designed to reflect the theme. It is my first JavaScript project built for the Code Institute's Full Stack Software Development course.
+Irish Wildlife MatchUp is a matching card game built with HTML, CSS, and JavaScript. The aim of the game is to enjoy the matching experience in a non-competitive, relaxed environment where the visual and audio aspects have been thoughtfully designed to reflect the theme. It is my first JavaScript project built for the Code Institute's Full Stack Software Development course.
 
 <br>
 
@@ -44,29 +44,29 @@ Irish Wildlife MatchUp is a matching card game built with HTML, CSS and JavaScri
 
 ### **Primary Goal**
 
-Irish Wildlife MatchUp is an online memory card game styled with my own artwork of Irish animals. It is suitable for all ages. The game aims to provide a fun, memory-enhancing experience which will relax the user through it's nature soundtrack and visual design.  The game has a Light/Dark mode with the design changing to reflect this. An audio track of nature plays with an option for the user to mute/unmute the sounds.
+Irish Wildlife MatchUp is an online memory card game styled with my artwork of Irish animals. It is suitable for all ages. The game aims to provide a fun, memory-enhancing experience which will relax the user through its nature soundtrack and visual design.  The game has a Light/Dark mode with the design changing to reflect this. An audio track of nature plays with an option for the user to mute/unmute the sounds.
 
 ### **Visitor Goals**
 
-Irish Wildlife MatchUp has been designed to be easily accessible and fun for all ages. It is a grid style card game that allows the user to flip two cards at a time in order to match them; testing their memory skills. The combination of artwork and nature sounds seek to bring the user into the wild environment as they play the game. Design and styling will be responsive to different media screen sizes and the user will have control over the aesthetic and the sounds played. A timer and moves counter will inform the user of their progress.
+Irish Wildlife MatchUp has been designed to be easily accessible and fun for all ages. It is a grid-style card game that allows the user to flip two cards at a time in order to match them; testing their memory skills. The combination of artwork and nature sounds seeks to bring the user into the wild environment as they play the game. Design and styling will be responsive to different media screen sizes and the user will have control over the aesthetic and the sounds played. A timer and moves counter will inform the user of their progress.
 
-### **First Time Visitor**
+### **First-Time Visitor**
 
-  - As a first time user, I want to know the rules of the game.
-  - As a first time user, I want to choose when to start the game.
-  - As a first time user, I want to have the choice of a Light/Dark mode.
-  - As a first time user, I want to control any audio playing.
-  - As a first time user, I want a visually pleasing experience.
-  - As a first time user, I want a friendly, challenging play experience.
-  - As a first time user, I want to compare my progress game to game.
-  - As a first time user, I want positive feedback when I complete the game.
+  - As a first-time user, I want to know the rules of the game.
+  - As a first-time user, I want to choose when to start the game.
+  - As a first-time user, I want to have the choice of a Light/Dark mode.
+  - As a first-time user, I want to control any audio playing.
+  - As a first-time user, I want a visually pleasing experience.
+  - As a first-time user, I want a friendly, challenging play experience.
+  - As a first-time user, I want to compare my progress game to game.
+  - As a first-time user, I want positive feedback when I complete the game.
 
 ### **Returning Visitor**
 
   - As a returning user, I want to be able to personalise my gameboard.
-  - As a returning user, I want to be able to configure my gamescreen and experience.
+  - As a returning user, I want to be able to configure my game screen and experience.
   - As a returning visitor, I want to be able to play the game on different devices.
-  - As a returning visitor, I want to be able to reset the gamescreen quickly if I share it with another user for their try.
+  - As a returning visitor, I want to be able to reset the game screen quickly if I share it with another user for their try.
   
 <br>  
 
@@ -76,29 +76,29 @@ Irish Wildlife MatchUp has been designed to be easily accessible and fun for all
 
 ### **1. Strategy**
 
-The project goal was to build an interactive, memory game suitable for all ages. I wished to use my own artwork to personalise the styling of the game. The theme of the game is 'Irish Wildlife', with different animals displayed on the cards to be matched, and the game environment styled to reflect the Irish landscape.
+The project goal was to build an interactive, memory game suitable for all ages. I wished to use my artwork to personalise the styling of the game. The theme of the game is 'Irish Wildlife', with different animals displayed on the cards to be matched, and the game environment styled to reflect the Irish landscape.
 
   - The user will be able to familiarise themselves with the game rules before personalising the gameboard with visual and acoustic features. 
-  - The user can develop their memory skills using the timer, moves counter and gamescore board which displays the user's recent score or play in a relaxed manner listening to the background nature soundtrack.
+  - The user can develop their memory skills using the timer, moves counter, and game score board which displays the user's recent score, or play in a relaxed manner listening to the background nature soundtrack.
 
 ### **2. Scope**
 
-The game must be responsive and playable on mobile, tablet and desktop sized devices. To assist with this, the styling and artwork will be clean, vectorised graphics that will adjust appropriately to the resizing of the screens.
+The game must be responsive and playable on mobile, tablet, and desktop-sized devices. To assist with this, the styling and artwork will be clean, vectorised graphics that will adjust appropriately to the resizing of the screens.
 
   - The game will allow the user to personalise their board with their name.
   - The game will have a light theme and a dark theme.
   - The game will play a soundtrack of forest sounds.
   - The game will track the time taken and moves made by the player.
   - The game will record the score for the player from the previous play.
-  - The game will have two playable sizes; 4x3 and 6x4 grid layouts. The player can choose which size by clicking a button - _Producing artwork for the 6x4 board was at this time not possible due to time restraints, however the larger gameboard will be added in the next version with a wider variety of animals displayed on the cards. I wish to have the cards shuffle through all of the available artwork, no matter the gameboard size, so that the user can challenge their skills. This is documented in the future features section._
+  - The game will have two playable sizes; 4x3 and 6x4 grid layouts. The player can choose which size by clicking a button - _Producing artwork for the 6x4 board was at this time not possible due to time restraints, however, the larger gameboard will be added in the next version with a wider variety of animals displayed on the cards. I wish to have the cards shuffle through all of the available artwork, no matter the gameboard size so that the user can challenge their skills. This is documented in the future features section._
 
 ### **3. Structural**
 
-Clear pathways to interactivity are essential for this games success. 
+Clear pathways to interactivity are essential for this game's success. 
 
-  - The player is informed of the rules via a modal window and a start 'Tick' button to bring them to the gameboard. This window also presents an input section to enter the players name to record their recent score, but this is optional. A placeholder informs the user of this.
+  - The player is informed of the rules via a modal window and a start 'Tick' button to bring them to the gameboard. This window also presents an input section to enter the player's name to record their recent score, but this is optional. A placeholder informs the user of this.
   - Buttons and toggles along the perimeter of the gameboard give the player the options to control the visual and acoustic aspects of the game. (Game size choice will be made available in future versions.)
-  - The player is informed of their win, time taken and moves made by modal window when the final cards are matched. This modal is personalised with the user's name if they choose to enter it in the 'Start' modal.
+  - The player is informed of their win, time taken, and moves made by a modal window when the final cards are matched. This modal is personalised with the user's name if they choose to enter it in the 'Start' modal.
   - The layout and design of the gameboard changes very minimally between screen sizes to keep the experience consistent, and gameplay familiar.
 
 ### **4. Skeleton**
@@ -158,7 +158,7 @@ The wireframes were created in Figma.
 
 ### **5. Surface**
   
-It is important to me that the game be the best possible visual representation of it's theme, that I can produce. Using Procreate to create the images, Figma for the backgrounds and CSS for styling the main features, the wireframes will be brought to life. Every design aspect will be considered to create a tactile feeling for the user. Hopefully one that they will enjoy coming back to.  
+It is important to me that the game be the best possible visual representation of its theme, that I can produce. Using Procreate to create the images, Figma for the backgrounds, and CSS for styling the main features, the wireframes will be brought to life. Every design aspect will be considered to create a tactile feeling for the user. Hopefully one that they will enjoy coming back to.  
 
 ---
 
@@ -166,12 +166,12 @@ It is important to me that the game be the best possible visual representation o
 
 ### **Colour Scheme**
 
-Using the Adobe Color website, I used the colour picker to select colours from landscape photographs and created palettes from these to create the themed backgrounds. Shades of brown were used to create the gameboard palette. These colours are used throught the gameboard and buttons/toggles, and in both of the Light/Dark Themes.
+Using the Adobe Color website, I used the colour picker to select colours from landscape photographs and created palettes from these to design the themed backgrounds. Shades of brown were used to create the gameboard palette. These colours are used throughout the gameboard and buttons/toggles, and in both of the Light/Dark Themes.
 
 ![gameboard colour palette swatch](docs/images/iw_gameboard.png)
 _Colour palette for the gameboard_
 
-The gameboard palette was inspired by natural wood tones and was used to give the gameboard design a 'heavy' feeling as it is the central, most important feature of the gamepage.
+The gameboard palette was inspired by natural wood tones and was used to give the gameboard design a 'heavy' feeling as it is the central, most important feature of the game page.
 
 <br>
 
@@ -196,7 +196,7 @@ I chose the serif font 'Inknut Antiqua' from [Google Fonts](https://fonts.google
 
 ### **Imagery**
 
-I wished to create the artwork for the game, instead of using photographs, to give the game a more 'playful' feeling. I gathered a selection of copyright free images as my reference material and used colours picked from the images to create the artwork in Procreate. A variety of rough brushes and ink brushes were used to create the textured feel.
+I wished to create the artwork for the game, instead of using photographs, to give the game a more 'playful' feeling. I gathered a selection of copyright-free images as my reference material and used colours picked from the images to create the artwork in Procreate. A variety of rough brushes and ink brushes were used to create the textured feel.
 
 ![selection of artwork in Irish Wildlife MatchUp](docs/images/iw_animals_art.png)
 
@@ -206,7 +206,7 @@ I wished to create the artwork for the game, instead of using photographs, to gi
 
 Once the main gameboard has been accessed, by pressing the start 'Tick' button, the forest soundtrack will start playing. The soundtrack is muted and the volume button must be selected for the user to hear the nature sounds. Birds can be heard chirping, leaves rustling in the wind and a stream can be heard babbling.
 
-I considered the use of additional audio feedback with card flip sounds and 'pings' to indicate successful cards matches, however I felt it did not fit with the relaxed game environment that I was seeking.
+I considered the use of additional audio feedback with card flip sounds and 'pings' to indicate successful card matches, however, I felt it did not fit with the relaxed game environment that I was seeking.
 
 [Pixabay Sound Effects](https://pixabay.com/sound-effects/forest-with-small-river-birds-and-nature-field-recording-6735/)  
 
@@ -214,7 +214,7 @@ I considered the use of additional audio feedback with card flip sounds and 'pin
 
 ### **Accessibility**
 
-Adobe Color Accessibility Tools was used to check for colour blind safeness in gameboard colour palette. Contrast levels were considered throughout the build.
+Adobe Color Accessibility Tools was used to check for colour blind safeness in the gameboard colour palette. Contrast levels were considered throughout the build.
 
 ![adobe color colour blind checker for main swatch](docs/images/gameboard_cbs.png)
 
@@ -225,14 +225,14 @@ Adobe Color Accessibility Tools was used to check for colour blind safeness in g
 ### **1. Start Modal** 
 ![screenshot of start modal](docs/images/feature_startmodal.png)  
 
-The start modal greets the user when the page first loads. It details the rules and offers the option to enter a player name to personalise the gameboard. This is indicated with the 'optional' placeholder. Pressing the 'Tick' button starts the game.
+The start modal greets the user when the page first loads. It details the rules and offers the option to enter a player's name to personalise the gameboard. This is indicated with the 'optional' placeholder. Pressing the 'Tick' button starts the game.
 
 <br>
   
 ### **2. Game Board**
 ![screenshot of game board](docs/images/feature_gameboard_com.png)  
 
-The gameboard offered is a 4x3 grid style gameboard. A hexagonal pattern decorates the backs of the cards to reflect traditional playing card graphics. Cards are flipped, two at a time, revealing artwork created by myself. Matched cards stay facing up. Unmatched cards flip back over and increase the 'Moves' counter by one. A 'Reset' button is present which will reset the game experience for the current player or to set it up for a new player.
+The gameboard offered is a 4x3 grid-style gameboard. A hexagonal pattern decorates the backs of the cards to reflect traditional playing card graphics. Cards are flipped, two at a time, revealing artwork created by myself. Matched cards stay facing up. Unmatched cards flip back over and increase the 'Moves' counter by one. A 'Reset' button is present which will reset the game experience for the current player or set it up for a new player.
 
 <br>
   
@@ -244,7 +244,7 @@ The timer starts when the first card is clicked and works as a stopwatch recordi
 ### **4. Player Name & Recent Score**
 ![screenshot of player name and recent score](docs/images/feature_recentscore.png)  
 
-The optional player name input from the start modal displays the entered name above the score section. The recent score displayed is the winning time and moves count from the player's last round when they choose to continue playing. This score can be some visual encouragement for the player to beat. 
+The optional player name input from the start modal displays the entered name above the score section. The recent score displayed is the winning time and moves count from the player's last round when they choose to continue playing. This score can be some visual encouragement for the player to continue playing and beat their previous round. 
   
 ### **5. Theme & Volume Toggles**
 ![screenshot of theme and volume toggles](docs/images/feature_toggles.png)  
@@ -254,22 +254,22 @@ The player has the option to turn on the volume for the nature soundtrack that p
 ### **6. Win Modal**
 ![screenshot of win modal](docs/images/feature_winmodal.png)  
 
-The win modal displays the player's name if they chosen to enter it initially. It also displays the winning time and moves count for the player to see. Pressing the 'Play Again?' button allows the player to continue the same game experience with a shuffled gameboard, reset timer and moves counter and their previous score displayed in the 'Recent Score' section.
+The win modal displays the player's name if they have chosen to enter it at the start. It also displays the winning time and moves count for the player to see. Pressing the 'Play Again?' button allows the player to continue the same game experience with a shuffled gameboard, reset the timer and moves counter, and their previous score is displayed in the 'Recent Score' section.
 
 ### **7. Dark Theme**
 ![screenshot of game in dark theme](docs/images/feature_darkmode_com.png)  
 
-The dark theme is accessed via a theme toggle located at the top, right hand corner of the screen. It changes the default day theme to a night-time background, with darker gameboard, timer, moves counter, name and score area. The theme and volume toggles change colour also to standout against the background. Both the day and night themed backgrounds were created by myself in Figma.
+The dark theme is accessed via a theme toggle located at the top, right-hand corner of the screen. It changes the default day theme to a night-time background, with darker gameboard, timer, moves counter, name and score area. The theme and volume toggles change colour also to stand out against the background. Both the day and night-themed backgrounds were created by myself in Figma.
 
 <br>
 
 ## Future Features
 
-- As mentioned earlier in the README, I had wished to include the option for a larger 6x4 gameboard. Creation of more artwork was beyond the scope for this version, but will be included in the next one.
+- As mentioned earlier in the README, I had wished to include the option for a larger 6x4 gameboard. The creation of more artwork was beyond the scope of this version but will be included in the next one.
 - In addition, the next version will allow for the complete array of animal artwork to be shuffled and used, no matter the size of the gameboard. The selection of cards will be greater and present fresh boards to encourage the user to continue playing and practising their memory skills.
-- I would like to include a high score board with all of the player's names entered and their top scores so that players can compete against others.
----
-<br>
+- I would like to include a high scoreboard with all of the players' names entered and their top scores recorded using localStorage, this will appeal to the more competitive player.  
+
+---  
 
 ## Technologies Used
 
@@ -286,14 +286,14 @@ The dark theme is accessed via a theme toggle located at the top, right hand cor
 - GitHub - used to save and store all files for this website  
 - Git - used for version control
 - Google Fonts - fonts were imported from here 
-- Font Awesome - icons and their associated kit were downloaded from here  
-- Adobe Color - for all color palettes and accessibility contrast ratios 
+- Flaticon - icons were edited and downloaded from here  
+- Adobe Color - for all color palettes and accessibility color testing 
 - Remove.bg - for image background removal 
 - Simple Image Resizer - to resize all artwork
 - Convertio - to convert PNG files to WEBP files
 - Favicon.io - for badger favicon  
 - Tiny PNG - to compress images 
-- Online Audio Convertor - to compress mp3 files
+- Online Audio Converter - to compress mp3 files
 - Google Dev Tools - to debug and for testing responsiveness 
 - Google Lighthouse - for auditing the website
 - W3C Validator - for validating the HTML and CSS code 
@@ -305,13 +305,13 @@ The dark theme is accessed via a theme toggle located at the top, right hand cor
 
 ### **How to deploy**  
 
-GitHub was used to deploy the website. These were the steps taken to acheive this:  
+GitHub was used to deploy the website. These were the steps taken to achieve this:  
 
 1. Login to GitHub account.
-2. Navigate to the project repository, irish-wildlife-matchup.
+2. Navigate to the project repository, [irish-wildlife-matchup](https://github.com/amylour/irish_wildlife_matchup).
 3. Click the Settings button near the top of the page.
 4. In the left-hand menu, find and click on the Pages button.
-5. In the Source section, choose 'main' from the drop-down, select branch menu.
+5. In the Source section, choose 'main' from the drop-down, and select branch menu.
 6. Select 'root' from the drop-down folder menu.
 7. Click 'Save' and after a few moments the project will have been made live and a link is visible at the top of the page.
 
@@ -324,8 +324,8 @@ To clone this project from GitHub:
 1. Visit the [Irish Wildlife MatchUp repository](https://github.com/amylour/irish_wildlife_matchup).
 2. Click on the <b>Code</b> dropdown menu located beside the green <b>GitPod</b> button. 
 3. Choosing your preferred cloning option of <b>HTTPS, SSH</b> or <b>GitHub CLI</b>, click on the clipboard icon to copy the displayed URL. 
-4. Open the terminla in your code editor and change the working directory to the location that you wish to use for the cloned directory.
-5. Type 'git clone' into the terminal, paste your copied link and press enter.
+4. Open the terminal in your code editor and change the working directory to the location that you wish to use for the cloned directory.
+5. Type 'git clone' into the terminal, paste your copied link, and press enter.
 
 <br>  
 
@@ -334,7 +334,7 @@ To clone this project from GitHub:
 To make a copy of this GitHub repository that allows you to view the content and make changes without affecting the original repository, please take the following steps:
   
 1. Login to <b>GitHub</b> and find [this repository](https://github.com/amylour/irish_wildlife_matchup).
-2. Locate the <b>Fork</b> button in the top, right hand side of the page.
+2. Locate the <b>Fork</b> button on the top, right hand side of the page.
 3. Click on the <b>Fork</b> button to create a copy of the repository in your GitHub account.
 
 <br>  
@@ -345,7 +345,7 @@ To make a copy of this GitHub repository that allows you to view the content and
   
 ### **Initial testing plan**  
   
-The primary goal with this project was to create a visually pleasing, responsive web application that delivers a positive experience for the user. I have used Chrome Dev Tools to thoroughly test my game through all stages. Using the console to debug my JavaScript was a new experience and skill which will continue to be developed on. I deployed my page early on in the build to ensure that I could test on real world devices. These devices included:
+The primary goal of this project was to create a visually pleasing, responsive web application that delivers a positive experience for the user. I have used Chrome Dev Tools to thoroughly test my game through all stages. Using the console to debug my JavaScript was a new experience and skill which will continue to be developed on. I deployed my page early on in the build to ensure that I could test it on real world devices. These devices included:
   
 - Acer Aspire 3 Laptop (1920 X 1080)  
 - Huawei AD80HW 24" Monitor
@@ -355,7 +355,6 @@ The primary goal with this project was to create a visually pleasing, responsive
 - Samsung Galaxy s10
 - Oppo Reno 8 Lite
   
-
 
 <details open>
 <summary>Popular device testing on Chrome Dev Tools</summary>
@@ -369,19 +368,19 @@ On desktop, the browsers that I had access to for testing were:
 - <b>Firefox</b> 
 - <b>Edge</b>  
   
-On my iPad Pro I had access to Safari but not the Safari Dev Tools/Web Inspector. This would have been helpful to solve an ongoing bug with the start modal's height appearing clipped near the bottom, interrupting the user's ability to enter their name. This is detailed more in the Bugs section.
+On my iPad Pro I had access to Safari but not the Safari Dev Tools/Web Inspector. This would have been helpful to solve an ongoing bug with the Start modal's height appearing clipped near the bottom, interrupting the user's ability to enter their name. This is detailed more in the Bugs section.
 
 The results of feature testing in <b>Chrome</b>, <b>Firefox</b>, <b>Edge</b> and <b>Safarai</b> are as follows:
 
 | Feature | Test | Chrome(Windows) | Firefox(Windows) | Edge(Windows) | Chrome(Android) | Safari (iPadOS) |
 |----|---------|----|----|----|----|----| 
-| Start Modal | Modal appears on main window load, centered with opaque background | Pass | Pass | Pass | Pass | Fail(Bug no.) |
-| Start Modal | Input field allows input | Pass | Pass | Pass | Pass | Pass (*Bug no.) |
+| Start Modal | Modal appears on main window load, centered with opaque background | Pass | Pass | Pass | Pass | Fail( see Bug no.9) |
+| Start Modal | Input field allows input | Pass | Pass | Pass | Pass | Pass ( see Bug no.9) |
 | Start Modal Tick Button | Removes modal from view and places player name in Name section when clicked/touched | Pass | Pass | Pass | Pass | Pass |
 | Light/Dark Theme toggle | Toggle changes game design themes on click/touch | Pass | Pass | Pass | Pass | Pass |
-| Volume/Mute toggle | Sound is muted when window loads and is audible when volume is unmuted | Pass | Pass | Pass | Pass | Pass |
+| Volume/Mute toggle | Audio is muted when window loads and is audible when volume is unmuted | Pass | Pass | Pass | Pass | Pass |
 | Gameboard | Cards are responsive and flip when clicked/touched | Pass | Pass | Pass | Pass | Pass |
-| Gameboard | Only two cards are responsivenes to click/touch at a time | Pass | Pass | Pass | Pass | Pass |
+| Gameboard | Only two cards are responsive to click/touch at a time | Pass | Pass | Pass | Pass | Pass |
 | Gameboard | Cards flip back over when not matched | Pass | Pass | Pass | Pass | Pass |
 | Gameboard | Cards that match stay facing up | Pass | Pass | Pass | Pass | Pass |
 | Timer | Timer starts when first card is clicked/touched | Pass | Pass | Pass | Pass | Pass |
@@ -401,18 +400,17 @@ The results of feature testing in <b>Chrome</b>, <b>Firefox</b>, <b>Edge</b> and
  
 | No. | Bug | Feature | Status | Fix |
 |----|-----|---------|--------|-----|
-| 1. | Time incorrectly displayed when timer starts | Timer | Resolved | Re-following the timer tutorial helped me to refactor my timer function so that it did not drop the beginning zero upon starting |
-| 2. | Previously matched cards not resetting correctly for next session | Gameboard | Resolved | |
-| 3. |card flip sound sporadic | Gameboard | Feature removed | Card flip noise detracted from peaceful feeling of the game |
-| 4. | 'Start' button (now 'Reset') text jumping to the side when clicked | Reset button | Resolved | Added margin-left to fix bug of button text jumping to right when clicked - help source - https://stackoverflow.com/a/26908722 |
-| 5. | Shuffling issue revealing matched cards in next game session | Gameboard | Resolved | I found that due to my shuffle function being inside an IIFE (https://www.tutorialsteacher.com/javascript/immediately-invoked-function-expression-iife), my 'reset game' function set up was behaving incorrectly when called in a new game session. I added a hard reset function with a basic windows reload but I felt this narrowed the scope of my project. I continued developing my game and resolved the issue in a new reset function by removing the shuffle function from the IIFE and placing it directly into my new resetGame() function. This was the best that I could do within my scope of JavaScript study. I used the above link with [MDN](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) documents to help me to solve this issue. |
-| 6. | Themed audio | Light/Dark theme | Resolved | Initially, I had considered having a night time audio track playing when the user switches to dark theme. I had a few options of audio tracks but similar to the 'card flip' sound, I found the change to be quite jarring in relation to the intended 'relaxed' aesthetic of the game. In addiion to this I found it difficult to create the JavaScript needed, after many different attempts, to allow the tracks to be swapped whilst still maintaining the function of the mute audio button. This is something that I will develop for the next version of the game and as the scope of my JavaScript learning grows. |
-| 7. | Play Again button responds to second click only | Win Modal | Resolved | 'onClick' placed in wrong HTML element and playAgain function updated to be called on first click by adding an EventListener to 'win-button' ID and adding the playAgain() function to it outside of the original function.
-| 8. | Audio not playing onload | Audio | Resolved | I added an if/else statement to audio play function to control when the music is muted/playing. |
-| 9. | Start Modal will appear again if user rapidly clicks on 'Tick' button when window first loads | Start modal | Resolved | Reduced setTimeout for window EventListener |
-| 10. | Start Modal and name input field cut off on display and when typing name | Start Modal | <b>Safari only</b> - Current | I have troubleshooted this issue to no avail. I have set a specific height, I have increased the input field size, reduced font size and investigated the 'border-box' properties for iOS. [Stack Overflow](https://stackoverflow.com/questions/42775664/pop-up-modal-being-cut-off-at-top-of-page) provided some suggestions which I have investigated. The issue does not present itself when viewing the webpage in Chrome Dev Tools. I would wish to access a Mac to use Web Inspector to debug this issue. |
-
+| 1. | Time incorrectly displayed when timer starts | Timer | Resolved | Re-following the timer tutorial (credited below and in JS file) helped me to refactor my timer function so that it did not drop the beginning zero upon starting |
+| 2. | Card flip sound sporadic | Gameboard | Feature removed | Card flip noise detracted from peaceful feeling of the game as it was not necessary or dependable |
+| 3. | 'Start' button (now 'Reset') text jumping to the side when clicked | Reset button | Resolved | Added margin-left to fix bug of button text jumping to right when clicked - help source - https://stackoverflow.com/a/26908722 |
+| 4. | Shuffling issue revealing matched cards in next game session | Gameboard | Resolved | I found that due to my shuffle function being inside an IIFE (https://www.tutorialsteacher.com/javascript/immediately-invoked-function-expression-iife), my 'reset game' function set up was behaving incorrectly when called in a new game session. I added a hard reset function with a basic window reload but I felt this narrowed the scope of my project. I continued developing my game and resolved the issue in a new reset function by removing the shuffle function from the IIFE and placing it directly into my new resetGame() function. This was the best that I could do within my scope of JavaScript study. I used the above link with [MDN](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) documents to help me to solve this issue. |
+| 5. | Themed audio | Light/Dark theme | Resolved | Initially, I had considered having a night-time audio track playing when the user switches to dark theme. I had a few options of audio tracks but similar to the 'card flip' sound, I found the change to be quite jarring in relation to the intended 'relaxed' aesthetic of the game. In addition to this, I found it difficult to create the JavaScript needed, after many different attempts, to allow the tracks to be swapped whilst still maintaining the function of the mute audio button. This is something that I will develop for the next version of the game and as the scope of my JavaScript learning grows. |
+| 6. | Play Again button responds to second click only | Win Modal | Resolved | 'onClick' placed in wrong HTML element and playAgain() function updated to be called on first click by adding an EventListener to 'win-button' ID and adding the playAgain() function to it outside of the original function.
+| 7. | Audio not playing onload | Audio | Resolved | I added an if/else statement to audio play function to control when the music is muted/playing. |
+| 8. | Start Modal will appear again if user rapidly clicks on 'Tick' button when window first loads | Start modal | Resolved | Reduced setTimeout for window EventListener |
+| 9. | Start Modal and name input field cut off on display and when typing name | Start Modal | <b>Safari only</b> - Current | I have troubleshot this issue to no avail. I have set a specific height, I have increased the input field size, reduced font size, and investigated the 'border-box' properties for iOS. [Stack Overflow](https://stackoverflow.com/questions/42775664/pop-up-modal-being-cut-off-at-top-of-page) provided some suggestions which I have investigated. The issue does not present itself when viewing the webpage in Chrome Dev Tools. I would wish to access a Mac to use Web Inspector to debug this issue. |
   
+<br>  
 
 ### **Validation**
   
@@ -422,43 +420,44 @@ The [W3C Validator](https://validator.w3.org/) was used to validate HTML and the
 <summary>W3C HTML Validation - no errors or warnings to show </summary>
 
 ![html w3c validation](docs/validation/html_validation.png)
-</details>
+</details>  
+
 
 <details>
 <summary>W3C Jigsaw CSS Validation - no errors found</summary>
 
 ![css w3c validation](docs/validation/css_validated.png)
-</details>
+</details>  
+
 
 <details>
-<summary>JSHint for JavaScript validation</summary>
+<summary>JSHint for JavaScript validation - no errors found, 2 warnings given for ternary functions used to clean up specific functions, 3 unused variables detected due to onclick events used in HTML file. </summary>
 
 ![JSHint for JavaScript validation](docs/validation/jshint_validation.png)
-</details>
+</details>  
 
 
 <details>
 <summary>Lighthouse Scores for Desktop</summary>
 
 ![desktop lighthouse scores](docs/validation/desktop_lighthouse.png)
-</details>
+</details>  
+
 
 <details>
 <summary>Lighthouse Scores for Mobile</summary>
 
 ![desktop lighthouse scores](docs/validation/mobile_lighthouse.png)
-</details>
+</details>  
+
 
 <details>
-<summary>WAVE report for accessibility</summary>
+<summary>WAVE report for accessibility - alerts given related to the use of headings, but as this is a game and not a traditional webpage structure, I felt that my code was sufficient and validated by the W3C Validator</summary>
 
 ![WAVE report for accessibility](docs/validation/wave_validation.png)
-</details>
+</details>  
+
     
-
-
-
-
 ---
 
 ## Credits
@@ -466,7 +465,7 @@ The [W3C Validator](https://validator.w3.org/) was used to validate HTML and the
 ### **Content References**
 
   - All content created is of my own design using copyright-free resources and is intended for educational purposes.
-  - [Free Code Camp](https://tinyurl.com/mpfnzhbt) for their Memory Card Game tutorial which I have practised, understood and adapted to fit my game.
+  - [Free Code Camp](https://tinyurl.com/mpfnzhbt) for their Memory Card Game tutorial which I have practised, understood, and adapted to fit my game.
   - [Code Institute](https://codeinstitute.net/ie/) for their HTML/CSS/JavaScript learning material.
   - [W3Schools](https://www.w3schools.com/) for additional learning material:
       - Modal how to -  https://www.w3schools.com/howto/howto_css_modals.asp
@@ -498,5 +497,8 @@ The [W3C Validator](https://validator.w3.org/) was used to validate HTML and the
 
 <br> 
 
-### **Acknowledgements**
+### **Acknowledgements**  
+  
+I would like to thank my mentor Rahul Lakhanpal for his continued guidance and expertise,  
+my fellow classmates and extended, Code Institute Slack community for their encouragement, and my family for their constant support during my studies.
 
