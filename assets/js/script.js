@@ -10,6 +10,8 @@ let hasTurnedCard = false; // checks if card has been clicked
 let firstCard, secondCard; // checks for matching cards
 let lockBoard = false;
 let moves = 0;
+let int = null;
+let [milliseconds, seconds, minutes, hours] = [0,0,0,0];
 let winMoves = document.getElementById('win-moves-value').innerHTML;
 let winTime = timeTaken.innerHTML;
 
@@ -138,34 +140,36 @@ function endGame() {
 }
 
 // timer - function adapted from https://foolishdeveloper.com/create-a-simple-stopwatch-using-javascript-tutorial-code/
-let time = 0;
-let minutes = 0;
-let seconds = 0;
-
-// set minutes as '00' and seconds as '00'
-seconds = seconds < 10 ? "0" + seconds : seconds;
-minutes = minutes < 10 ? "0" + minutes : minutes;
-
-timeTaken.innerHTML = "00" + ":" + "00";
 
 function timer() {
-    time = setInterval(function () {
-        seconds++;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-        if (seconds === 60) {
-            minutes++;
-            minutes = minutes < 10 ? "0" + minutes : minutes;
-            seconds = 0;
-        }
-        timeTaken.innerHTML = minutes + ":" + seconds;
-    }, 1000);
+    if (int !== null) {
+        clearInterval(int);
+    }
+    int = setInterval(showTime, 10);
 }
 
-
+function showTime() {
+    milliseconds +=10;
+    if (milliseconds == 1000) {
+        milliseconds = 0;
+        seconds++;
+        if (seconds == 60) {
+            seconds = 0;
+            minutes++;
+            if (minutes == 60) {
+                minutes = 0;
+                hours++;
+            }
+        }
+    }
+    let m = minutes < 10 ? '0' + minutes : minutes;
+    let s = seconds < 10 ? '0' + seconds : seconds;
+    timeTaken.innerHTML = `${m}:${s}`;
+}
 
 // stop time function - used when all cards are matched to give player's total time taken
 function stopTime() {
-    clearInterval(time);
+    clearInterval(int);
 }
 
 // shuffleCards function wrapped in IIFE to invoke function immediately 
@@ -210,7 +214,7 @@ function playAgain() {
             card.style.order = randomPosition;
         });
         // reset board features - not player name, theme or music
-        time = 0;
+        int = null;
         moves = 0;
         minutes = 0;
         seconds = 0;
