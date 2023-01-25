@@ -32,11 +32,11 @@ Irish Wildlife MatchUp is a matching card game built with HTML, CSS and JavaScri
   * [How to deploy](#how-to-deploy)
   * [How to clone](#how-to-clone)
   * [How to fork](#how-to-fork)
-* [Testing](#testing)
+* [Testing](#testing)  
+  * [Bugs](#bugs)
 * [Credits](#credits) 
 
 ---
-<br>
 
 ## User Experience (UX)
 
@@ -44,12 +44,11 @@ Irish Wildlife MatchUp is a matching card game built with HTML, CSS and JavaScri
 
 ### **Primary Goal**
 
-Irish Wildlife MatchUp is an online memory card game styled with my own artwork of Irish animals. It is suitable for all ages. The game has a Light/Dark mode with the design changing to reflect this. An audio track of nature also plays with an option for the user to mute/unmute the sounds.
+Irish Wildlife MatchUp is an online memory card game styled with my own artwork of Irish animals. It is suitable for all ages. The game aims to provide a fun, memory-enhancing experience which will relax the user through it's nature soundtrack and visual design.  The game has a Light/Dark mode with the design changing to reflect this. An audio track of nature plays with an option for the user to mute/unmute the sounds.
 
 ### **Visitor Goals**
 
 Irish Wildlife MatchUp has been designed to be easily accessible and fun for all ages. It is a grid style card game that allows the user to flip two cards at a time in order to match them; testing their memory skills. The combination of artwork and nature sounds seek to bring the user into the wild environment as they play the game. Design and styling will be responsive to different media screen sizes and the user will have control over the aesthetic and the sounds played. A timer and moves counter will inform the user of their progress.
-
 
 ### **First Time Visitor**
 
@@ -59,19 +58,19 @@ Irish Wildlife MatchUp has been designed to be easily accessible and fun for all
   - As a first time user, I want to control any audio playing.
   - As a first time user, I want a visually pleasing experience.
   - As a first time user, I want a friendly, challenging play experience.
-  - As a first time user, I want my progress to be recorded.
-  - As a first time user, I want to be able to play against my previous score.
+  - As a first time user, I want to compare my progress game to game.
   - As a first time user, I want positive feedback when I complete the game.
 
 ### **Returning Visitor**
 
   - As a returning user, I want to be able to personalise my gameboard.
   - As a returning user, I want to be able to configure my gamescreen and experience.
-  - As a returning visitor, I want to be able to reset the gamescreen quickly if I share it with another user for their try.
   - As a returning visitor, I want to be able to play the game on different devices.
+  - As a returning visitor, I want to be able to reset the gamescreen quickly if I share it with another user for their try.
   
----
-<br>
+<br>  
+
+---  
 
 ## Creation Process
 
@@ -91,17 +90,15 @@ The game must be responsive and playable on mobile, tablet and desktop sized dev
   - The game will play a soundtrack of forest sounds.
   - The game will track the time taken and moves made by the player.
   - The game will record the score for the player from the previous play.
-  - The game will have two playable sizes; 4x3 and 6x4 grid layouts. The player can choose which size by clicking a button.*
-
-  * Producing artwork for the 6x4 board was at this time not possible due to time restraints, however the larger gameboard will be added in the future with a wider variety of animals displayed on the cards. I wish to have the cards shuffle through all of the available artwork, no matter the gameboard size, so that the user can challenge their skills.
+  - The game will have two playable sizes; 4x3 and 6x4 grid layouts. The player can choose which size by clicking a button - _Producing artwork for the 6x4 board was at this time not possible due to time restraints, however the larger gameboard will be added in the next version with a wider variety of animals displayed on the cards. I wish to have the cards shuffle through all of the available artwork, no matter the gameboard size, so that the user can challenge their skills. This is documented in the future features section._
 
 ### **3. Structural**
 
 Clear pathways to interactivity are essential for this games success. 
 
-  - The player is informed of the rules via a modal window and a start 'Tick' button to bring them to the gameboard. This window also presents an input section to enter the players name to record their recent score, but this is optional.
+  - The player is informed of the rules via a modal window and a start 'Tick' button to bring them to the gameboard. This window also presents an input section to enter the players name to record their recent score, but this is optional. A placeholder informs the user of this.
   - Buttons and toggles along the perimeter of the gameboard give the player the options to control the visual and acoustic aspects of the game. (Game size choice will be made available in future versions.)
-  - The player is informed of their win, time taken and moves made by modal window when the final cards are matched. This modal is personalised with the user's name if they choose to enter it in the 'start' modal.
+  - The player is informed of their win, time taken and moves made by modal window when the final cards are matched. This modal is personalised with the user's name if they choose to enter it in the 'Start' modal.
   - The layout and design of the gameboard changes very minimally between screen sizes to keep the experience consistent, and gameplay familiar.
 
 ### **4. Skeleton**
@@ -114,8 +111,11 @@ The game site will have a clean layout with every feature identifiable and inter
   - An audio control is situated beside the theme toggle to unmute/mute the nature sounds.
   - Timer and moves counter are located above the gameboard to the left for larger screens and on top for smaller screens.
   - A reset button is located centered, below the cards on the gameboard.
-  - The gameboard is centered over background art of an Irish landscape which changes to reflect the Light/Dark mode.
-### Wireframes
+  - The gameboard is centered over background art of an Irish landscape which changes to reflect the Light/Dark mode.  
+
+### **Wireframes**  
+  
+The wireframes were created in Figma.
 
 <details open>
 <summary>Wireframe - Desktop main window</summary>
@@ -153,9 +153,12 @@ The game site will have a clean layout with every feature identifiable and inter
 
 ![main desktop window wireframe](docs/images/wf_mobile_win.png)
 </details>  
+
 <br>  
 
 ### **5. Surface**
+  
+It is important to me that the game be the best possible visual representation of it's theme, that I can produce. Using Procreate to create the images, Figma for the backgrounds and CSS for styling the main features, the wireframes will be brought to life. Every design aspect will be considered to create a tactile feeling for the user. Hopefully one that they will enjoy coming back to.  
 
 ---
 
@@ -185,7 +188,6 @@ _Dark theme colours extracted from photography by Matthew Ang/Pexels_
 
 <br>
 
-
 ### **Typography**  
 
 I chose the serif font 'Inknut Antiqua' from [Google Fonts](https://fonts.google.com/specimen/Inknut+Antiqua) and imported the Light 300 weight for use in my project. The font reminded me of the 'Book of Kells' in keeping with the Irish theme and is used throughout the project.
@@ -194,8 +196,7 @@ I chose the serif font 'Inknut Antiqua' from [Google Fonts](https://fonts.google
 
 ### **Imagery**
 
-I wished to create the artwork for the game, instead of using photographs, to give the game a more 'playful' feeling. I gathered a selection of copyright free images as my reference material and used colours picked from the images to create the artwork in Procreate.
-
+I wished to create the artwork for the game, instead of using photographs, to give the game a more 'playful' feeling. I gathered a selection of copyright free images as my reference material and used colours picked from the images to create the artwork in Procreate. A variety of rough brushes and ink brushes were used to create the textured feel.
 
 ![selection of artwork in Irish Wildlife MatchUp](docs/images/iw_animals_art.png)
 
@@ -207,16 +208,15 @@ Once the main gameboard has been accessed, by pressing the start 'Tick' button, 
 
 I considered the use of additional audio feedback with card flip sounds and 'pings' to indicate successful cards matches, however I felt it did not fit with the relaxed game environment that I was seeking.
 
+[Pixabay Sound Effects](https://pixabay.com/sound-effects/forest-with-small-river-birds-and-nature-field-recording-6735/)  
 
-[Pixabay Sound Effects](https://pixabay.com/sound-effects/forest-with-small-river-birds-and-nature-field-recording-6735/)
 <br>
 
 ### **Accessibility**
 
-Adobe Color Accessibility Tools used to check for colour blind safeness in gameboard colour palette
+Adobe Color Accessibility Tools was used to check for colour blind safeness in gameboard colour palette. Contrast levels were considered throughout the build.
 
 ![adobe color colour blind checker for main swatch](docs/images/gameboard_cbs.png)
-
 
 ---
 
@@ -232,7 +232,7 @@ The start modal greets the user when the page first loads. It details the rules 
 ### **2. Game Board**
 ![screenshot of game board](docs/images/feature_gameboard_com.png)  
 
-The gameboard offered is a 4x3 grid style gameboard. A hexagonal pattern decorates the backs of the cards to reflect traditional playing card graphics. are flipped, two at a time, revealing artwork created by myself. Matched cards stay facing up. Unmatched cards flip back over and increase the 'Moves' counter by one. A 'Reset' button is present which will reset the game experience for the current player or to set it up for a new player.
+The gameboard offered is a 4x3 grid style gameboard. A hexagonal pattern decorates the backs of the cards to reflect traditional playing card graphics. Cards are flipped, two at a time, revealing artwork created by myself. Matched cards stay facing up. Unmatched cards flip back over and increase the 'Moves' counter by one. A 'Reset' button is present which will reset the game experience for the current player or to set it up for a new player.
 
 <br>
   
@@ -354,12 +354,20 @@ The primary goal with this project was to create a visually pleasing, responsive
 - iPhone 13
 - Samsung Galaxy s10
 - Oppo Reno 8 Lite
+  
+
+
+<details open>
+<summary>Popular device testing on Chrome Dev Tools</summary>
+
+![dev tools screenshot](docs/images/devtools_screenshot.png)
+</details>
 
 On desktop, the browsers that I had access to for testing were:
 
-- Chrome
-- Firefox 
-- Edge  
+- <b>Chrome</b>
+- <b>Firefox</b> 
+- <b>Edge</b>  
   
 On my iPad Pro I had access to Safari but not the Safari Dev Tools/Web Inspector. This would have been helpful to solve an ongoing bug with the start modal's height appearing clipped near the bottom, interrupting the user's ability to enter their name. This is detailed more in the Bugs section.
 
@@ -387,13 +395,13 @@ The results of feature testing in <b>Chrome</b>, <b>Firefox</b>, <b>Edge</b> and
   
 <br>  
   
-### **Bugs Section** 
+### **Bugs** 
 
 <br> 
  
 | No. | Bug | Feature | Status | Fix |
 |----|-----|---------|--------|-----|
-| 1. |time incorrectly displayed | Timer | | 
+| 1. | Time incorrectly displayed when timer starts | Timer | Resolved | Re-following the timer tutorial helped me to refactor my timer function so that it did not drop the beginning zero upon starting |
 | 2. | Previously matched cards not resetting correctly for next session | Gameboard | Resolved | |
 | 3. |card flip sound sporadic | Gameboard | Feature removed | Card flip noise detracted from peaceful feeling of the game |
 | 4. | 'Start' button (now 'Reset') text jumping to the side when clicked | Reset button | Resolved | Added margin-left to fix bug of button text jumping to right when clicked - help source - https://stackoverflow.com/a/26908722 |
