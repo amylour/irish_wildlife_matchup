@@ -445,7 +445,7 @@ The [W3C Validator](https://validator.w3.org/) was used to validate HTML and the
 
 
 <details>
-<summary>Lighthouse Scores for Mobile</summary>
+<summary>Lighthouse Scores for Mobile - performance optimised by using webp files and reducing art image sizes. I will seek a solution for improving performance for the next version.</summary>
 
 ![desktop lighthouse scores](docs/validation/mobile_lighthouse.png)
 </details>  
