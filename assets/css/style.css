@@ -146,6 +146,12 @@ input:focus {
     outline: none;
 }
 
+::placeholder {
+    opacity: 0.5;
+    font-size: 14px;
+    padding: 10px;
+}
+
 /* span for player name enter, time, moves and play again */
 span {
     font-size: 24px;
