@@ -2,7 +2,7 @@
 
 [View live project here on Github](https://amylour.github.io/irish_wildlife_matchup/)
 
-Irish Wildlife MatchUp is a matching card game built with HTML, CSS and JavaScript. It is my first JavaScript project built for the Code Institute's Full Stack Software Development course.
+Irish Wildlife MatchUp is a matching card game built with HTML, CSS and JavaScript. The aim of the game is enjoy the matching experience in a non-competitive, relaxed environment where the visual and audio aspects have been thoughtfully designed to reflect the theme. It is my first JavaScript project built for the Code Institute's Full Stack Software Development course.
 
 <br>
 
@@ -225,7 +225,7 @@ Adobe Color Accessibility Tools used to check for colour blind safeness in gameb
 ### **1. Start Modal** 
 ![screenshot of start modal](docs/images/feature_startmodal.png)  
 
-The start modal greets the user when the page first loads. It details the rules and offers the option to enter a player name to personalise the gameboard. Pressing the 'Tick' button starts the game.
+The start modal greets the user when the page first loads. It details the rules and offers the option to enter a player name to personalise the gameboard. This is indicated with the 'optional' placeholder. Pressing the 'Tick' button starts the game.
 
 <br>
   
@@ -390,13 +390,17 @@ The results of feature testing in <b>Chrome</b>, <b>Firefox</b>, <b>Edge</b> and
 ### **Bugs** - unfinished section !!!
 
  
-| Bug | Feature | Status | Fix |
-|-----|---------|--------|-----|
-|time incorrectly displayed | Timer | | |
-|previously matched cards not resetting correctly for next session | Gameboard | Resolved | |
-|double click cards for response | Gameboard | Resolved | Placing EventListener outside of function |
-|card flip sound sporadic | Gameboard | Feature removed | Card flip noise detracted from peaceful feeling of the game |
-|
+| No. | Bug | Feature | Status | Fix |
+|----|-----|---------|--------|-----|
+| 1. |time incorrectly displayed | Timer | | 
+| 2. |previously matched cards not resetting correctly for next session | Gameboard | Resolved | |
+| 3. |double click cards for response | Gameboard | Resolved | Placing EventListener outside of function |
+| 4. |card flip sound sporadic | Gameboard | Feature removed | Card flip noise detracted from peaceful feeling of the game |
+| 5. | 'Start' button (now 'Reset') text jumping to the side when clicked | Reset button | Resolved | Added margin-left to fix bug of button text jumping to right when clicked - help source - https://stackoverflow.com/a/26908722 |
+| 6. | Shuffling issue revealing matched cards in next game session | Gameboard | Resolved | I found that due to my shuffle function being inside an IIFE (https://www.tutorialsteacher.com/javascript/immediately-invoked-function-expression-iife), my 'reset game' function set up was behaving incorrectly when called in a new game session. I added a hard reset function with a basic windows reload but I felt this narrowed the scope of my project. I continued developing my game and resolved the issue in a new reset function by removing the shuffle function from the IIFE and placing it directly into my new resetGame() function. This was the best that I could do within my scope of JavaScript study. I used the above link with [MDN](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) documents to help me to solve this issue. |
+| 7. | Themed audio | Light/Dark theme | Resolved | Initially, I had considered having a night time audio track playing when the user switches to dark theme. I had a few options of audio tracks but similar to the 'card flip' sound, I found the change to be quite jarring in relation to the intended 'relaxed' aesthetic of the game. In addiion to this I found it difficult to create the JavaScript needed, after many different attempts, to allow the tracks to be swapped whilst still maintaining the function of the mute audio button. This is something that I will develop for the next version of the game and as the scope of my JavaScript learning grows. |
+| 8. | Play Again button responds to second click only | Win Modal | Resolved | 'onClick' placed in wrong HTML element and playAgain function updated to be called on first click by adding EventListener to 'win-button' ID and adding playAgain() function after the playAgain() function had been declared. |
+| 9. |
 
   
 

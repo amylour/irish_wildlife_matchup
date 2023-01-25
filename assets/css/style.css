@@ -146,10 +146,10 @@ input:focus {
     outline: none;
 }
 
+/* placeholder text settings for 'optional' input field*/
 ::placeholder {
     opacity: 0.5;
     font-size: 14px;
-    padding: 10px;
 }
 
 /* span for player name enter, time, moves and play again */
