@@ -22,7 +22,7 @@ window.addEventListener('load', function () {
     this.setTimeout(
         function open(event) {
             document.querySelector('#start-modal').style.display = "block";
-        }, 1000);
+        }, 100);
 });
 
 // play music - volume on or mute button
@@ -137,7 +137,7 @@ function endGame() {
     }, 1000);
 }
 
-// timer - function learned, practised and adapted from https://foolishdeveloper.com/create-a-simple-stopwatch-using-javascript-tutorial-code/
+// timer - function adapted from https://foolishdeveloper.com/create-a-simple-stopwatch-using-javascript-tutorial-code/
 let time = 0;
 let minutes = 0;
 let seconds = 0;
