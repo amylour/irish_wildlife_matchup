@@ -247,9 +247,9 @@ The timer starts when the first card is clicked and works as a stopwatch recordi
 The optional player name input from the start modal displays the entered name above the score section. The recent score displayed is the winning time and moves count from the player's last round when they choose to continue playing. This score can be some visual encouragement for the player to continue playing and beat their previous round. 
   
 ### **5. Theme & Volume Toggles**
-![screenshot of theme and volume toggles](docs/images/feature_toggles.png)  
+![screenshot of theme and volume toggles](docs/images/feature_toggles.png) ![screenshot of theme and volume toggles](docs/images/toggles_darkmode.png)  
 
-The player has the option to turn on the volume for the nature soundtrack that plays when the game loads, they can then also mute it. The player also has the option to choose a dark theme over the default light theme for a different play experience.
+The player has the option to turn on the volume for the nature soundtrack that plays when the game loads, they can then also mute it. The player also has the option to choose a dark theme over the default light theme for a different play experience. The toggles change colour to refelct the dark theme.
   
 ### **6. Win Modal**
 ![screenshot of win modal](docs/images/feature_winmodal.png)  
@@ -373,7 +373,7 @@ On my iPad Pro I had access to Safari but not the Safari Dev Tools/Web Inspector
 The results of feature testing in <b>Chrome</b>, <b>Firefox</b>, <b>Edge</b> and <b>Safarai</b> are as follows:
 
 | Feature | Test | Chrome(Windows) | Firefox(Windows) | Edge(Windows) | Chrome(Android) | Safari (iPadOS) |
-|----|---------|----|----|----|----|----| 
+|----|-------------------------|----|----|----|----|----| 
 | Start Modal | Modal appears on main window load, centered with opaque background | Pass | Pass | Pass | Pass | Fail( see Bug no.9) |
 | Start Modal | Input field allows input | Pass | Pass | Pass | Pass | Pass ( see Bug no.9) |
 | Start Modal Tick Button | Removes modal from view and places player name in Name section when clicked/touched | Pass | Pass | Pass | Pass | Pass |
@@ -399,7 +399,7 @@ The results of feature testing in <b>Chrome</b>, <b>Firefox</b>, <b>Edge</b> and
 <br> 
  
 | No. | Bug | Feature | Status | Fix |
-|----|-----|---------|--------|-----|
+|----|---------|-------------|---------------------|-----|
 | 1. | Time incorrectly displayed when timer starts | Timer | Resolved | Re-following the timer tutorial (credited below and in JS file) helped me to refactor my timer function so that it did not drop the beginning zero upon starting |
 | 2. | Card flip sound sporadic | Gameboard | Feature removed | Card flip noise detracted from peaceful feeling of the game as it was not necessary or dependable |
 | 3. | 'Start' button (now 'Reset') text jumping to the side when clicked | Reset button | Resolved | Added margin-left to fix bug of button text jumping to right when clicked - help source - https://stackoverflow.com/a/26908722 |
