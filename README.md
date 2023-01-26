@@ -502,5 +502,5 @@ The [W3C Validator](https://validator.w3.org/) was used to validate HTML and the
 ### **Acknowledgements**  
   
 I would like to thank my mentor Rahul Lakhanpal for his continued guidance and expertise,  
-my fellow classmates and extended, Code Institute Slack community for their encouragement, and my family for their constant support during my studies.
+my fellow classmates and extended Code Institute Slack community for their encouragement, and my family for their constant support during my studies.
 
