@@ -206,7 +206,7 @@ I wished to create the artwork for the game, instead of using photographs, to gi
 
 Once the main gameboard has been accessed, by pressing the start 'Tick' button, the forest soundtrack will start playing. The soundtrack is muted and the volume button must be selected for the user to hear the nature sounds. Birds can be heard chirping, leaves rustling in the wind and a stream can be heard babbling.
 
-I considered the use of additional audio feedback with card flip sounds and 'pings' to indicate successful card matches, however, I felt it did not fit with the relaxed game environment that I was seeking.
+I considered the use of additional audio feedback with card flip sounds and 'pings' to indicate successful card matches, however, I felt it did not fit with the relaxed game environment that I was seeking. This was similar with adding a dark theme soundtrack, it brought no benefit to the game experience at this time.
 
 [Pixabay Sound Effects](https://pixabay.com/sound-effects/forest-with-small-river-birds-and-nature-field-recording-6735/)  
 
@@ -459,6 +459,7 @@ The [W3C Validator](https://validator.w3.org/) was used to validate HTML and the
 
     
 ---
+  
 
 ## Credits
 
@@ -491,8 +492,9 @@ The [W3C Validator](https://validator.w3.org/) was used to validate HTML and the
     - Hedgehog (credit: Amaya Eguizába)
     - Bee (credit: Myriams-Fotos)
   - [Pattern Monster](https://pattern.monster/hexagon-2/) for hexagonal pattern on back of cards.
+
   - [Favicon](https://favicon.io/) for the favicon used for this site.
-  - [Freepik](https://www.freepik.com/) for the volume icon (credit: Amazona Adorada), theme toggle (credit: Saepul Nahwan) and tick button (credit: Vectors Market).
+  - [Flaticon](https://www.flaticon.com/) for the volume icon (credit: Amazona Adorada), theme toggle (credit: Saepul Nahwan) and tick button (credit: Vectors Market).
   - [Pixabay](https://pixabay.com/) for the forest soundtrack (credit: Garuda1982).
 
 <br> 
