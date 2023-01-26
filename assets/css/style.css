@@ -292,7 +292,6 @@ span {
     transition: transform .4s;
 }
 
-
 .game-card.flip {
     transform: rotateY(180deg);
 }
@@ -675,8 +674,6 @@ body.dark-mode .modal-background {
     }
 }
 
-
-
 /*For large tablets & laptops (769px-1024px)*/
 
 @media only screen and (max-width: 1024px) and (min-width: 769px) {
@@ -876,7 +873,6 @@ body.dark-mode .modal-background {
         font-size: 20px;
     }
 }
-
 
 /*For large mobiles, iPads & tablets (768px-481px)*/
 
