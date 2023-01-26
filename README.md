@@ -471,7 +471,7 @@ The [W3C Validator](https://validator.w3.org/) was used to validate HTML and the
       - Modal how to -  https://www.w3schools.com/howto/howto_css_modals.asp
   - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript) for JavaScript best-practise, tutorials and guidance.
   - [Stack Overflow](https://stackoverflow.com/) for assistance:
-      - Add '0' to minutes/seconds in timer - https://stackoverflow.com/questions/26898378/javascript-countdown-timer-need-a-second-digit 
+      - Add '0' to minutes/seconds in timer and moves counter - https://stackoverflow.com/questions/26898378/javascript-countdown-timer-need-a-second-digit 
       - Centering modals - https://stackoverflow.com/questions/39627549/how-to-center-modal-to-the-center-of-screen
       - Fix text jumping when button clicked - https://stackoverflow.com/a/26908722
   - [Web Designer Hut](https://webdesignerhut.com/3d-buttons-with-css-dropshadow/) for solid drop shadow tutorial.

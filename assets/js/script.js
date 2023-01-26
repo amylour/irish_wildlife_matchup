@@ -10,7 +10,7 @@ let hasTurnedCard = false; // checks if card has been clicked
 let firstCard, secondCard; // checks for matching cards
 let lockBoard = false;
 let moves = 0;
-let int = null;
+let int = null; // timer
 let [milliseconds, seconds, minutes, hours] = [0,0,0,0];
 let winMoves = document.getElementById('win-moves-value').innerHTML;
 let winTime = timeTaken.innerHTML;
@@ -140,7 +140,6 @@ function endGame() {
 }
 
 // timer - function adapted from https://foolishdeveloper.com/create-a-simple-stopwatch-using-javascript-tutorial-code/
-
 function timer() {
     if (int !== null) {
         clearInterval(int);
@@ -186,7 +185,6 @@ function stopTime() {
     resetBtn.addEventListener('click', () => {
     window.location.reload();
     });
-
 
 // win modal pop up
 function winMessageDisplay() {
